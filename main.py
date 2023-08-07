@@ -18,7 +18,7 @@ def download_zenn_articles(url: str) -> None:
     zenn: List[Article] = parse_zenn_rss_xml_to_article_class(
         url=url
     )
-    write_articles_to_csv(zenn, 'src/techblog/zenn.csv')
+    write_articles_to_csv(zenn, 'src/techblog/data/zenn.csv')
 
 
 if __name__ == "__main__":

@@ -1,4 +1,3 @@
-from pydantic import ValidationError
 from typing import List
 from models.site import Site
 

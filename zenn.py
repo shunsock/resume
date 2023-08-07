@@ -2,7 +2,7 @@ from typing import Optional, List
 import requests
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element
-from article import Article
+from models.article import Article
 
 
 def get_element_text(element: Element, tag_name: str) -> Optional[str]:

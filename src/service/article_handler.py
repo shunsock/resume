@@ -1,5 +1,5 @@
 from typing import List
-from models.article import Article
+from src.models.article import Article
 import csv
 
 

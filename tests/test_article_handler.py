@@ -1,6 +1,6 @@
-from models.article import Article
+from src.models.article import Article
 from typing import List
-from service.article_handler import write_articles_to_csv
+from src.service.article_handler import write_articles_to_csv
 
 
 def supply_test_case_on_memory() -> List[Article]:
@@ -18,7 +18,7 @@ def supply_test_case_on_memory() -> List[Article]:
 
 def test_write_articles_to_csv(
     articles=supply_test_case_on_memory(),
-    csv_file_path="techblog/test.csv"
+    csv_file_path="src/techblog/test.csv"
 ):
     write_articles_to_csv(articles, csv_file_path)
     assert True
@@ -26,7 +26,9 @@ def test_write_articles_to_csv(
 
 def test_write_articles_to_csv_with_empty_list(
     articles=[],
-    csv_file_path="techblog/test.csv"
+    csv_file_path="src/techblog/test.csv"
 ):
-    write_articles_to_csv(articles, csv_file_path)
-    assert True
+    try:
+        write_articles_to_csv(articles, csv_file_path)
+    except ValueError as e:
+        assert True

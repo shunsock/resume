@@ -1,5 +1,5 @@
 from pydantic import ValidationError
-from models.article import Article
+from src.models.article import Article
 import pytest
 
 

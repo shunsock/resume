@@ -1,4 +1,4 @@
-from models.site import Site
+from src.models.site import Site
 from pydantic import ValidationError
 
 

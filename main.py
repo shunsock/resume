@@ -1,8 +1,8 @@
-from zenn import parse_zenn_rss_xml_to_article_class
-from models.article import Article
-from models.site import Site
-from service.supply_url import SiteSupply
-from service.article_handler import write_articles_to_csv
+from src.zenn import parse_zenn_rss_xml_to_article_class
+from src.models.article import Article
+from src.models.site import Site
+from src.service.supply_url import SiteSupply
+from src.service.article_handler import write_articles_to_csv
 from typing import List
 
 
@@ -18,7 +18,7 @@ def download_zenn_articles(url: str) -> None:
     zenn: List[Article] = parse_zenn_rss_xml_to_article_class(
         url=url
     )
-    write_articles_to_csv(zenn, 'techblog/zenn.csv')
+    write_articles_to_csv(zenn, 'src/techblog/zenn.csv')
 
 
 if __name__ == "__main__":

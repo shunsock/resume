@@ -1,5 +1,5 @@
 from typing import List
-from models.site import Site
+from src.models.site import Site
 
 
 class SiteSupply:

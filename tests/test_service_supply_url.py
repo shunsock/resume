@@ -1,5 +1,5 @@
-from service.supply_url import SiteSupply
-from models.site import Site
+from src.service.supply_url import SiteSupply
+from src.models.site import Site
 
 
 def site_supply_in_memory_mock():

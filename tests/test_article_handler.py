@@ -1,5 +1,6 @@
-from src.models.article import Article
 from typing import List
+
+from src.models.article import Article
 from src.service.article_handler import write_articles_to_csv
 
 
@@ -17,16 +18,14 @@ def supply_test_case_on_memory() -> List[Article]:
 
 
 def test_write_articles_to_csv(
-    articles=supply_test_case_on_memory(),
-    csv_file_path="src/techblog/data/test.csv"
+    articles=supply_test_case_on_memory(), csv_file_path="src/techblog/data/test.csv"
 ):
     write_articles_to_csv(articles, csv_file_path)
     assert True
 
 
 def test_write_articles_to_csv_with_empty_list(
-    articles=[],
-    csv_file_path="src/techblog/data/test.csv"
+    articles=[], csv_file_path="src/techblog/data/test.csv"
 ):
     try:
         write_articles_to_csv(articles, csv_file_path)

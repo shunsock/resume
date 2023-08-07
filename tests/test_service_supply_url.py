@@ -1,17 +1,11 @@
-from src.service.supply_url import SiteSupply
 from src.models.site import Site
+from src.service.supply_url import SiteSupply
 
 
 def site_supply_in_memory_mock():
     test_case = [
-            Site(
-                name="Test Site",
-                base_url="http://www.testsite.com/"
-            ),
-            Site(
-                name="Test Site2",
-                base_url="http://www.testsite2.com/"
-            )
+        Site(name="Test Site", base_url="http://www.testsite.com/"),
+        Site(name="Test Site2", base_url="http://www.testsite2.com/"),
     ]
     site_supply = SiteSupply(test_case)
     return site_supply
@@ -50,6 +44,7 @@ def test_check_if_name_exists():
     assert site_supply.check_if_name_exists("Test Site") is True
     assert site_supply.check_if_name_exists("Test Site2") is True
     assert site_supply.check_if_name_exists("Test Site3") is False
+
 
 def test_check_if_name_exists_failure_by_name_is_not_string():
     site_supply = site_supply_in_memory_mock()

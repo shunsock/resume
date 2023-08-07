@@ -1,20 +1,21 @@
 from typing import List
+
 from src.models.site import Site
 
 
 class SiteSupply:
     def __init__(self, sites_list: List[Site]):
         """
-            Initialize SiteSupply object
+        Initialize SiteSupply object
 
-            Parameters
-            ======
-            sites_list: List[Site] - list of Site objects
+        Parameters
+        ======
+        sites_list: List[Site] - list of Site objects
 
-            Raises
-            ======
-            TypeError - if sites_list is not a list
-            ValueError - if sites_list is empty
+        Raises
+        ======
+        TypeError - if sites_list is not a list
+        ValueError - if sites_list is empty
         """
         try:
             # Check if sites_list is a List
@@ -38,15 +39,15 @@ class SiteSupply:
 
     def check_if_name_exists(self, name: str) -> bool:
         """
-            Check if site with name exists
+        Check if site with name exists
 
-            Parameters
-            ======
-            name: str - site name
+        Parameters
+        ======
+        name: str - site name
 
-            Returns
-            ======
-            bool - True if site with name exists, False otherwise
+        Returns
+        ======
+        bool - True if site with name exists, False otherwise
         """
         if isinstance(name, str) is False:
             raise TypeError("Name must be a string")
@@ -54,15 +55,15 @@ class SiteSupply:
 
     def check_if_url_exists(self, url: str) -> bool:
         """
-            Check if site with url exists
+        Check if site with url exists
 
-            Parameters
-            ======
-            url: str - site url
+        Parameters
+        ======
+        url: str - site url
 
-            Returns
-            ======
-            bool - True if site with url exists, False otherwise
+        Returns
+        ======
+        bool - True if site with url exists, False otherwise
         """
         if isinstance(url, str) is False:
             raise TypeError("URL must be a string")
@@ -70,20 +71,20 @@ class SiteSupply:
 
     def get_url_by_name(self, name: str) -> str:
         """
-            Get site url by name
+        Get site url by name
 
-            Parameters
-            ======
-            name: str - site name
+        Parameters
+        ======
+        name: str - site name
 
-            Returns
-            ======
-            str - site url
+        Returns
+        ======
+        str - site url
 
-            Raises
-            ======
-            TypeError - if name is not a string
-            ValueError - if site with name not found
+        Raises
+        ======
+        TypeError - if name is not a string
+        ValueError - if site with name not found
         """
         if isinstance(name, str) is False:
             raise TypeError("Name must be a string")

@@ -1,22 +1,24 @@
-from typing import Optional, List
-import requests
 import xml.etree.ElementTree as ET
+from typing import List, Optional
 from xml.etree.ElementTree import Element
+
+import requests
+
 from models.article import Article
 
 
 def get_element_text(element: Element, tag_name: str) -> Optional[str]:
     """
-        Get text from element
+    Get text from element
 
-        Parameters
-        ======
-        element: Element - XML element
-        tag_name: str - XML tag name
+    Parameters
+    ======
+    element: Element - XML element
+    tag_name: str - XML tag name
 
-        Returns
-        ======
-        Optional[str] - text from element if element exists, None otherwise
+    Returns
+    ======
+    Optional[str] - text from element if element exists, None otherwise
     """
     found_element = element.find(tag_name)
     return found_element.text.strip() if found_element is not None else None
@@ -24,19 +26,19 @@ def get_element_text(element: Element, tag_name: str) -> Optional[str]:
 
 def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
     """
-        Parse Zenn RSS XML to Article class
+    Parse Zenn RSS XML to Article class
 
-        Parameters
-        ======
-        url: str - RSS XML URL
+    Parameters
+    ======
+    url: str - RSS XML URL
 
-        Returns
-        ======
-        List[Article] - list of Article class
+    Returns
+    ======
+    List[Article] - list of Article class
 
-        Raises
-        ======
-        SystemExit - if request failed
+    Raises
+    ======
+    SystemExit - if request failed
     """
     try:
         response = requests.get(url)
@@ -46,10 +48,10 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
         raise SystemExit(e)
 
     articles: List = []
-    for item in tree.findall('.//item'):
+    for item in tree.findall(".//item"):
         article_data = {
-            'title': get_element_text(item, 'title'),
-            'link': get_element_text(item, 'link'),
+            "title": get_element_text(item, "title"),
+            "link": get_element_text(item, "link"),
         }
         article = Article(**article_data)
         articles.append(article)

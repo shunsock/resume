@@ -1,6 +1,7 @@
-from typing import List
-from src.models.article import Article
 import csv
+from typing import List
+
+from src.models.article import Article
 
 
 def write_articles_to_csv(articles: List[Article], filename: str) -> None:
@@ -14,8 +15,8 @@ def write_articles_to_csv(articles: List[Article], filename: str) -> None:
     if filename == "":
         raise ValueError("No filename provided")
 
-    with open(filename, 'w', newline='') as csvfile:
-        fieldnames = ['title', 'link']
+    with open(filename, "w", newline="") as csvfile:
+        fieldnames = ["title", "link"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()

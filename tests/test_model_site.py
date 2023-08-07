@@ -1,13 +1,11 @@
-from src.models.site import Site
 from pydantic import ValidationError
+
+from src.models.site import Site
 
 
 def test_construction_success():
     url = "http://www.testsite.com/"
-    site = Site(
-        name="Test Site",
-        base_url=url
-    )
+    site = Site(name="Test Site", base_url=url)
     assert site.name == "Test Site"
     assert str(site.base_url) == url
 

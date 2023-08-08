@@ -15,6 +15,7 @@ def create_site_list():
 
 def download_zenn_articles(url: str) -> None:
     zenn: List[Article] = parse_zenn_rss_xml_to_article_class(url=url)
+    # TODO 差分を出して、差分のみをCSVに書き込むようにする
     write_articles_to_csv(zenn, "src/techblog/data/zenn.csv")
 
 

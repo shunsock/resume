@@ -39,19 +39,19 @@ def csv_to_md_table(file_path: str, site_name: str, tag_name: str) -> None:
 def build_techblog() -> None:
     with open("README.md", "a") as f:
         f.write("## Tech Blog\n")
-        f.write("| Site Name | Tag       | Title       |\n")
-        f.write("| ------    |:-----:    | -----------:|\n")
+        f.write("| Site Name | Tag      | Title       |\n")
+        f.write("| ------    |------    | -----------|\n")
 
     # write articles to README.md
     csv_to_md_table(
         file_path='src/techblog/data/prtimes.csv',
-        site_name='PR TIMES TECH BLOG',
-        tag_name='ML&Stats'
+        site_name='PR TIMES',
+        tag_name='MLOps'
     )
     csv_to_md_table(
         file_path='src/techblog/data/zenn.csv',
         site_name='Zenn',
-        tag_name='Web/ML&Stats'
+        tag_name='Web \n ML&Stats'
     )
     csv_to_md_table(
         file_path='src/techblog/data/toukei_no_mori.csv',
@@ -60,7 +60,7 @@ def build_techblog() -> None:
     )
     csv_to_md_table(
         file_path='src/techblog/data/hatena.csv',
-        site_name='Hatena',
+        site_name='Hatena Blog',
         tag_name='Conference'
     )
 

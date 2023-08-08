@@ -4,7 +4,7 @@ from xml.etree.ElementTree import Element
 
 import requests
 
-from models.article import Article
+from src.models.article import Article
 
 
 def get_element_text(element: Element, tag_name: str) -> Optional[str]:

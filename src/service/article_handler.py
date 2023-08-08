@@ -72,7 +72,6 @@ def read_articles_list_from_csv(file_path: str) -> List[Article]:
     with open(file_path, newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            print(row)
             articles.append(Article.model_validate(row))
 
     # validation

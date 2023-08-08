@@ -1,5 +1,68 @@
 from typing import List
+from src.service.article_handler import read_articles_list_from_csv
+from src.service.supply_article import ArticleSupply
 import os
+
+
+def csv_to_md_table(file_path: str, site_name: str, tag_name: str) -> None:
+    """
+        Converts a csv file to a text file
+
+        Parameters
+        ======
+        file_path: str
+
+        Returns
+        ======
+        None
+
+        Raises
+        ======
+        TypeError: if file_path is not a string
+        FileNotFoundError: if file_path is not a valid file
+    """
+    if isinstance(file_path, str) is False:
+        raise TypeError('file_path must be a string')
+    if os.path.isfile(file_path) is False:
+        raise FileNotFoundError('file_path must be a valid file')
+
+    articles = ArticleSupply(
+        read_articles_list_from_csv(file_path)
+    )
+    with open("README.md", "a") as f:
+        for article in articles.articles:
+            title = "[" + article.title+"]("+str(article.link)+")"
+            row = "|" + site_name + "|" + tag_name + "|" + title + "|\n"
+            f.write(row)
+
+
+def build_techblog() -> None:
+    with open("README.md", "a") as f:
+        f.write("## Tech Blog\n")
+        f.write("| Site Name | Tag       | Title       |\n")
+        f.write("| ------    |:-----:    | -----------:|\n")
+
+    # write articles to README.md
+    csv_to_md_table(
+        file_path='src/techblog/data/prtimes.csv',
+        site_name='PR TIMES TECH BLOG',
+        tag_name='ML&Stats'
+    )
+    csv_to_md_table(
+        file_path='src/techblog/data/zenn.csv',
+        site_name='Zenn',
+        tag_name='Web/ML&Stats'
+    )
+    csv_to_md_table(
+        file_path='src/techblog/data/toukei_no_mori.csv',
+        site_name='Hello Statisicians!',
+        tag_name='ML&Stats'
+    )
+    csv_to_md_table(
+        file_path='src/techblog/data/hatena.csv',
+        site_name='Hatena',
+        tag_name='Conference'
+    )
 
 
 def get_path_list(directory: str) -> List[str]:
@@ -54,11 +117,17 @@ def get_file_contents(file_path: str) -> List[str]:
         return f.readlines()
 
 
-if __name__ == '__main__':
+def build_profile() -> None:
+    # write profile to README.md
     files: List[str] = get_path_list('src/profile/')
-    with open('README.md', 'a') as readme:
+    with open('README.md', 'w') as readme:
         for f in files:
             lines: List[str] = sorted(get_file_contents(f))
             for line in lines:
                 # print(line)
                 readme.write(line + '\n')
+
+
+if __name__ == '__main__':
+    build_profile()
+    build_techblog()

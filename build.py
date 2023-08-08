@@ -51,12 +51,12 @@ def build_techblog() -> None:
     csv_to_md_table(
         file_path='src/techblog/data/zenn.csv',
         site_name='Zenn',
-        tag_name='Web / ML&Stats'
+        tag_name='Web/Stats'
     )
     csv_to_md_table(
         file_path='src/techblog/data/toukei_no_mori.csv',
         site_name='Hello Statisicians!',
-        tag_name='ML&Stats'
+        tag_name='Machine Learning'
     )
     csv_to_md_table(
         file_path='src/techblog/data/hatena.csv',

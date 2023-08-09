@@ -6,10 +6,10 @@ from src.zenn import download_zenn_articles
 def create_site_list() -> SiteSupply:
     return SiteSupply(
         sites_list=[
-            Site(
-                name="zenn",
-                base_url="https://zenn.dev/shundeveloper/feed"
-            )
+            Site.model_validate({
+                "name": "zenn",
+                "base_url": "https://zenn.dev/shundeveloper/feed"
+            })
         ]
     )
 

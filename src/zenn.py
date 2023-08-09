@@ -26,7 +26,10 @@ def get_element_text(element: Element, tag_name: str) -> Optional[str]:
     Optional[str] - text from element if element exists, None otherwise
     """
     found_element = element.find(tag_name)
-    return found_element.text.strip() if found_element is not None else None
+    if isinstance(found_element, str):
+        return found_element.text.strip()
+    else:
+        return None
 
 
 def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
@@ -54,12 +57,14 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
 
     articles: List = []
     for item in tree.findall(".//item"):
-        article_data = {
-            "title": get_element_text(item, "title"),
-            "link": get_element_text(item, "link"),
-        }
-        article = Article(**article_data)
-        articles.append(article)
+        title = get_element_text(item, "title")
+        link = get_element_text(item, "link")
+        if isinstance(title, str) and isinstance(link, str):
+            article = Article.model_validate({
+                "title": title,
+                "link": link
+            })
+            articles.append(article)
     return articles
 
 

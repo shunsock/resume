@@ -46,7 +46,7 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
     SystemExit - if request failed
     """
     try:
-        response = requests.get(url)
+        response: requests.Response = requests.get(url)
         xml_data = response.content
         tree = ET.fromstring(xml_data)
     except requests.exceptions.RequestException as e:

@@ -1,11 +1,11 @@
 ### Portfolio
 - [Resume](https://github.com/shunsock/resume)
 ```yml
-- About: This is my resume. CI/CD is implemented by GitHub Actions.
-- Language: Python, Shell Script
-- CI/CD: GitHub Actions
-- Static Analysis: mypy
-- Testing/Formatter: pytest, black, isort
+About: This is my resume. CI/CD is implemented by GitHub Actions.
+Language: Python, Shell Script
+CI/CD: GitHub Actions
+Static Analysis: mypy
+Testing/Formatter: pytest, black, isort
 ```
 
 - [Zshian](https://github.com/shunsock/zshian)

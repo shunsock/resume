@@ -1,4 +1,5 @@
 ## Profile
+![profile image](https://avatars.githubusercontent.com/u/84004458?s=96&v=4)
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 
 ### Technology Stack
@@ -9,12 +10,14 @@ Language:
   Front-end: TypeScript
   Back-end: TypeScript, Python, PHP, Shell Script, R
   SQLs: MySQL, PostgreSQL, BigQuery
+
 Frameworks:
   TypeScript: React, Next.js
   JavaScript: Node.js, Express.js
   CSS: TailwindCSS, SCSS
   Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
   PHP: Laravel
+
 Infrastructure:
   Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
   Container: Docker
@@ -35,11 +38,11 @@ Infrastructure:
 ### Portfolio
 - [Resume](https://github.com/shunsock/resume)
 ```yml
-- About: This is my resume. CI/CD is implemented by GitHub Actions.
-- Language: Python, Shell Script
-- CI/CD: GitHub Actions
-- Static Analysis: mypy
-- Testing/Formatter: pytest, black, isort
+About: This is my resume. CI/CD is implemented by GitHub Actions.
+Language: Python, Shell Script
+CI/CD: GitHub Actions
+Static Analysis: mypy
+Testing/Formatter: pytest, black, isort
 ```
 
 - [Zshian](https://github.com/shunsock/zshian)

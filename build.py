@@ -121,10 +121,11 @@ def build_profile() -> None:
     files: List[str] = get_path_list("src/profile/")
     with open("README.md", "w") as readme:
         for f in files:
-            lines: List[str] = sorted(get_file_contents(f))
+            lines: List[str] = get_file_contents(f)
             for line in lines:
                 # print(line)
-                readme.write(line + "\n")
+                readme.write(line)
+            readme.write("\n")
 
 
 if __name__ == "__main__":

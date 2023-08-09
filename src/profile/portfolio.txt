@@ -1,28 +1,36 @@
 ### Portfolio
-[Resume](https://github.com/shunsock/resume)
-==> About: This is my resume. CI/CD is implemented by GitHub Actions.
-==> Language: Python, Shell Script
-==> CI/CD: GitHub Actions
-==> Static Analysis: mypy
-==> Testing/Formatter: pytest, black, isort
+- [Resume](https://github.com/shunsock/resume)
+```
+- About: This is my resume. CI/CD is implemented by GitHub Actions.
+- Language: Python, Shell Script
+- CI/CD: GitHub Actions
+- Static Analysis: mypy
+- Testing/Formatter: pytest, black, isort
+```
 
-[Zshian](https://github.com/shunsock/zshian)
-==> About: This is my zsh configuration. You can use colorful and readable zsh with this. also, You can use some useful functions and aliases.
-==> Language: Shell Script
-==> CI/CD: GitHub Actions
-==> Testing: just build test on GitHub Actions
+- [Zshian](https://github.com/shunsock/zshian)
+```
+- About: This is my zsh configuration. You can use colorful and readable zsh with this. also, You can use some useful functions and aliases.
+- Language: Shell Script
+- CI/CD: GitHub Actions
+- Testing: just build test on GitHub Actions
+```
 
-[Mahjong Util](https://mahjong.streamlit.app/)
-==> About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
-==> Language: Python
-==> CI/CD: GitHub Actions, Streamlit Cloud
-==> FlameWork: Streamlit
-==> Static Analysis: mypy
-==> Testing/Formatter: pytest, black, isort
+- [Mahjong Util](https://mahjong.streamlit.app/)
+```
+- About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
+- Language: Python
+- CI/CD: GitHub Actions, Streamlit Cloud
+- FlameWork: Streamlit
+- Static Analysis: mypy
+- Testing/Formatter: pytest, black, isort
+```
 
-[Portfolio Site](https://shun-developer.com/blog)
-==> About: This is my previous portfolio web site.
-==> Language: TypeScript
-==> CI/CD: Vercel
-==> FlameWork: Next.js, Tailwind CSS
-==> Static Analysis: ESLint
+- [Portfolio Site](https://shun-developer.com/blog)
+```
+- About: This is my previous portfolio web site.
+- Language: TypeScript
+- CI/CD: Vercel
+- FlameWork: Next.js, Tailwind CSS
+- Static Analysis: ESLint
+```

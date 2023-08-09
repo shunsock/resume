@@ -1,5 +1,6 @@
 ## Profile
-![profile image](https://avatars.githubusercontent.com/u/84004458?s=96&v=4)
+![profile image](/assets/images/thumbnail.jpg)
+
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 
 ### Technology Stack

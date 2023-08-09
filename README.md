@@ -28,14 +28,6 @@ I’m a Software Engineer with a passion for building things. I have a strong ba
 
 ### Portfolio
 
-- [Mahjong Util](https://mahjong.streamlit.app/)
-
-- [Portfolio Site](https://shun-developer.com/blog)
-
-- [Resume](https://github.com/shunsock/resume]
-
-- [Zshian](https://github.com/shunsock/zshian)
-
 ==> About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
 
 ==> About: This is my previous portfolio web site.
@@ -75,6 +67,14 @@ I’m a Software Engineer with a passion for building things. I have a strong ba
 ==> Testing/Formatter: pytest, black, isort
 
 ==> Testing: just build test on GitHub Actions
+
+[Mahjong Util](https://mahjong.streamlit.app/)
+
+[Portfolio Site](https://shun-developer.com/blog)
+
+[Resume](https://github.com/shunsock/resume)
+
+[Zshian](https://github.com/shunsock/zshian)
 
 ## Tech Blog
 | Site Name | Tag      | Title       |

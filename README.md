@@ -20,11 +20,61 @@ I’m a Software Engineer with a passion for building things. I have a strong ba
 
 - [Toyo University (Bacherer of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
 
+
+
+
+
+
+
 ### Portfolio
 
 - [Mahjong Util](https://mahjong.streamlit.app/)
 
 - [Portfolio Site](https://shun-developer.com/blog)
+
+- [Resume](https://github.com/shunsock/resume]
+
+- [Zshian](https://github.com/shunsock/zshian)
+
+==> About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
+
+==> About: This is my previous portfolio web site.
+
+==> About: This is my resume. CI/CD is implemented by GitHub Actions.
+
+==> About: This is my zsh configuration. You can use colorful and readable zsh with this. also, You can use some useful functions and aliases.
+
+==> CI/CD: GitHub Actions
+
+==> CI/CD: GitHub Actions
+
+==> CI/CD: GitHub Actions, Streamlit Cloud
+
+==> CI/CD: Vercel
+
+==> FlameWork: Next.js, Tailwind CSS
+
+==> FlameWork: Streamlit
+
+==> Language: Python
+
+==> Language: Python, Shell Script
+
+==> Language: Shell Script
+
+==> Language: TypeScript
+
+==> Static Analysis: ESLint
+
+==> Static Analysis: mypy
+
+==> Static Analysis: mypy
+
+==> Testing/Formatter: pytest, black, isort
+
+==> Testing/Formatter: pytest, black, isort
+
+==> Testing: just build test on GitHub Actions
 
 ## Tech Blog
 | Site Name | Tag      | Title       |

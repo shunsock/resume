@@ -5,11 +5,11 @@ from src.models.article import Article
 
 class ArticleSupply:
     """
-        ArticleSupply class
+    ArticleSupply class
 
-        Properties
-        ======
-        articles: List[Article] - list of Article objects
+    Properties
+    ======
+    articles: List[Article] - list of Article objects
     """
 
     def __init__(self, articles_list: List[Article]):
@@ -120,15 +120,9 @@ class ArticleSupply:
         ValueError - if new_article already exists
         """
         if isinstance(new_article, Article) is False:
-            raise TypeError(
-                "new_article must be a Article object"
-            )
+            raise TypeError("new_article must be a Article object")
         if self.check_if_title_exists(new_article.title):
-            raise ValueError(
-                f"Article with title {new_article.title} already exists"
-            )
+            raise ValueError(f"Article with title {new_article.title} already exists")
         if self.check_if_link_exists(str(new_article.link)):
-            raise ValueError(
-                f"Article with link {new_article.link} already exists"
-            )
+            raise ValueError(f"Article with link {new_article.link} already exists")
         self.articles.insert(0, new_article)

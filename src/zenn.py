@@ -5,11 +5,9 @@ from xml.etree.ElementTree import Element
 import requests
 
 from src.models.article import Article
+from src.service.article_handler import (read_articles_list_from_csv,
+                                         write_articles_to_csv)
 from src.service.supply_article import ArticleSupply
-from src.service.article_handler import (
-    write_articles_to_csv,
-    read_articles_list_from_csv
-)
 
 
 def get_element_text(element: Element, tag_name: str) -> Optional[str]:
@@ -60,22 +58,14 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
         title = get_element_text(item, "title")
         link = get_element_text(item, "link")
         if isinstance(title, str) and isinstance(link, str):
-            article = Article.model_validate({
-                "title": title,
-                "link": link
-            })
+            article = Article.model_validate({"title": title, "link": link})
             articles.append(article)
     return articles
 
 
-def download_zenn_articles(
-    url: str,
-    csv_path: str
-) -> None:
+def download_zenn_articles(url: str, csv_path: str) -> None:
     current_article: List[Article] = parse_zenn_rss_xml_to_article_class(url)
-    zenn = ArticleSupply(
-        read_articles_list_from_csv(csv_path)
-    )
+    zenn = ArticleSupply(read_articles_list_from_csv(csv_path))
 
     is_new_article_found: bool = False
     for article in current_article:

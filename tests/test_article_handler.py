@@ -1,10 +1,8 @@
 from typing import List
 
 from src.models.article import Article
-from src.service.article_handler import (
-    write_articles_to_csv,
-    read_articles_list_from_csv
-)
+from src.service.article_handler import (read_articles_list_from_csv,
+                                         write_articles_to_csv)
 
 
 def supply_test_case_on_memory() -> List[Article]:
@@ -21,8 +19,7 @@ def supply_test_case_on_memory() -> List[Article]:
 
 
 def test_write_articles_to_csv(
-    articles=supply_test_case_on_memory(),
-    csv_file_path="src/techblog/data/test.csv"
+    articles=supply_test_case_on_memory(), csv_file_path="src/techblog/data/test.csv"
 ):
     write_articles_to_csv(articles, csv_file_path)
     assert True
@@ -56,7 +53,7 @@ def test_read_artsscles_list_from_csv_with_empty_file(file_path=""):
 
 
 def test_read_articles_list_from_csv_with_invalid_file(
-        file_path="src/techblog/data/invalid.csv"
+    file_path="src/techblog/data/invalid.csv",
 ):
     try:
         read_articles_list_from_csv(file_path)

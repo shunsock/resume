@@ -1,28 +1,29 @@
 import csv
 import os
 from typing import List
+
 from src.models.article import Article
 
 
 def write_articles_to_csv(articles: List[Article], filename: str) -> None:
     """
-        Write articles to CSV file
+    Write articles to CSV file
 
-        Parameters
-        ======
-        articles: List[Article]
-        filename: str
+    Parameters
+    ======
+    articles: List[Article]
+    filename: str
 
-        Returns
-        ======
-        None
+    Returns
+    ======
+    None
 
-        Raises
-        ======
-        TypeError: articles is not a list
-        TypeError: filename is not a string
-        ValueError: articles is empty
-        ValueError: filename is empty
+    Raises
+    ======
+    TypeError: articles is not a list
+    TypeError: filename is not a string
+    ValueError: articles is empty
+    ValueError: filename is empty
     """
     # input validation
     if isinstance(articles, List) is False:
@@ -45,21 +46,21 @@ def write_articles_to_csv(articles: List[Article], filename: str) -> None:
 
 def read_articles_list_from_csv(file_path: str) -> List[Article]:
     """
-        Read articles from CSV file
+    Read articles from CSV file
 
-        Parameters
-        ======
-        file_path: str
+    Parameters
+    ======
+    file_path: str
 
-        Returns
-        ======
-        List[Article]
+    Returns
+    ======
+    List[Article]
 
-        Raises
-        ======
-        TypeError: file_path is not a string
-        OSError: file_path is not a file
-        ValueError: articles is empty
+    Raises
+    ======
+    TypeError: file_path is not a string
+    OSError: file_path is not a file
+    ValueError: articles is empty
     """
     # input validation
     if isinstance(file_path, str) is False:

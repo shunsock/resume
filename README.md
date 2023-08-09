@@ -1,6 +1,26 @@
 ## Profile
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 
+### Technology Stack
+- I used the following technologies to build.
+- As I often do serverside engineering, So please note I am not good at front-end.
+```yml
+Language:
+  Front-end: TypeScript
+  Back-end: TypeScript, Python, PHP, Shell Script, R
+  SQLs: MySQL, PostgreSQL, BigQuery
+Frameworks:
+  TypeScript: React, Next.js
+  JavaScript: Node.js, Express.js
+  CSS: TailwindCSS, SCSS
+  Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
+  PHP: Laravel
+Infrastructure:
+  Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
+  Container: Docker
+  OS: Ubuntu 20.04, 22.04
+```
+
 ### Awards and Honors
 - [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
 - [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
@@ -14,7 +34,7 @@ I’m a Software Engineer with a passion for building things. I have a strong ba
 
 ### Portfolio
 - [Resume](https://github.com/shunsock/resume)
-```
+```yml
 - About: This is my resume. CI/CD is implemented by GitHub Actions.
 - Language: Python, Shell Script
 - CI/CD: GitHub Actions
@@ -23,30 +43,30 @@ I’m a Software Engineer with a passion for building things. I have a strong ba
 ```
 
 - [Zshian](https://github.com/shunsock/zshian)
-```
-- About: This is my zsh configuration. You can use colorful and readable zsh with this. also, You can use some useful functions and aliases.
-- Language: Shell Script
-- CI/CD: GitHub Actions
-- Testing: just build test on GitHub Actions
+```yml
+About: This is my zsh configuration. You can use colorful and readable zsh with this. also, You can use some useful functions and aliases.
+Language: Shell Script
+CI/CD: GitHub Actions
+Testing: just build test on GitHub Actions
 ```
 
 - [Mahjong Util](https://mahjong.streamlit.app/)
-```
-- About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
-- Language: Python
-- CI/CD: GitHub Actions, Streamlit Cloud
-- FlameWork: Streamlit
-- Static Analysis: mypy
-- Testing/Formatter: pytest, black, isort
+```yml
+About: This is a web application for Mahjong players. You can calculate and practice the score of Mahjong.
+Language: Python
+CI/CD: GitHub Actions, Streamlit Cloud
+FlameWork: Streamlit
+Static Analysis: mypy
+Testing/Formatter: pytest, black, isort
 ```
 
 - [Portfolio Site](https://shun-developer.com/blog)
-```
-- About: This is my previous portfolio web site.
-- Language: TypeScript
-- CI/CD: Vercel
-- FlameWork: Next.js, Tailwind CSS
-- Static Analysis: ESLint
+```yml
+About: This is my previous portfolio web site.
+Language: TypeScript
+CI/CD: Vercel
+FlameWork: Next.js, Tailwind CSS
+Static Analysis: ESLint
 ```
 
 ## Tech Blog

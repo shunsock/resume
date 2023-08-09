@@ -1,0 +1,19 @@
+### Technology Stack
+- I used the following technologies to build.
+- As I often do serverside engineering, So please note I am not good at front-end.
+```yml
+Language:
+  Front-end: TypeScript
+  Back-end: TypeScript, Python, PHP, Shell Script, R
+  SQLs: MySQL, PostgreSQL, BigQuery
+Frameworks:
+  TypeScript: React, Next.js
+  JavaScript: Node.js, Express.js
+  CSS: TailwindCSS, SCSS
+  Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
+  PHP: Laravel
+Infrastructure:
+  Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
+  Container: Docker
+  OS: Ubuntu 20.04, 22.04
+```

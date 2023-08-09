@@ -1,5 +1,5 @@
 ## Profile
-![profile image](/assets/images/thumbnail.jpg)
+![profile image](thumbnail.jpg)
 
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 

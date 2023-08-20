@@ -1,6 +1,5 @@
-import xml.etree.ElementTree as ET
-from typing import List, Optional
-from xml.etree.ElementTree import Element
+from typing import List
+from xml.etree import ElementTree
 
 import requests
 
@@ -8,26 +7,6 @@ from src.models.article import Article
 from src.service.article_handler import (read_articles_list_from_csv,
                                          write_articles_to_csv)
 from src.service.supply_article import ArticleSupply
-
-
-def get_element_text(element: Element, tag_name: str) -> Optional[str]:
-    """
-    Get text from element
-
-    Parameters
-    ======
-    element: Element - XML element
-    tag_name: str - XML tag name
-
-    Returns
-    ======
-    Optional[str] - text from element if element exists, None otherwise
-    """
-    found_element = element.find(tag_name)
-    if isinstance(found_element, str):
-        return found_element.text.strip()
-    else:
-        return None
 
 
 def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
@@ -43,20 +22,27 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
     List[Article] - list of Article class
 
     Raises
-    ======
+
     SystemExit - if request failed
     """
     try:
+        # Fetch the XML data
         response: requests.Response = requests.get(url)
-        xml_data = response.content
-        tree = ET.fromstring(xml_data)
+        response.raise_for_status()
+        xml_data = response.text
+
+        # Parse the XML data into a dictionary
+        root = ElementTree.fromstring(xml_data)
+        channel = root.find("channel")
+        items = channel.findall("item")
+
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
     articles: List = []
-    for item in tree.findall(".//item"):
-        title = get_element_text(item, "title")
-        link = get_element_text(item, "link")
+    for item in items:
+        title = item.find("title").txt if item.find("title") else None
+        link = item.find("link").txt if item.find("link") else None
         if isinstance(title, str) and isinstance(link, str):
             article = Article.model_validate({"title": title, "link": link})
             articles.append(article)

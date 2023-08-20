@@ -78,6 +78,8 @@ Static Analysis: ESLint
 | ------    |------    | -----------|
 |PR TIMES|MLOps|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)|
 |PR TIMES|MLOps|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)|
+|Zenn|Web/Stats|[【統計学】メトロポリス-ヘイスティング法(Metropolis-Hastings Algorithm)で詳細釣り合い条件が成立することの証明](https://zenn.dev/shundeveloper/articles/878f2b6504338e)|
+|Zenn|Web/Stats|[マルコフ連鎖モンテカルロを用いたベイズ推定](https://zenn.dev/shundeveloper/articles/8be490a0327cb1)|
 |Zenn|Web/Stats|[[統計学]モンテカルロ積分の証明と実践](https://zenn.dev/shundeveloper/articles/c51a759af9b5ca)|
 |Zenn|Web/Stats|[[統計学] 数理統計学の主要な概念の定義一覧](https://zenn.dev/shundeveloper/articles/6b071255a1546c)|
 |Zenn|Web/Stats|[[統計学] 正規分布の期待値・分散を素早く導出する方法, 標準正規分布の導出と期待値・分散](https://zenn.dev/shundeveloper/articles/c0ac306c89f996)|

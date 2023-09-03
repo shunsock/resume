@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from xml.etree import ElementTree
 
 import requests
@@ -30,22 +30,36 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
         response: requests.Response = requests.get(url)
         response.raise_for_status()
         xml_data = response.text
+    except requests.exceptions.RequestException as syse:
+        raise SystemExit(syse)
 
+    try:
         # Parse the XML data into a dictionary
         root = ElementTree.fromstring(xml_data)
         channel = root.find("channel")
-        items = channel.findall("item")
-
-    except requests.exceptions.RequestException as e:
-        raise SystemExit(e)
+        if channel is not None:
+            items = channel.findall("item")
+        else:
+            raise ValueError("channel is None")
+    except ValueError as ve:
+        raise SystemExit(ve)
 
     articles: List = []
     for item in items:
-        title = item.find("title").txt if item.find("title") else None
-        link = item.find("link").txt if item.find("link") else None
-        if isinstance(title, str) and isinstance(link, str):
-            article = Article.model_validate({"title": title, "link": link})
-            articles.append(article)
+        title_ = item.find("title")
+        link_ = item.find("link")
+        if title_ is not None and link_ is not None:
+            title: Optional[str] = title_.text
+            link: Optional[str] = link_.text
+
+            # MEMO
+            # we have to type check because
+            # sometimes the title and link are None
+            title_type_str: bool = isinstance(title, str)
+            link_type_str: bool = isinstance(link, str)
+            if title_type_str and link_type_str:
+                article = Article.model_validate({"title": title, "link": link})
+                articles.append(article)
     return articles
 
 

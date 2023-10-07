@@ -3,6 +3,11 @@
 
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 
+### Presentation
+- [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+- [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
+
 ### Technology Stack
 - I used the following technologies to build.
 - As I often do serverside engineering, So please note I am not good at front-end.
@@ -76,6 +81,7 @@ Static Analysis: ESLint
 ## Tech Blog
 | Site Name | Tag      | Title       |
 | ------    |------    | -----------|
+|PR TIMES|MLOps|[One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)|
 |PR TIMES|MLOps|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)|
 |PR TIMES|MLOps|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)|
 |Zenn|Web/Stats|[日本語に関連するunicodeの範囲一文字を指定する正規表現マッチオブジェクトを作成する関数の作成](https://zenn.dev/shundeveloper/articles/b5cc85b4d1e7eb)|

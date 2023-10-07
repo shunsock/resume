@@ -18,7 +18,7 @@ pytest==7.4.0
 python-dateutil==2.8.2
 requests==2.31.0
 six==1.16.0
-style==1.1.0
+style==1.1.6
 types-requests==2.31.0.8
 types-urllib3==1.26.25.14
 typing_extensions==4.8.0

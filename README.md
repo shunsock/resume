@@ -78,6 +78,7 @@ Static Analysis: ESLint
 | ------    |------    | -----------|
 |PR TIMES|MLOps|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)|
 |PR TIMES|MLOps|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)|
+|Zenn|Web/Stats|[日本語に関連するunicodeの範囲一文字を指定する正規表現マッチオブジェクトを作成する関数の作成](https://zenn.dev/shundeveloper/articles/b5cc85b4d1e7eb)|
 |Zenn|Web/Stats|[正規表現と友達になろう](https://zenn.dev/shundeveloper/articles/8587cedf949a4c)|
 |Zenn|Web/Stats|[日本語に関連する主なUnicodeの範囲と公式のpdfの一覧](https://zenn.dev/shundeveloper/articles/a4be0379508e2d)|
 |Zenn|Web/Stats|[【統計学】メトロポリス-ヘイスティング法(Metropolis-Hastings Algorithm)で詳細釣り合い条件が成立することの証明](https://zenn.dev/shundeveloper/articles/878f2b6504338e)|

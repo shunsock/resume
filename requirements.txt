@@ -21,6 +21,6 @@ six==1.16.0
 style==1.1.0
 types-requests==2.31.0.8
 types-urllib3==1.26.25.14
-typing_extensions==4.7.1
+typing_extensions==4.8.0
 update==0.0.1
 urllib3==2.0.6

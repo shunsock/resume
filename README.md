@@ -3,33 +3,6 @@
 
 I’m a Software Engineer with a passion for building things. I have a strong background in web development and machine learning. I’m a quick learner and enjoy working with new technologies.
 
-### Presentation
-- [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-- [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-
-
-### Technology Stack
-- I used the following technologies to build.
-- As I often do serverside engineering, So please note I am not good at front-end.
-```yml
-Language:
-  Front-end: TypeScript
-  Back-end: TypeScript, Python, PHP, Shell Script, R
-  SQLs: MySQL, PostgreSQL, BigQuery
-
-Frameworks:
-  TypeScript: React, Next.js
-  JavaScript: Node.js, Express.js
-  CSS: TailwindCSS, SCSS
-  Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
-  PHP: Laravel
-
-Infrastructure:
-  Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
-  Container: Docker
-  OS: Ubuntu 20.04, 22.04
-```
-
 ### Awards and Honors
 - [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
 - [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
@@ -76,6 +49,33 @@ Language: TypeScript
 CI/CD: Vercel
 FlameWork: Next.js, Tailwind CSS
 Static Analysis: ESLint
+```
+
+### Presentation
+- [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+- [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
+
+### Technology Stack
+- I used the following technologies to build.
+- As I often do serverside engineering, So please note I am not good at front-end.
+```yml
+Language:
+  Front-end: TypeScript
+  Back-end: TypeScript, Python, PHP, Shell Script, R
+  SQLs: MySQL, PostgreSQL, BigQuery
+
+Frameworks:
+  TypeScript: React, Next.js
+  JavaScript: Node.js, Express.js
+  CSS: TailwindCSS, SCSS
+  Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
+  PHP: Laravel
+
+Infrastructure:
+  Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
+  Container: Docker
+  OS: Ubuntu 20.04, 22.04
 ```
 
 ## Tech Blog

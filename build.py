@@ -119,6 +119,7 @@ def get_file_contents(file_path: str) -> List[str]:
 def build_profile() -> None:
     # write profile to README.md
     files: List[str] = get_path_list("src/profile/")
+    files = sorted(files)
     with open("README.md", "w") as readme:
         for f in files:
             lines: List[str] = get_file_contents(f)

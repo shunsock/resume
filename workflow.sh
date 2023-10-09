@@ -19,28 +19,32 @@ check_status "virtual environment activated"
 # Run Formatting
 # --------------------------------
 black update_data.py build.py src tests
-check_status "formatted code"
+check_status "formatting code by black"
 
 isort update_data.py build.py src tests
-check_status "sorted imports"
+check_status "formatting code by isort"
 
 # --------------------------------
 # Run Static Analysis
 # --------------------------------
 mypy update_data.py build.py
-check_status "static analysis passed"
+check_status "static analysis"
 
 
 # --------------------------------
 # Run Tests
 # --------------------------------
 pytest
-check_status "tests passed"
+check_status "tests"
 
+
+# --------------------------------
+# Build
+# --------------------------------
 echo "[workflow] Building..."
 python update_data.py
 python build.py
-check_status "build completed"
+check_status "build"
 
 
 # --------------------------------

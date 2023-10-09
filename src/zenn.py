@@ -2,6 +2,7 @@ from typing import List, Optional
 from xml.etree import ElementTree
 
 import requests
+from pydantic import HttpUrl
 
 from src.models.article import Article
 from src.service.article_handler import (read_articles_list_from_csv,
@@ -45,21 +46,29 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
         raise SystemExit(ve)
 
     articles: List = []
-    for item in items:
-        title_ = item.find("title")
-        link_ = item.find("link")
-        if title_ is not None and link_ is not None:
-            title: Optional[str] = title_.text
-            link: Optional[str] = link_.text
+    while len(items) > 0:
+        item = items.pop()
 
-            # MEMO
-            # we have to type check because
-            # sometimes the title and link are None
-            title_type_str: bool = isinstance(title, str)
-            link_type_str: bool = isinstance(link, str)
-            if title_type_str and link_type_str:
-                article = Article.model_validate({"title": title, "link": link})
-                articles.append(article)
+        item_title = item.find("title")
+        item_link = item.find("link")
+        if item_title is None or item_link is None:
+            continue
+
+        title_opt_str: Optional[str] = item_title.text
+        link_opt_str: Optional[str] = item_link.text
+
+        # MEMO
+        # we have to type check because
+        # sometimes the title and link are None
+        title_type_not_str: bool = isinstance(title_opt_str, str) is False
+        link_type_not_str: bool = isinstance(link_opt_str, str) is False
+        if title_type_not_str or link_type_not_str:
+            continue
+
+        title_str: str = str(title_opt_str)
+        link_str: str = str(link_opt_str)
+        article = Article(title=title_str, link=HttpUrl(link_str))
+        articles.append(article)
     return articles
 
 

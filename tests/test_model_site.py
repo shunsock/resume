@@ -4,7 +4,7 @@ from src.models.site import Site
 
 
 def test_construction_success():
-    url = "http://www.testsite.com/"
+    url = "https://www.testsite.com/"
     site = Site(name="Test Site", base_url=url)
     assert site.name == "Test Site"
     assert str(site.base_url) == url
@@ -12,9 +12,9 @@ def test_construction_success():
 
 def test_construction_failure_by_name():
     try:
-        site = Site(
+        Site(
             name=123,
-            base_url="http://www.testsite.com/",
+            base_url="https://www.testsite.com/",
         )
         assert False
     except ValidationError:
@@ -23,7 +23,7 @@ def test_construction_failure_by_name():
 
 def test_construction_failure_by_url_is_invalid():
     try:
-        site = Site(
+        Site(
             name="Test Site",
             base_url="hogehoge",
         )
@@ -34,7 +34,7 @@ def test_construction_failure_by_url_is_invalid():
 
 def test_construction_failure_by_url_is_int():
     try:
-        site = Site(
+        Site(
             name="Test Site",
             base_url=123,
         )

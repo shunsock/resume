@@ -32,6 +32,9 @@ class TechBlogCSV(BaseModel):
         return value
 
 
+# --------------------------------------------
+# Tech Blog CSV List (use this to add new csv)
+# --------------------------------------------
 TECH_BLOG_CSV_LIST: List[TechBlogCSV] = [
     TechBlogCSV(
         file_path="src/techblog/data/prtimes.csv",

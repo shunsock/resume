@@ -4,8 +4,8 @@ from src.service.supply_url import SiteSupply
 
 def site_supply_in_memory_mock():
     test_case = [
-        Site(name="Test Site", base_url="http://www.testsite.com/"),
-        Site(name="Test Site2", base_url="http://www.testsite2.com/"),
+        Site(name="Test Site", base_url="https://www.testsite.com/"),
+        Site(name="Test Site2", base_url="https://www.testsite2.com/"),
     ]
     site_supply = SiteSupply(test_case)
     return site_supply
@@ -16,8 +16,8 @@ def test_construction_success():
     assert len(site_supply.sites) == 2
     assert site_supply.sites[0].name == "Test Site"
     assert site_supply.sites[1].name == "Test Site2"
-    assert str(site_supply.sites[0].base_url) == "http://www.testsite.com/"
-    assert str(site_supply.sites[1].base_url) == "http://www.testsite2.com/"
+    assert str(site_supply.sites[0].base_url) == "https://www.testsite.com/"
+    assert str(site_supply.sites[1].base_url) == "https://www.testsite2.com/"
 
     for s in site_supply.sites:
         assert isinstance(s, Site) is True
@@ -57,9 +57,9 @@ def test_check_if_name_exists_failure_by_name_is_not_string():
 
 def test_check_if_url_exists():
     site_supply = site_supply_in_memory_mock()
-    assert site_supply.check_if_url_exists("http://www.testsite.com/") is True
-    assert site_supply.check_if_url_exists("http://www.testsite2.com/") is True
-    assert site_supply.check_if_url_exists("http://www.testsite3.com/") is False
+    assert site_supply.check_if_url_exists("https://www.testsite.com/") is True
+    assert site_supply.check_if_url_exists("https://www.testsite2.com/") is True
+    assert site_supply.check_if_url_exists("https://www.testsite3.com/") is False
 
 
 def test_check_if_url_exists_failure_by_url_is_not_string():
@@ -74,10 +74,10 @@ def test_check_if_url_exists_failure_by_url_is_not_string():
 def test_get_url_by_name():
     site_supply = site_supply_in_memory_mock()
     site = site_supply.get_url_by_name("Test Site")
-    assert site == "http://www.testsite.com/"
+    assert site == "https://www.testsite.com/"
 
     site = site_supply.get_url_by_name("Test Site2")
-    assert site == "http://www.testsite2.com/"
+    assert site == "https://www.testsite2.com/"
 
 
 def test_get_url_by_name_failure_by_name_is_not_string():

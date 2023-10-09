@@ -4,10 +4,8 @@ from xml.etree import ElementTree
 import requests
 
 from src.models.article import Article
-from src.service.article_handler import (
-    read_articles_list_from_csv,
-    write_articles_to_csv,
-)
+from src.service.article_handler import (read_articles_list_from_csv,
+                                         write_articles_to_csv)
 from src.service.supply_article import ArticleSupply
 
 

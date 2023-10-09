@@ -1,3 +1,4 @@
+import os
 from typing import List
 
 from src.models.article import Article
@@ -18,24 +19,29 @@ def supply_test_case_on_memory() -> List[Article]:
     ]
 
 
-def test_write_articles_to_csv(
-    articles=supply_test_case_on_memory(), csv_file_path="src/techblog/data/test.csv"
-):
+def test_write_articles_to_csv() -> None:
+    articles = supply_test_case_on_memory()
+    csv_file_path = "src/techblog/data/test_write_artilce.csv"
     write_articles_to_csv(articles, csv_file_path)
+    os.remove(csv_file_path)
     assert True
 
 
-def test_write_articles_to_csv_with_empty_list(
-    articles=[], csv_file_path="src/techblog/data/test.csv"
-):
+def test_write_articles_to_csv_with_empty_list() -> None:
+    articles = []
+    csv_file_path = "src/techblog/data/test.csv"
     try:
         write_articles_to_csv(articles, csv_file_path)
-    except ValueError as e:
-        print(e)
+    except ValueError:
         assert True
 
 
-def test_read_articles_list_from_csv(file_path="src/techblog/data/test.csv"):
+def test_read_articles_list_from_csv() -> None:
+    # write test data to csv
+    file_path = "src/techblog/data/test_read_artile.csv"
+    write_articles_to_csv(supply_test_case_on_memory(), file_path)
+
+    # read test data from csv we just wrote
     articles: List[Article] = read_articles_list_from_csv(file_path)
     assert len(articles) == 2
     assert articles[0].title == "Test Article 1"
@@ -43,8 +49,12 @@ def test_read_articles_list_from_csv(file_path="src/techblog/data/test.csv"):
     assert articles[1].title == "Test Article 2"
     assert str(articles[1].link) == "https://www.test2.com/"
 
+    # remove test data
+    os.remove(file_path)
 
-def test_read_artsscles_list_from_csv_with_empty_file(file_path=""):
+
+def test_read_artsscles_list_from_csv_with_empty_file() -> None:
+    file_path = ""
     try:
         read_articles_list_from_csv(file_path)
     except OSError as e:
@@ -52,9 +62,8 @@ def test_read_artsscles_list_from_csv_with_empty_file(file_path=""):
         assert True
 
 
-def test_read_articles_list_from_csv_with_invalid_file(
-    file_path="src/techblog/data/invalid.csv",
-):
+def test_read_articles_list_from_csv_with_invalid_file() -> None:
+    file_path = "src/techblog/data/invalid.csv"
     try:
         read_articles_list_from_csv(file_path)
     except OSError as e:

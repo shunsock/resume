@@ -3,7 +3,10 @@ from typing import List
 
 from src.service.article_handler import read_articles_list_from_csv
 from src.service.supply_article import ArticleSupply
-from src.service import supply_file_content
+from src.service import (
+    supply_file_content,
+    supply_path_list
+)
 
 
 def csv_to_md_table(file_path: str, site_name: str, tag_name: str) -> None:
@@ -63,34 +66,6 @@ def build_techblog() -> None:
     )
 
 
-def get_path_list(directory: str) -> List[str]:
-    """
-    Returns a list of all .txt files in a directory
-
-    Parameters
-    ======
-    directory: str
-
-    Returns
-    ======
-    List[str]
-
-    Raises
-    ======
-    TypeError: if directory is not a string
-    NotADirectoryError: if directory is not a valid directory
-    """
-    if isinstance(directory, str) is False:
-        raise TypeError("directory must be a string")
-    if os.path.isdir(directory) is False:
-        raise NotADirectoryError("directory must be a valid directory")
-
-    txt_files = [
-        os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(".txt")
-    ]
-    return txt_files
-
-
 def build_profile() -> None:
     """
     Builds the profile
@@ -104,7 +79,7 @@ def build_profile() -> None:
     None
     """
     # write profile to README.md
-    files_: List[str] = get_path_list("src/profile/")
+    files_: List[str] = supply_path_list.get("src/profile/")
     files_ = sorted(files_)
 
     # we can not use name `file`

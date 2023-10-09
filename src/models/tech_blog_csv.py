@@ -1,15 +1,27 @@
 import os
 from typing import List, Type
 
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, ConfigDict, field_validator
 
 
 class TechBlogCSV(BaseModel):
+    """
+    Tech Blog CSV Model
+
+    Attributes:
+    ======
+    file_path: str
+    site_name: str
+    tag_name: str
+    """
+
     file_path: str
     site_name: str
     tag_name: str
 
-    @validator("file_path", pre=True, always=True)
+    model_config = ConfigDict(extra="forbid")
+
+    @field_validator("file_path")
     def validate_file_path(cls: Type[BaseModel], value: str) -> str:
         if not isinstance(value, str):
             raise TypeError("file_path must be str")

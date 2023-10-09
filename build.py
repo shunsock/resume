@@ -54,7 +54,6 @@ def write_profile_to_readme() -> None:
         for file_ in files_:
             lines: List[str] = supply_file_content.get(file_)
             for line in lines:
-                # print(line)
                 readme.write(line)
             readme.write("\n")
 

@@ -1,16 +1,10 @@
-from src.models.site import Site
+from src.models.site import WEB_SITE_LIST
 from src.service.supply_url import SiteSupply
 from src.zenn import download_zenn_articles
 
 
 def create_site_list() -> SiteSupply:
-    return SiteSupply(
-        sites_list=[
-            Site.model_validate(
-                {"name": "zenn", "base_url": "https://zenn.dev/shundeveloper/feed"}
-            )
-        ]
-    )
+    return SiteSupply(WEB_SITE_LIST)
 
 
 if __name__ == "__main__":

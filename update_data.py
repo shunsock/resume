@@ -1,6 +1,6 @@
+from src.downloader.zenn import download_zenn_articles
 from src.models.site import WEB_SITE_LIST
 from src.service.supply_url import SiteSupply
-from src.zenn import download_zenn_articles
 
 
 def create_site_list() -> SiteSupply:

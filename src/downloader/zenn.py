@@ -72,20 +72,22 @@ def parse_zenn_rss_xml_to_article_class(url: str) -> List[Article]:
     return articles
 
 
-def download_zenn_articles(url: str, csv_path: str) -> None:
+def update_zenn_articles(url: str, csv_path: str) -> None:
     current_article: List[Article] = parse_zenn_rss_xml_to_article_class(url)
     zenn = ArticleSupply(read_articles_list_from_csv(csv_path))
 
+    new_articles: List[Article] = []
     is_new_article_found: bool = False
     for article in current_article:
         is_new_link: bool = not zenn.check_if_link_exists(str(article.link))
         is_new_title: bool = not zenn.check_if_title_exists(article.title)
         if is_new_link and is_new_title:
             print(f"記事が存在しないため、記事を追加します。{article.title}")
-            zenn.add_article(article)
+            new_articles.append(article)
             is_new_article_found = True
 
     if is_new_article_found is False:
         print("新しい記事はありませんでした。")
-
-    write_articles_to_csv(zenn.articles, "src/techblog/data/zenn.csv")
+    else:
+        write_articles_to_csv(new_articles, "src/techblog/data/zenn.csv")
+        print("記事を追加しました。")

@@ -35,7 +35,7 @@ def write_articles_to_csv(articles: List[Article], filename: str) -> None:
     if filename == "":
         raise ValueError("No filename provided")
 
-    with open(filename, "w", newline="") as csvfile:
+    with open(filename, "a", newline="") as csvfile:
         fieldnames = ["title", "link"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -70,7 +70,7 @@ def read_articles_list_from_csv(file_path: str) -> List[Article]:
 
     # read CSV
     articles: List[Article] = []
-    with open(file_path, newline="") as csvfile:
+    with open(file_path, "r", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             articles.append(Article.model_validate(row))

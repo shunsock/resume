@@ -9,11 +9,11 @@ def supply_test_case_on_memory() -> List[Article]:
     return [
         Article(
             title="Test Article 1",
-            link="http://www.test1.com/",
+            link="https://www.test1.com/",
         ),
         Article(
             title="Test Article 2",
-            link="http://www.test2.com/",
+            link="https://www.test2.com/",
         ),
     ]
 
@@ -39,9 +39,9 @@ def test_read_articles_list_from_csv(file_path="src/techblog/data/test.csv"):
     articles: List[Article] = read_articles_list_from_csv(file_path)
     assert len(articles) == 2
     assert articles[0].title == "Test Article 1"
-    assert str(articles[0].link) == "http://www.test1.com/"
+    assert str(articles[0].link) == "https://www.test1.com/"
     assert articles[1].title == "Test Article 2"
-    assert str(articles[1].link) == "http://www.test2.com/"
+    assert str(articles[1].link) == "https://www.test2.com/"
 
 
 def test_read_artsscles_list_from_csv_with_empty_file(file_path=""):

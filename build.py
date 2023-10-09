@@ -3,6 +3,7 @@ from typing import List
 
 from src.service.article_handler import read_articles_list_from_csv
 from src.service.supply_article import ArticleSupply
+from src.service import supply_file_content
 
 
 def csv_to_md_table(file_path: str, site_name: str, tag_name: str) -> None:
@@ -90,39 +91,27 @@ def get_path_list(directory: str) -> List[str]:
     return txt_files
 
 
-def get_file_contents(file_path: str) -> List[str]:
+def build_profile() -> None:
     """
-    Returns the contents of a file
+    Builds the profile
 
     Parameters
     ======
-    file_path: str
+    None
 
     Returns
     ======
-    str
-
-    Raises
-    ======
-    TypeError: if file_path is not a string
-    FileNotFoundError: if file_path is not a valid file
+    None
     """
-    if isinstance(file_path, str) is False:
-        raise TypeError("file_path must be a string")
-    if os.path.isfile(file_path) is False:
-        raise FileNotFoundError("file_path must be a valid file")
-
-    with open(file_path, "r") as f:
-        return f.readlines()
-
-
-def build_profile() -> None:
     # write profile to README.md
-    files: List[str] = get_path_list("src/profile/")
-    files = sorted(files)
+    files_: List[str] = get_path_list("src/profile/")
+    files_ = sorted(files_)
+
+    # we can not use name `file`
+    # because it is a built-in function
     with open("README.md", "w") as readme:
-        for f in files:
-            lines: List[str] = get_file_contents(f)
+        for file_ in files_:
+            lines: List[str] = supply_file_content.get(file_)
             for line in lines:
                 # print(line)
                 readme.write(line)

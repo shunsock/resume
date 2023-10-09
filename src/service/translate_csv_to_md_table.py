@@ -1,6 +1,7 @@
-from src.service.article_handler.article_supply import ArticleSupply
-from src.service.article_handler.read_articles_list_from_csv import read_articles_list_from_csv
 import os
+
+from src.service.article_handler import read_articles_list_from_csv
+from src.service.supply_article import ArticleSupply
 
 
 def run(file_path: str, site_name: str, tag_name: str) -> None:

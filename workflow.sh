@@ -1,28 +1,52 @@
-echo "[workflow] Activating virtual environment..."
+# check if virtual env exists
+function check_status {
+    if [ $? -eq 0 ]; then
+        echo "[workflow] ✅ success! => $1"
+    else
+        echo "[workflow] 🚨 failed! =>  $1"
+        exit 1
+    fi
+}
+
+# --------------------------------
+# Activate Virtual Env 
+# --------------------------------
 source env/bin/activate
-echo "[workflow] ✅ virtual environment activated"
+check_status "virtual environment activated"
 
-echo "[workflow] Formatting..."
+
+# --------------------------------
+# Run Formatting
+# --------------------------------
 black update_data.py build.py src tests
-echo "[workflow] ✅ formatted"
+check_status "formatted code"
+
 isort update_data.py build.py src tests
-echo "[workflow] ✅ sorted imports"
+check_status "sorted imports"
 
-echo "[workflow] Running static analyser..."
+# --------------------------------
+# Run Static Analysis
+# --------------------------------
 mypy update_data.py build.py
-echo "[workflow] ✅ static analysis passed"
+check_status "static analysis passed"
 
-echo "[workflow] Running tests..."
+
+# --------------------------------
+# Run Tests
+# --------------------------------
 pytest
-echo "[workflow] ✅ tests passed"
+check_status "tests passed"
 
 echo "[workflow] Building..."
 python update_data.py
 python build.py
-echo "[workflow] ✅ built"
+check_status "build completed"
 
-echo "[workflow] Deactivating virtual environment..."
+
+# --------------------------------
+# Deactivate Virtual Env
+# --------------------------------
 deactivate
-echo "[workflow] ✅ virtual environment deactivated"
+check_status "virtual environment deactivated"
 
 echo "[workflow] 🎉 Done! All Processes Completed Successfully! 🎉"

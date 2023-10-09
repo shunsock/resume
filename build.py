@@ -1,10 +1,7 @@
 from typing import List
 
-from src.service import (
-    supply_file_content,
-    supply_path_list,
-    translate_csv_to_md_table
-)
+from src.service import (supply_file_content, supply_path_list,
+                         translate_csv_to_md_table)
 
 
 def write_techblog_to_readme() -> None:

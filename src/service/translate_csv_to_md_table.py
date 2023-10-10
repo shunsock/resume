@@ -1,7 +1,8 @@
 import os
+from typing import List
 
+from src.models.article import Article
 from src.service.article_handler import read_articles_list_from_csv
-from src.service.supply_article import ArticleSupply
 
 
 def run(file_path: str, site_name: str, tag_name: str) -> None:
@@ -26,9 +27,12 @@ def run(file_path: str, site_name: str, tag_name: str) -> None:
     if os.path.isfile(file_path) is False:
         raise FileNotFoundError("file_path must be a valid file")
 
-    articles = ArticleSupply(read_articles_list_from_csv(file_path))
+    articles = read_articles_list_from_csv(file_path)
+
+    # revese to assign the latest article at the top
+    articles_reverse: List[Article] = articles[::-1]
     with open("README.md", "a") as f:
-        for article in articles.articles:
+        for article in articles_reverse:
             title = "[" + article.title + "](" + str(article.link) + ")"
             row = "|" + site_name + "|" + tag_name + "|" + title + "|\n"
             f.write(row)

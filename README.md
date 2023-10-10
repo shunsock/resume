@@ -122,6 +122,9 @@ Infrastructure:
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第8章「推論の信頼性」 176p-177p 数式の表記揺れの確認](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_8_176p-177p.html)|
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第10章「いろいろな学習方法」 220p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_10_220p.html)|
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第4章「誤差逆伝播法」 65p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_4_65p-html.html)|
+|Hatena Blog|Conference|[入社エントリ: PR TIMES](https://shundeveloper.hatenablog.com/entry/entry_prtimes)|
+|Hatena Blog|Conference|[PHP Conference Japan 2023に参加してきました](https://shundeveloper.hatenablog.com/entry/2023/10/08/180751)|
+|Hatena Blog|Conference|[ISUCON夏祭りに参加しました！！](https://shundeveloper.hatenablog.com/entry/isucon_summer_fes_2023)|
 |Hatena Blog|Conference|[入社エントリ PR TIMES](https://shundeveloper.hatenablog.com/entry/entry_prtimes?_ga=2.3977136.1644655810.1682752716-479239798.1680491954)|
 |Hatena Blog|Conference|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023?_ga=2.3977136.1644655810.1682752716-479239798.1680491954)|
 |Hatena Blog|Conference|[YAPC::Kyoto 2023 ベストLT賞をいただいた話](https://shundeveloper.hatenablog.com/entry/2023/03/21/135437)|

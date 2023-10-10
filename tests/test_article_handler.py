@@ -21,7 +21,7 @@ def supply_test_case_on_memory() -> List[Article]:
 
 def test_write_articles_to_csv() -> None:
     articles = supply_test_case_on_memory()
-    csv_file_path = "src/techblog/data/test_write_artilce.csv"
+    csv_file_path = "src/techblog/data/test_write_article.csv"
     write_articles_to_csv(articles, csv_file_path)
     os.remove(csv_file_path)
     assert True
@@ -29,8 +29,10 @@ def test_write_articles_to_csv() -> None:
 
 def test_write_articles_to_csv_with_empty_list() -> None:
     articles = []
-    csv_file_path = "src/techblog/data/test.csv"
+    csv_file_path = "src/techblog/data/test_write_article.csv"
     try:
+        # fail to write empty list
+        # no file will be created
         write_articles_to_csv(articles, csv_file_path)
     except ValueError:
         assert True
@@ -38,7 +40,7 @@ def test_write_articles_to_csv_with_empty_list() -> None:
 
 def test_read_articles_list_from_csv() -> None:
     # write test data to csv
-    file_path = "src/techblog/data/test_read_artile.csv"
+    file_path = "src/techblog/data/test_read_article.csv"
     write_articles_to_csv(supply_test_case_on_memory(), file_path)
 
     # read test data from csv we just wrote

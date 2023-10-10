@@ -3,11 +3,13 @@ import os
 from typing import List
 
 from src.models.article import Article
+from src.service.generate_csv import create_if_article_csv_not_exist
 
 
 def write_articles_to_csv(articles: List[Article], filename: str) -> None:
     """
     Write articles to CSV file
+    (Skip Header)
 
     Parameters
     ======
@@ -35,11 +37,11 @@ def write_articles_to_csv(articles: List[Article], filename: str) -> None:
     if filename == "":
         raise ValueError("No filename provided")
 
+    create_if_article_csv_not_exist(filename)
     with open(filename, "a", newline="") as csvfile:
         fieldnames = ["title", "link"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-        writer.writeheader()
         for article in articles:
             writer.writerow(article.model_dump())
 
@@ -71,7 +73,8 @@ def read_articles_list_from_csv(file_path: str) -> List[Article]:
     # read CSV
     articles: List[Article] = []
     with open(file_path, "r", newline="") as csvfile:
-        reader = csv.DictReader(csvfile)
+        next(csvfile)  # skip header
+        reader = csv.DictReader(csvfile, fieldnames=["title", "link"])
         for row in reader:
             articles.append(Article.model_validate(row))
 

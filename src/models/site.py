@@ -22,5 +22,6 @@ class Site(BaseModel):
 
 
 WEB_SITE_LIST: List[Site] = [
-    Site(name="zenn", base_url=HttpUrl("https://zenn.dev/shundeveloper/feed"))
+    Site(name="zenn", base_url=HttpUrl("https://zenn.dev/shundeveloper/feed")),
+    Site(name="hatena", base_url=HttpUrl("https://blog.hatena.ne.jp/")),
 ]

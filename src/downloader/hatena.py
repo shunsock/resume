@@ -37,6 +37,7 @@ def get_rss_from_server() -> str:
         )
         response.raise_for_status()
         xml_data = response.text
+        return xml_data
     except requests.exceptions.RequestException as err:
         raise requests.exception.RequestException(err)
 

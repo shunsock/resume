@@ -12,7 +12,37 @@ from src.service.article_handler import (read_articles_list_from_csv,
 from src.service.supply_article import ArticleSupply
 
 
-def parse_hatena_rss_xml_to_article_class(url: str) -> List[Article]:
+def get_rss_from_server() -> str:
+    # read .env file
+    config = dotenv_values(".env")
+
+    if config["HATENA_USER_NAME"] is None:
+        raise SystemExit("HATENA_USER_NAME is not defined")
+    if config["HATENA_BLOG_NAME"] is None:
+        raise SystemExit("HATENA_BLOG_NAME is not defined")
+    if config["HATENA_API_KEY"] is None:
+        raise SystemExit("HATENA_API_KEY is not defined")
+
+    user_name: str = config["HATENA_USER_NAME"]
+    blog_name: str = config["HATENA_BLOG_NAME"]
+    api_key: str = config["HATENA_API_KEY"]
+
+    # create http request
+    blog_entries_url = f"https://blog.hatena.ne.jp/{user_name}/{blog_name}/atom/entry"
+    user_pass_tuple: Tuple[str, str] = (user_name, api_key)
+    try:
+        # Fetch the XML data
+        response: requests.Response = requests.get(
+            blog_entries_url, auth=user_pass_tuple
+        )
+        response.raise_for_status()
+        xml_data = response.text
+        return xml_data
+    except requests.exceptions.RequestException as err:
+        raise SystemExit(err)
+
+
+def parse_hatena_rss_xml_to_article_class() -> List[Article]:
     """
     Parse Zenn RSS XML to Article class
 
@@ -109,8 +139,8 @@ def parse_hatena_rss_xml_to_article_class(url: str) -> List[Article]:
     return articles
 
 
-def update_hatena_articles(url: str, csv_path: str) -> None:
-    current_articles = parse_hatena_rss_xml_to_article_class(url)
+def update_hatena_articles(csv_path: str) -> None:
+    current_articles = parse_hatena_rss_xml_to_article_class()
     saved_articles = ArticleSupply(read_articles_list_from_csv(csv_path))
     new_articles: List[Article] = extract_new_article.run(
         articles_downloaded=current_articles,

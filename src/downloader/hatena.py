@@ -39,7 +39,7 @@ def get_rss_from_server() -> str:
         xml_data = response.text
         return xml_data
     except requests.exceptions.RequestException as err:
-        raise requests.exception.RequestException(err)
+        raise SystemExit(err)
 
 
 def parse_hatena_rss_xml_to_article_class() -> List[Article]:

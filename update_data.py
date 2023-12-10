@@ -1,10 +1,11 @@
+from typing import List
+
 from src.downloader.hatena import update_hatena_articles
 from src.downloader.zenn import update_zenn_articles
-from src.service.article_handler import write_articles_to_csv
-from src.models.site import WEB_SITE_LIST
-from src.service.supply_url import SiteSupply
 from src.models.article import Article
-from typing import List
+from src.models.site import WEB_SITE_LIST
+from src.service.article_handler import write_articles_to_csv
+from src.service.supply_url import SiteSupply
 
 
 def create_site_list() -> SiteSupply:

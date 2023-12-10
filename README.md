@@ -83,6 +83,8 @@ Infrastructure:
 |PR TIMES|MLOps|[One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)|
 |PR TIMES|MLOps|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)|
 |PR TIMES|MLOps|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)|
+|Zenn|Web/Stats|[C#でResult型を作ってみた](https://zenn.dev/shundeveloper/articles/d824035de4e042)|
+|Zenn|Web/Stats|[Pythonで可視化するときのちょっとしたコツ](https://zenn.dev/shundeveloper/articles/51596a6e9bfeb3)|
 |Zenn|Web/Stats|[日本語に関連するunicodeの範囲一文字を指定する正規表現マッチオブジェクトを作成する関数の作成](https://zenn.dev/shundeveloper/articles/b5cc85b4d1e7eb)|
 |Zenn|Web/Stats|[正規表現と友達になろう](https://zenn.dev/shundeveloper/articles/8587cedf949a4c)|
 |Zenn|Web/Stats|[日本語に関連する主なUnicodeの範囲と公式のpdfの一覧](https://zenn.dev/shundeveloper/articles/a4be0379508e2d)|
@@ -122,6 +124,7 @@ Infrastructure:
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第8章「推論の信頼性」 176p-177p 数式の表記揺れの確認](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_8_176p-177p.html)|
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第10章「いろいろな学習方法」 220p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_10_220p.html)|
 |Hello Statisicians!|Machine Learning|[深層学習 改訂第2版 第4章「誤差逆伝播法」 65p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_4_65p-html.html)|
+|Hatena Blog|Conference|[Fastly Yamagoya 2023に参加しました！](https://shundeveloper.hatenablog.com/entry/fastly_yamagoya2023)|
 |Hatena Blog|Conference|[入社エントリ: PR TIMES](https://shundeveloper.hatenablog.com/entry/entry_prtimes)|
 |Hatena Blog|Conference|[PHP Conference Japan 2023に参加してきました](https://shundeveloper.hatenablog.com/entry/2023/10/08/180751)|
 |Hatena Blog|Conference|[ISUCON夏祭りに参加しました！！](https://shundeveloper.hatenablog.com/entry/isucon_summer_fes_2023)|

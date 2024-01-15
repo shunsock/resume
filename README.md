@@ -54,6 +54,7 @@ Static Analysis: ESLint
 ### Presentation
 - [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 - [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
 
 ### Technology Stack
 - I used the following technologies to build.
@@ -80,9 +81,12 @@ Infrastructure:
 ## Tech Blog
 | Site Name | Tag      | Title       |
 | ------    |------    | -----------|
+|PR TIMES|MLOps|[PR TIMESはPHPカンファレンス北海道 2024に協賛・登壇します](https://developers.prtimes.jp/2023/12/28/phpcon_hokkaido_2024_pre/)|
+|PR TIMES|MLOps|[PR TIMES・ディップ・ピクシブ・グルコースの4社合同のLT大会を開催しました](https://developers.prtimes.jp/2023/12/07/20231204_meetup/)|
 |PR TIMES|MLOps|[One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)|
 |PR TIMES|MLOps|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)|
 |PR TIMES|MLOps|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)|
+|Zenn|Web/Stats|[PHP Onelinerでお洒落なおみくじを作成する](https://zenn.dev/shundeveloper/articles/e113c189e3cc97)|
 |Zenn|Web/Stats|[平均と分散を漸化式を使って爆速で求める](https://zenn.dev/shundeveloper/articles/a38d310f5e524e)|
 |Zenn|Web/Stats|[C#でResult型を作ってみた](https://zenn.dev/shundeveloper/articles/d824035de4e042)|
 |Zenn|Web/Stats|[Pythonで可視化するときのちょっとしたコツ](https://zenn.dev/shundeveloper/articles/51596a6e9bfeb3)|

@@ -6,7 +6,7 @@ click==8.1.7
 idna==3.6
 iniconfig==2.0.0
 isort==5.13.2
-mypy==1.7.1
+mypy==1.8.0
 mypy-extensions==1.0.0
 packaging==23.2
 pathspec==0.12.1

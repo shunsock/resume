@@ -1,6 +1,6 @@
 import pytest
 
-from resume_builder.main import Hello
+from src.resume_builder.main import Hello
 
 
 @pytest.mark.parametrize(

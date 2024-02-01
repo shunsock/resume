@@ -2,7 +2,7 @@
 name = "resume-builder"
 version = "0.1.0"
 description = "Add your description here"
-dependencies = []
+dependencies = ["pydantic~=2.6.0"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -15,7 +15,15 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "black>=24.1.1",
+    "isort>=5.13.2",
+    "pytest>=8.0.0",
+    "mypy>=1.8.0",
+    "coverage>=7.4.1",
+    "ruff>=0.1.15",
+    "pydantic>=2.6.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true

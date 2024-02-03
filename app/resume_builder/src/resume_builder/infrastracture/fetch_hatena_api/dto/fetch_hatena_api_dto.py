@@ -8,5 +8,5 @@ from src.resume_builder.factory.api_config.hatena_api_config_factory import (
 
 class FetchHatenaApiDto(BaseModel):
     name: StrictStr = "hatena blog"
-    url: HttpUrl = HttpUrl("https://blog.hatena.ne.jp/")
+    url: HttpUrl = HttpUrl(create_hatena_api_config().get_blog_entries_url())
     api_config: HatenaApiConfig = create_hatena_api_config()

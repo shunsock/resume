@@ -13,7 +13,7 @@ static-analysis:
 	rye run mypy src/resume_builder
 
 test:
-	rye run coverage run -m pytest --durations=10
+	rye run coverage run -m pytest -s --durations=10
 
 report:
 	rye run coverage report -m

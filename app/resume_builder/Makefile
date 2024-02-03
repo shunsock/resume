@@ -3,11 +3,11 @@
 all: formatting linter static-analysis test report
 
 formatting:
-	rye run isort src/resume_builder
-	rye run black src/resume_builder
+	rye run isort src/resume_builder tests
+	rye run black src/resume_builder tests
 
 linter:
-	rye run ruff check src/resume_builder
+	rye run ruff check src/resume_builder tests
 
 static-analysis:
 	rye run mypy src/resume_builder

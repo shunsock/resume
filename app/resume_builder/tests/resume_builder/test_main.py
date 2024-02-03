@@ -9,7 +9,6 @@ from src.resume_builder.main import Hello
         pytest.param("Hello World!", id="Hello World!"),
         pytest.param("Hello World!!", id="Hello World!!"),
     ],
-
 )
 def test_hello(message: str):
     hello = Hello(message=message)

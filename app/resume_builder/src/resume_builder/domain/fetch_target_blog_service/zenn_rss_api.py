@@ -5,6 +5,6 @@ from src.resume_builder.domain.fetch_target_blog_service.fetch_target_blog_servi
 )
 
 
-class Zenn(FetchTargetBlogServiceModel):
+class ZennApi(FetchTargetBlogServiceModel):
     name: StrictStr = "zenn"
     url: HttpUrl = "https://zenn.dev/shundeveloper/feed"

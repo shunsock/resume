@@ -1,6 +1,6 @@
 from pydantic import BaseModel, HttpUrl, StrictStr
 
-from src.resume_builder.domain.blog_article.get_blog_article_path import (
+from src.resume_builder.domain.blog_article.get_blog_article_csv_path import (
     get_blog_article_csv_path,
 )
 

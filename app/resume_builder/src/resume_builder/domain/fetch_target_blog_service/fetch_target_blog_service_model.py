@@ -9,4 +9,4 @@ class FetchTargetBlogServiceModel(BaseModel):
     """
 
     name: StrictStr
-    base_url: HttpUrl
+    url: HttpUrl

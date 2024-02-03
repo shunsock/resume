@@ -5,4 +5,7 @@ services:
     tty: true
     volumes:
       - ./app:/root/opt/app
-    working_dir: /root/opt/app
+    working_dir: /root/opt/app/resume_builder
+    environment:
+      - PYTHONPATH=/root/opt/app/resume_builder/src/resume_builder
+

@@ -9,11 +9,11 @@ from src.resume_builder.infrastracture.helper.optional_str_to_str import (
 )
 
 
-def zenn_rss_response_text_to_model(xml_data: str) -> List[BlogArticleModel]:
+def zenn_rss_response_text_to_model(text: str) -> List[BlogArticleModel]:
     """Converts a Zenn RSS response text to a list of BlogArticle."""
     try:
         # Parse the XML data into a dictionary
-        root = ElementTree.fromstring(xml_data)
+        root = ElementTree.fromstring(text)
         channel = root.find("channel")
         if channel is not None:
             items = channel.findall("item")

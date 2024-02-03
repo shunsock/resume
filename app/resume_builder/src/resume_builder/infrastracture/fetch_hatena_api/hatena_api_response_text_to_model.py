@@ -44,6 +44,10 @@ def hatena_api_response_text_to_model(api_response_text: str) -> List[BlogArticl
         blog_article_http_url: HttpUrl = HttpUrl(blog_article_url)
 
         # Directly create BlogArticleModel without casting since we now ensure all types are correct
-        article = BlogArticleModel(title=blog_article_title, url=blog_article_http_url)
+        article = BlogArticleModel(
+            blog_service_name="hatena_blog",
+            title=blog_article_title,
+            url=blog_article_http_url,
+        )
         articles.append(article)
     return articles

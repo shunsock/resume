@@ -1,10 +1,10 @@
 import pytest
 
-from resume_builder.domain.blog_article.blog_article_model import BlogArticleModel
-from resume_builder.infrastracture.read_blog_article_csv.dto.read_blog_article_csv_dto import (
+from resumer.domain.blog_article.blog_article_model import BlogArticleModel
+from resumer.infrastracture.read_blog_article_csv.dto.read_blog_article_csv_dto import (
     ReadBlogArticleFromCsvDto,
 )
-from resume_builder.infrastracture.read_blog_article_csv.read_blog_article_from_csv import (
+from resumer.infrastracture.read_blog_article_csv.read_blog_article_from_csv import (
     read_blog_article_from_csv,
 )
 
@@ -14,19 +14,19 @@ from resume_builder.infrastracture.read_blog_article_csv.read_blog_article_from_
     [
         ReadBlogArticleFromCsvDto(
             blog_service_name="hatena_blog",
-            file_path="src/resume_builder/data/blog_article/hatena_blog.csv",
+            file_path="resumer/data/blog_article/hatena_blog.csv",
         ),
         ReadBlogArticleFromCsvDto(
             blog_service_name="prtimes_tech_blog",
-            file_path="src/resume_builder/data/blog_article/prtimes_tech_blog.csv",
+            file_path="resumer/data/blog_article/prtimes_tech_blog.csv",
         ),
         ReadBlogArticleFromCsvDto(
             blog_service_name="zenn",
-            file_path="src/resume_builder/data/blog_article/zenn.csv",
+            file_path="resumer/data/blog_article/zenn.csv",
         ),
         ReadBlogArticleFromCsvDto(
             blog_service_name="toukei_no_mori",
-            file_path="src/resume_builder/data/blog_article/toukei_no_mori.csv",
+            file_path="resumer/data/blog_article/toukei_no_mori.csv",
         ),
     ],
 )

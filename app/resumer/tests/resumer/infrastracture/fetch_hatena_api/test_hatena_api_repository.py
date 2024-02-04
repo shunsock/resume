@@ -1,7 +1,7 @@
-from resume_builder.infrastracture.fetch_hatena_api.dto.fetch_hatena_api_dto import (
+from resumer.infrastracture.fetch_hatena_api.dto.fetch_hatena_api_dto import (
     FetchHatenaApiDto,
 )
-from resume_builder.infrastracture.fetch_hatena_api.hatena_api_repository import (
+from resumer.infrastracture.fetch_hatena_api.hatena_api_repository import (
     fetch_blog_entries,
 )
 

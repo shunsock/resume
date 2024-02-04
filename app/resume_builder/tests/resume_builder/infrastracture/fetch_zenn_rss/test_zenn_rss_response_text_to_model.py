@@ -1,10 +1,10 @@
-from src.resume_builder.infrastracture.fetch_zenn_rss.dto.fetch_zenn_rss_dto import (
+from resume_builder.infrastracture.fetch_zenn_rss.dto.fetch_zenn_rss_dto import (
     FetchZennRssDto,
 )
-from src.resume_builder.infrastracture.fetch_zenn_rss.zenn_rss_repository import (
+from resume_builder.infrastracture.fetch_zenn_rss.zenn_rss_repository import (
     fetch_zenn_rss,
 )
-from src.resume_builder.infrastracture.fetch_zenn_rss.zenn_rss_response_text_to_model import (
+from resume_builder.infrastracture.fetch_zenn_rss.zenn_rss_response_text_to_model import (
     zenn_rss_response_text_to_model,
 )
 

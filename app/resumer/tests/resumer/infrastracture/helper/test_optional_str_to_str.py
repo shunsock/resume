@@ -1,6 +1,6 @@
 import pytest
 
-from resume_builder.infrastracture.helper.optional_str_to_str import optional_str_to_str
+from resumer.infrastracture.helper.optional_str_to_str import optional_str_to_str
 
 
 @pytest.mark.parametrize(

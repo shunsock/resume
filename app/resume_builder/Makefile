@@ -10,7 +10,7 @@ linter:
 	rye run ruff check src/resume_builder tests
 
 static-analysis:
-	rye run mypy src/resume_builder
+	rye run mypy src/resume_builder --explicit-package-bases
 
 test:
 	rye run coverage run -m pytest -s --durations=10

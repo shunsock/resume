@@ -1,21 +1,31 @@
-FROM python:3.10-slim-bookworm
+FROM python:3.12.0-slim-bookworm
 
 # Set Working Directory
 ENV HOME="/root"
 WORKDIR ${HOME}
 
-# Install Dependencies
-RUN apt-get update && \
-  apt-get install -y --no-install-recommends \
-  curl \
-  make
+ENV PATH="/etc/poetry/bin:${PATH}"
 
-# Install pip and pip-tools
-RUN python -m pip install --upgrade pip && \
-    pip install pip-tools
+#-----------------------------------------------------------------------------
+# Setup OS and install system dependencies
+# Note:
+#   - mecab, mecab-ipadic-utf8, libmecab-dev are required for mecab-python3
+#----------------------------------------------------------------------------
+RUN apt-get update -y &&\
+    apt-get install -y \
+      build-essential \
+      curl \
+      file \
+      git \
+      gcc \
+      libpq-dev \
+      libmariadb-dev \
+      pkg-config \
+      python3-dev \
+      sudo
 
-# Download and execute the Rye installation script
-RUN curl -sSf https://rye-up.com/get | RYE_VERSION="0.20.0" RYE_INSTALL_OPTION="--yes" bash
+#----------------------------------------------------------------------------
+# Install Poetry for Python package management
+#----------------------------------------------------------------------------
 
-# Add Rye environment to bashrc for future sessions
-RUN echo 'source "$HOME/.rye/env"' >> ~/.bashrc
+RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/etc/poetry python3 -

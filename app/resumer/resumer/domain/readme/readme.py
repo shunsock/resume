@@ -24,3 +24,19 @@ class Readme(BaseModel):
                 file_paths.append(str(file_path))
 
         return file_paths
+
+    def get_blog_article_paths_under_profile_directory(self) -> List[str]:
+        # Convert the FilePath to a Path object to use pathlib methods
+        profile_path = Path(str(self.blog_articles_file_path))
+
+        # List to hold the paths
+        file_paths = []
+
+        # Use rglob to find all files under the directory
+        for file_path in profile_path.rglob("*"):
+            # Check if it's a file (and not a directory)
+            if file_path.is_file():
+                # Append the string representation of the path to the list
+                file_paths.append(str(file_path))
+
+        return file_paths

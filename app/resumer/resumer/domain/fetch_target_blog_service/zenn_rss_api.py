@@ -6,5 +6,11 @@ from resumer.domain.fetch_target_blog_service.fetch_target_blog_service_model im
 
 
 class ZennRssApi(FetchTargetBlogServiceModel):
-    name: StrictStr = "zenn"
-    url: HttpUrl = "https://zenn.dev/shundeveloper/feed"
+    name: StrictStr
+    url: HttpUrl
+
+    def __init__(self) -> None:
+        super().__init__(
+            name="zenn",
+            url=HttpUrl("https://zenn.dev/shundeveloper/feed"),
+        )

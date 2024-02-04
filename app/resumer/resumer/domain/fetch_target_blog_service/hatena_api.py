@@ -15,4 +15,6 @@ class HatenaApi(FetchTargetBlogServiceModel):
     api_config: HatenaApiConfig = create_hatena_api_config()
 
     def __init__(self) -> None:
-        super().__init__(name=StrictStr("hatena_blog"), url=HttpUrl("https://blog.hatena.ne.jp/"))
+        super().__init__(
+            name=StrictStr("hatena_blog"), url=HttpUrl("https://blog.hatena.ne.jp/")
+        )

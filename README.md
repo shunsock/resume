@@ -1,7 +1,123 @@
+## About
+- Name:
+    - Full Name: Shunsuke Tsuchiya / 土屋 俊介
+    - Nickname: Shunsock / しゅんそく
+- Birthday: 2001-02-07
+- Location: Tokyo, Japan
+- Job:
+    - Software Engineer / Web Developer
+    - Worked at [PR TIMES](https://prtimes.co.jp/)
+- SNS:
+    - [Twitter](https://twitter.com/shunsock)
+    - [GitHub](https://github.com/shunsock)
+## Career
+### 略歴
+- [PR TIMES (Software Engineer)](https://prtimes.co.jp/): 2023/04/01 - now
+- [PR TIMES (Intern)](https://herp.careers/v1/prtimes/yqADIecHef7y): 2022/02/01 - 2023/03/31
+- [Toyo University (Bachelier of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
+- [Epson Avasys Corporation (Intern)](https://avasys.jp/blog/article/000221.html): 2021/08/23 - 2021/09/27
+
+### PR TIMES
+- When: 2023/04/01 - now
+- As: Proper Software Engineer
+- Works:
+    - PR TIMES の新規機能開発
+    - Batch Server 開発 (非公開)
+    - PHPerKaigi 2024 Booth Game 「PHP 8.3秒チャレンジ」の開発 with PHP 8.3
+- Description
+    - PHPやPythonを持ちいて社内各所のシステム開発を行っています．
+    - 2023年夏には，新卒研修でPR TIMESの検索機能のPoCを開発・提案し，その後，検索機能のアルゴリズム開発に相談役として携わりました．
+    - 2023年秋にはPR TIMESでは新規機能開発として，カテゴリーごとのランキングを実装しました．
+    - 2024年春には新規開発でPHPerKaigi 2024のブースゲームの開発を行いました．
+    - 後述するCloudですが，アプリケーションは障害の少ないAWS，データ関連は機能の充実しているGCPを使用しています．
+- Technologies
+    - Languages: `PHP`, `JavaScript`, `Python`, `SQL (PostgreSQL, MySQL, BigQuery)`
+    - Cloud: AWS / GCP
+    - Frameworks:
+        - PHP: `Vanilla`, `Smarty`, `Leaf PHP`
+        - JavaScript: `Vanilla`
+        - Python: `Prefect`
+
+### PR TIMES (Intern)
+- When: 2022/02/01 - 2023/03/31
+- As: Intern
+- Works:
+    - 機械学習を用いたPoCの開発
+- Description:
+    - 2022年には，機械学習を用いたPoCの開発を行いました．
+        - 具体的には，Word2Vecを用いた類似度に基づく単語推薦システムをPoCとして開発し，社内に公開しました．
+        - この開発を通して，文字コードの知識を深く学びました
+        - 特に日本語の新旧字体の処理を行う必要があり，互換表を作成するなどの作業を行っています．
+        - [新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)
+- Technologies
+    - Languages: `Python`, `JavaScript`, `SQL (BigQuery)`
+    - Frameworks:
+        - Python: `Gensim`, `MeCab`
+        - JavaScript: `Next.js`
+        - Cloud: `AWS`
+    - Cloud: `AWS` / `GCP`
+
+### Toyo University
+- When: 2019/04/01 - 2022/03/31
+- As: Student of Bachelier of Business, Department of  Marketing
+- TimeLine:
+    - 2019年4月1日，東洋大学経営学部に入学
+    - 2020年4月1日，大久保ゼミに参加
+    - 2023年3月31日に，東洋大学経営学部マーケティング学科卒業
+- Description:
+    - 東洋大学では，経営学部に所属しマーケティングを専攻しました．
+    - 東洋大学のマーケティング学科では統計とRの授業が必須であり，これをきっかけにデータ分析やプログラミングに興味を持ちました
+    - 2020年には，大久保ゼミに参加し，大久保ゼミでは多変量解析，テキスト解析を学びました
+
+### Epson Avasys Corporation (Intern)
+- When: 2021/08/23 - 2021/09/27
+- As: Intern (Summer Internship)
+- Works:
+    - 社内Wikiの推薦システムの開発
+- Description:
+    - Epson AvasysというEpsonグループのシステム開発を行う会社で，夏季インターンシップに参加しました．
+    - 前半にOpenCVを用いた画像処理のワーク後半にチームでEpson Avasys Corporationで社内Wikiの推薦システムの開発を行いました．
+    - 特に後半では，ルールベースや協調フィルタリングを用いた推薦システムの技術を学びました
+    - 日付情報やカテゴリ情報，ユーザー情報を用いた推薦システムの開発を行いました．
+    - 単なる推薦システムではなく，Doc2VecやClusteringといったNLPの技術をふんだんに使った面白い推薦システムになりました
+- Technologies
+    - Languages: Python
+    - Frameworks:
+        - Python: `Pandas`, `NumPy`, `scikit-learn`, `Gensim`
+## Technology Stack
+- 以下は使用経験のある技術であり，初見の技術でもDocumentやソースコードがあれば理解し，使用することができます.
+- 特に知識の持っている技術については⭐️をつけています.
+- PHPについては，8系と7系，5系でほぼ別の言語であるため，括弧でバージョンを記載しています.
+
+### Language
+- 動的型付け言語
+    - Python ⭐️
+    - R Language
+    - PHP (8.0 >) ⭐️
+    - JavaScript (Node.js, Vanilla)
+    - Shell Script (bash, zsh)
+- 静的型付け言語
+    - TypeScript
+    - Java
+    - C / C++
+    - C# ⭐️
+    - Go
+    - Rust
+
+### Cloud Service
+- AWS ⭐️
+- GCP
+
+### Database
+- MySQL
+- PostgreSQL
+- SQLite
+- BigQuery ⭐️
 ## Awards and Certificates
 Web x MLの領域で活動をしています．その活動の中で受賞や資格を取得したものをまとめです．
 
-### [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
+### YAPC::Kyoto 2023: The Best LT
+- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
 - Date: 2023-03-20
 - Description: ["ChatGPTと文字コード"](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)というテーマで発表をしました．
 - Related Articles:
@@ -10,14 +126,16 @@ Web x MLの領域で活動をしています．その活動の中で受賞や資
     - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
     - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
 
-### [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
+### 統計検定準一級 (Japan Statistical society Certificate: Grade Pre-1)
+- URL: [統計検定](https://www.toukei-kentei.jp/)
 - Date: 2021-11
 - Technical Skills: `Statistics`, `Mathematics`
 - Description: 統計検定の準一級をB3の秋に取得しました．単に就活で有利にするだけであれば2級で十分なのですが，文系出身ながら統計学の専門的知識があること・大学数学レベルの知識があることを証明するために取得しました．ちなみに学部初の取得だったそうで学部で紹介されることがありました．
 
-### [PR TIMES Hackathon](https://www.wantedly.com/projects/796082): individual award
+### PR TIMES HACKATHON: The Individual Award
+- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
 - Date: 2021-12-24
-- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `Kmeans`, `TF-IDF
+- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `K-means`, `TF-IDF
 - Description: PR TIMESのハッカソンで個人賞をいただきました．お題はPR TIMESに新機能をつけてを改善せよという題で，私は自然言語処理を用いた，PR TIMES TVの記事推薦機能をPythonのAPIとそのClientをJavaScriptで作成しました．
 - How to create AI:
     - まず，PR TIMES TVの記事を提供されたAPIから取得し，ビデオのタイトルをBoW化してベクトル化しました．
@@ -25,11 +143,6 @@ Web x MLの領域で活動をしています．その活動の中で受賞や資
     - その後ベクトルをKmeansでクラスタリングするModelを作成します．
     - 最後に，そのクラスタリング結果を元に，ユーザーに記事を推薦する機能を作成しました．
     - テストとして, 記事についているラベルを表示するようにしました．実際に推薦するタイトルとラベルを表示することで納得してもらうことができました．
-### Career
-- [PR TIMES (Software Engineer)](https://prtimes.co.jp/): 2023/04/01 - now
-- [PR TIMES (Intern)](https://herp.careers/v1/prtimes/yqADIecHef7y): 2022/02/01 - 2023/03/31
-- [Toyo University (Bacherer of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
-- [Epson Avasys Corporation (Intern)](https://avasys.jp/blog/article/000221.html): 2021/08/23 - 2021/09/27
 ## Presentation
 Web技術やプログラミングのほかにも，データ分析や自然言語処理についても発表を行っています．
 
@@ -73,27 +186,6 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 
 関連記事
 [Readable 正規表現 Web Article版](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
-### Technology Stack
-- I used the following technologies to build.
-- As I often do serverside engineering, So please note I am not good at front-end.
-```yml
-Language:
-  Front-end: TypeScript
-  Back-end: TypeScript, Python, PHP, Shell Script, R
-  SQLs: MySQL, PostgreSQL, BigQuery
-
-Frameworks:
-  TypeScript: React, Next.js
-  JavaScript: Node.js, Express.js
-  CSS: TailwindCSS, SCSS
-  Python: Flask, FastAPI, Streamlit, PyTorch, Numpy, Pandas, Polars, Scikit-learn, Matplotlib, Seaborn, Gensim
-  PHP: Laravel
-
-Infrastructure:
-  Cloud: AWS, GCP, GitHub Actions, Streamlit Cloud
-  Container: Docker
-  OS: Ubuntu 20.04, 22.04
-```
 ## Tech Blog
 | Site Name | Title       |
 | ------    | -----------|

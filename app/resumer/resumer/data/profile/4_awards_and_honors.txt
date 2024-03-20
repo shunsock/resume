@@ -1,7 +1,8 @@
 ## Awards and Certificates
 Web x MLの領域で活動をしています．その活動の中で受賞や資格を取得したものをまとめです．
 
-### [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
+### YAPC::Kyoto 2023: The Best LT
+- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
 - Date: 2023-03-20
 - Description: ["ChatGPTと文字コード"](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)というテーマで発表をしました．
 - Related Articles:
@@ -10,14 +11,16 @@ Web x MLの領域で活動をしています．その活動の中で受賞や資
     - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
     - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
 
-### [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
+### 統計検定準一級 (Japan Statistical society Certificate: Grade Pre-1)
+- URL: [統計検定](https://www.toukei-kentei.jp/)
 - Date: 2021-11
 - Technical Skills: `Statistics`, `Mathematics`
 - Description: 統計検定の準一級をB3の秋に取得しました．単に就活で有利にするだけであれば2級で十分なのですが，文系出身ながら統計学の専門的知識があること・大学数学レベルの知識があることを証明するために取得しました．ちなみに学部初の取得だったそうで学部で紹介されることがありました．
 
-### [PR TIMES Hackathon](https://www.wantedly.com/projects/796082): individual award
+### PR TIMES HACKATHON: The Individual Award
+- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
 - Date: 2021-12-24
-- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `Kmeans`, `TF-IDF
+- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `K-means`, `TF-IDF
 - Description: PR TIMESのハッカソンで個人賞をいただきました．お題はPR TIMESに新機能をつけてを改善せよという題で，私は自然言語処理を用いた，PR TIMES TVの記事推薦機能をPythonのAPIとそのClientをJavaScriptで作成しました．
 - How to create AI:
     - まず，PR TIMES TVの記事を提供されたAPIから取得し，ビデオのタイトルをBoW化してベクトル化しました．

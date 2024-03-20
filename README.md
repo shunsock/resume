@@ -8,9 +8,45 @@
 - [Toyo University (Bacherer of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
 - [Epson Avasys Corporation (Intern)](https://avasys.jp/blog/article/000221.html): 2021/08/23 - 2021/09/27
 ### Presentation
-- [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-- [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-- [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
+#### ChatGPTと文字コード
+URL: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+Location: YAPC::Kyoto 2023
+Theme: Character Code, ChatGPT, NLP, Unicode
+Description:
+当時登場から数ヶ月経ったChat GPTに関する発表です．ChatGPTが文字コードをどのように解釈しているのかというテーマで発表しました．光栄なことに，この発表はYAPC::Kyoto 2023でBest LTを受賞しました．また，Logmi Techさんにて記事が掲載されました．
+
+関連記事
+- [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
+- [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
+
+#### 嗚呼我が愛しきインタープリタ
+URL: [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+Location: PHP Conference Japan 2023
+Theme: PHP, Interpreter, Bytecode
+Description:
+PHPの中級者に向けたインタープリタの発表です．PHPの"Hello World"がどのようにして動くのか，アプリケーションから一歩踏み込んで理解するための発表です．
+この発表は初めてのPHP Conferenceの登壇でした．著者はこの発表をきっかけにPHPのコミュニティに関わっていくことになります．
+
+#### プロポーザルに通したいのでプロポーザルのテキスト分析をします！
+URL: [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th.PHP Conference Hokkaido](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
+Location: PHP Conference Hokkaido 2024
+Theme: Scraping, Data Cleaning, Data Analysis, Text Analysis, GPT4
+よくあるデータ分析の発表です．ですが，公開されているデータセットが存在しないので自分で作るところから始めるというアプローチを取りました．そのため，データ分析そのものだけではなく，良いデータの集めかたや，データの前処理についても触れています．
+
+#### Readable 正規表現
+URL: [shunsock."Readable 正規表現".2024 Mar 7th.PHPerKaigi 2024](https://www.canva.com/design/DAF9IPmoHMM/Y40JL-jOOGwSE89vT9mytg/view)
+Location: PHPerKaigi 2024
+Theme: Regular Expression, Readability, PHP 8.x, Solid Principle
+Description:
+正規表現はシンプルで汎用的なツールですが，多くのプログラマは複雑で読みにくいと考えています．なぜ，正規表現が複雑化するのか，その対処方法について話しました．
+この発表ではサンプルコードとスライド両方を参照できるように設計しています．幸いなことに，特に評価が高く多くのフィードバックをいただいた他，プログラムの可読性について沢山の方と議論するきっかけになりました．
+なお，サンプルコードはPHP 8.2 >= で動作します．
+
+サンプルコード
+[Smaple Code: GitHub "phper_kaigi_2024"](https://github.com/shunsock/phper_kaigi_2024)
+
+関連記事
+[Readable 正規表現 Web Article版](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
 ### Technology Stack
 - I used the following technologies to build.
 - As I often do serverside engineering, So please note I am not good at front-end.
@@ -40,7 +76,6 @@ Infrastructure:
 |hatena_blog|[入社エントリ: PR TIMES](https://shundeveloper.hatenablog.com/entry/entry_prtimes)
 |hatena_blog|[もみじ饅頭は揚げたてがうまい](https://shundeveloper.hatenablog.com/entry/2024/02/13/010756)
 |hatena_blog|[YAPC::Kyoto 2023 ベストLT賞をいただいた話](https://shundeveloper.hatenablog.com/entry/2023/03/21/135437)
-|hatena_blog|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023?_ga=2.3977136.1644655810.1682752716-479239798.1680491954)
 |hatena_blog|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023)
 |hatena_blog|[PHP Conference Japan 2023に参加してきました](https://shundeveloper.hatenablog.com/entry/2023/10/08/180751)
 |hatena_blog|[ISUCON夏祭りに参加しました！！](https://shundeveloper.hatenablog.com/entry/isucon_summer_fes_2023)

@@ -10,5 +10,8 @@ def update_blog_article_controller() -> None:
 
 
 def update_readme_controller() -> None:
+    # write mode to README.md
     update_readme()
+
+    # append blog data
     update_blog_article()

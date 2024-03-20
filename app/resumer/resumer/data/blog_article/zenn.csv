@@ -5,6 +5,7 @@ title,url
 日本語に関連するunicodeの範囲一文字を指定する正規表現マッチオブジェクトを作成する関数の作成,https://zenn.dev/shundeveloper/articles/b5cc85b4d1e7eb
 平均と分散を漸化式を使って爆速で求める,https://zenn.dev/shundeveloper/articles/a38d310f5e524e
 友達のMacの環境構築をした話 (初心者向け),https://zenn.dev/shundeveloper/articles/a2c360bc89ad52
+初心者がRustのstd::netのソースコードを読んでみた,https://zenn.dev/shundeveloper/articles/9b45b1a886961a
 マルコフ連鎖モンテカルロを用いたベイズ推定,https://zenn.dev/shundeveloper/articles/8be490a0327cb1
 【統計学】メトロポリス-ヘイスティング法(Metropolis-Hastings Algorithm)で詳細釣り合い条件が成立することの証明,https://zenn.dev/shundeveloper/articles/878f2b6504338e
 [統計学]モンテカルロ積分の証明と実践,https://zenn.dev/shundeveloper/articles/c51a759af9b5ca
@@ -34,7 +35,9 @@ title,url
 [AI・機械学習] GPT Indexを体験してきたので感想やかかった費用を書いていく,https://zenn.dev/shundeveloper/articles/059ff1543946c5/
 Zshをカスタマイズしよう,https://zenn.dev/shundeveloper/articles/ef7bb1a1b85663
 VSCode+KaTeXで楽に数式を記述しよう,https://zenn.dev/shundeveloper/articles/86e3cda89492d4
+Readable 正規表現 @PHPerKaigi 2024,https://zenn.dev/shundeveloper/articles/e6405c323c555a
 Pythonで可視化するときのちょっとしたコツ,https://zenn.dev/shundeveloper/articles/51596a6e9bfeb3
+Python Notebookを速く安全に書く,https://zenn.dev/shundeveloper/articles/4322d4dad72b9f
 PostgREST: CheatSheet / JOIN Table Query,https://zenn.dev/shundeveloper/articles/873aa2aa6ed34d
 PHP Onelinerでお洒落なおみくじを作成する,https://zenn.dev/shundeveloper/articles/e113c189e3cc97
 "HTMLタグを抽出する正規表現,  読めますか?",https://zenn.dev/shundeveloper/articles/8f74aa69ed9702

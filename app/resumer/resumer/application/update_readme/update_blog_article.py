@@ -1,3 +1,5 @@
+from typing import List
+
 from resumer.domain.readme.readme import Readme
 from resumer.infrastracture.build_readme.dto.write_blog_article_to_readme_dto import (
     WriteBlogArticleToReadmeDto,
@@ -11,7 +13,6 @@ from resumer.infrastracture.read_blog_article_csv.dto.read_blog_article_csv_dto 
 from resumer.infrastracture.read_blog_article_csv.read_blog_article_from_csv import (
     read_blog_article_from_csv,
 )
-from typing import List
 
 
 def update_blog_article() -> None:
@@ -36,7 +37,6 @@ def update_blog_article() -> None:
             blog_service_name="toukei_no_mori",
         ),
     ]
-
 
     with open(str(readme.output_file_path), "a") as f:
         f.write("## Tech Blog\n")

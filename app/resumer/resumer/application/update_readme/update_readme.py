@@ -17,6 +17,7 @@ def update_readme() -> None:
             file_paths=file_paths,
         )
     )
+    print(readme.output_file_path)
     write_readme(
         WriteReadmeDto(
             output_file_path=str(readme.output_file_path),

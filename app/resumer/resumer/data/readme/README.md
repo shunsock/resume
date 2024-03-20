@@ -1,43 +1,65 @@
-### Awards and Honors
-- [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
-- [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
-- [PR TIMES Hackathon](https://www.wantedly.com/projects/796082): individual award
+## Awards and Certificates
+### [YAPC::Kyoto 2023 LT大会](https://yapcjapan.org/2023kyoto/): The Best LT
+- Date: 2023-03-20
+- Description: ["ChatGPTと文字コード"](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)というテーマで発表をしました．
+- Related Articles:
+    - 本発表を受けてLogmi Tech様より2本の記事の掲載とYoutube登壇のオファーをいただきました．
+    - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
+    - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
+    - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
+
+## [Japan Statistical society Certificate](https://www.toukei-kentei.jp/): Grade Pre-1
+- Date: 2021-11
+- Technical Skills: `Statistics`, `Mathematics`
+- Description: 統計検定の準一級をB3の秋に取得しました．単に就活で有利にするだけであれば2級で十分なのですが，文系出身ながら統計学の専門的知識があること・大学数学レベルの知識があることを証明するために取得しました．ちなみに学部初の取得だったそうで学部で紹介されることがありました．
+
+## [PR TIMES Hackathon](https://www.wantedly.com/projects/796082): individual award
+- Date: 2021-12-24
+- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `Kmeans`, `TF-IDF
+- Description: PR TIMESのハッカソンで個人賞をいただきました．お題はPR TIMESに新機能をつけてを改善せよという題で，私は自然言語処理を用いた，PR TIMES TVの記事推薦機能をPythonのAPIとそのClientをJavaScriptで作成しました．
+- How to create AI:
+    - まず，PR TIMES TVの記事を提供されたAPIから取得し，ビデオのタイトルをBoW化してベクトル化しました．
+    - 次に特徴量を抽出するために，TF-IDFを適用しました．
+    - その後ベクトルをKmeansでクラスタリングするModelを作成します．
+    - 最後に，そのクラスタリング結果を元に，ユーザーに記事を推薦する機能を作成しました．
+    - テストとして, 記事についているラベルを表示するようにしました．実際に推薦するタイトルとラベルを表示することで納得してもらうことができました．
 ### Career
 - [PR TIMES (Software Engineer)](https://prtimes.co.jp/): 2023/04/01 - now
 - [PR TIMES (Intern)](https://herp.careers/v1/prtimes/yqADIecHef7y): 2022/02/01 - 2023/03/31
 - [Toyo University (Bacherer of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
 - [Epson Avasys Corporation (Intern)](https://avasys.jp/blog/article/000221.html): 2021/08/23 - 2021/09/27
-### Presentation
-#### ChatGPTと文字コード
-URL: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-Location: YAPC::Kyoto 2023
-Theme: Character Code, ChatGPT, NLP, Unicode
-Description:
-当時登場から数ヶ月経ったChat GPTに関する発表です．ChatGPTが文字コードをどのように解釈しているのかというテーマで発表しました．光栄なことに，この発表はYAPC::Kyoto 2023でBest LTを受賞しました．また，Logmi Techさんにて記事が掲載されました．
+## Presentation
+### ChatGPTと文字コード
+- URL: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- Location: YAPC::Kyoto 2023
+- Theme: `Character Code`, `ChatGPT`, `NLP`, `Unicode`
+- Description:
+当時登場から数ヶ月経ったChat GPTに関する発表です．単なる使ってみたという内容ではなく，ChatGPTが文字コードをどのように解釈しているのかというニッチなテーマで発表しました．当時ChatGPTに関する発表は沢山ありましたが，文字コードについて分析していたのは私ぐらいだったからか聴衆の興味を集めました．光栄なことに，この発表はYAPC::Kyoto 2023でBest LTを受賞しました．また，Logmi Techさんにて記事が掲載されました．
 
 関連記事
 - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
 - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
 
 #### 嗚呼我が愛しきインタープリタ
-URL: [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-Location: PHP Conference Japan 2023
-Theme: PHP, Interpreter, Bytecode
-Description:
+- URL: [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- Location: PHP Conference Japan 2023
+- Theme: `PHP`, `Interpreter`, `Bytecode`
+- Description:
 PHPの中級者に向けたインタープリタの発表です．PHPの"Hello World"がどのようにして動くのか，アプリケーションから一歩踏み込んで理解するための発表です．
 この発表は初めてのPHP Conferenceの登壇でした．著者はこの発表をきっかけにPHPのコミュニティに関わっていくことになります．
 
 #### プロポーザルに通したいのでプロポーザルのテキスト分析をします！
-URL: [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th.PHP Conference Hokkaido](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
-Location: PHP Conference Hokkaido 2024
-Theme: Scraping, Data Cleaning, Data Analysis, Text Analysis, GPT4
+- URL: [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th.PHP Conference Hokkaido](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
+- Location: PHP Conference Hokkaido 2024
+- Theme: `Scraping`, `Data Cleaning`, `Data Analysis`, `Text Analysis`, `GPT4`
+- Description:
 よくあるデータ分析の発表です．ですが，公開されているデータセットが存在しないので自分で作るところから始めるというアプローチを取りました．そのため，データ分析そのものだけではなく，良いデータの集めかたや，データの前処理についても触れています．
 
 #### Readable 正規表現
-URL: [shunsock."Readable 正規表現".2024 Mar 7th.PHPerKaigi 2024](https://www.canva.com/design/DAF9IPmoHMM/Y40JL-jOOGwSE89vT9mytg/view)
-Location: PHPerKaigi 2024
-Theme: Regular Expression, Readability, PHP 8.x, Solid Principle
-Description:
+- URL: [shunsock."Readable 正規表現".2024 Mar 7th.PHPerKaigi 2024](https://www.canva.com/design/DAF9IPmoHMM/Y40JL-jOOGwSE89vT9mytg/view)
+- Location: PHPerKaigi 2024
+- Theme: `Regular Expression`, `Readability`, `PHP 8.x`, `Solid Principle`
+- Description:
 正規表現はシンプルで汎用的なツールですが，多くのプログラマは複雑で読みにくいと考えています．なぜ，正規表現が複雑化するのか，その対処方法について話しました．
 この発表ではサンプルコードとスライド両方を参照できるように設計しています．幸いなことに，特に評価が高く多くのフィードバックをいただいた他，プログラムの可読性について沢山の方と議論するきっかけになりました．
 なお，サンプルコードはPHP 8.2 >= で動作します．

@@ -40,7 +40,6 @@ Infrastructure:
 |hatena_blog|[入社エントリ: PR TIMES](https://shundeveloper.hatenablog.com/entry/entry_prtimes)
 |hatena_blog|[もみじ饅頭は揚げたてがうまい](https://shundeveloper.hatenablog.com/entry/2024/02/13/010756)
 |hatena_blog|[YAPC::Kyoto 2023 ベストLT賞をいただいた話](https://shundeveloper.hatenablog.com/entry/2023/03/21/135437)
-|hatena_blog|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023?_ga=2.3977136.1644655810.1682752716-479239798.1680491954)
 |hatena_blog|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023)
 |hatena_blog|[PHP Conference Japan 2023に参加してきました](https://shundeveloper.hatenablog.com/entry/2023/10/08/180751)
 |hatena_blog|[ISUCON夏祭りに参加しました！！](https://shundeveloper.hatenablog.com/entry/isucon_summer_fes_2023)

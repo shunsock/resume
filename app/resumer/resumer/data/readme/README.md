@@ -186,6 +186,65 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 
 関連記事
 [Readable 正規表現 Web Article版](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
+## Portfolio
+ここでは個人での制作物を紹介します，
+
+### Fortee Proposal CLI
+![](image/fortee_proposal_cli.png)
+- GitHub: [Fortee Proposal CLI](https://github.com/shunsock/fortee_proposal_cli)
+- Technology:
+    - Language:
+        - `Rust`
+        - `Shell Script`
+    - Dependency
+        - `Makefile`
+- Description:
+    - Forteeに投稿されたプロポーザルデータをダウンロード+表示するためのコマンドラインツールです
+    - URLを指定すると，プロポーザルデータとOG Imageをダウンロードします
+    - ダウンロードしたデータは，Command Line上で表示されます
+    - このツールを使うことで，登壇ブログを書く作業を効率化できます
+
+### Readable Regex
+![](image/readable_regex.jpeg)
+- GitHub: [Readable Regex](https://github.com/shunsock/phper_kaigi_2024)
+- Zenn: [Readable Regex](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
+- Technology:
+    - `Regular Expression`
+    - Language:
+        - `PHP (8.2 >=)`
+- Description:
+    - 中野セントラルパークカンファレンスで行われたPHPerKaigi 2024で「Readable 正規表現」というタイトルでトークさせていただきました
+    - その際に使用したコード・スライドを公開しています
+
+### Resume
+- GitHub: [Resume](https://github.com/shunsock/resume)
+- Technology:
+    - Language:
+        - `Python`
+        - `Shell Script`
+    - Infrastructure
+        - `Docker`
+        - `Poetry` (Python Dependency Management)
+        - `GitHub Actions` (CI)
+    - Dependency
+        - `Makefile`
+- Description:
+    - 自分の履歴書を生成するためのツールです
+    - `Python`で書かれており，`Docker`を使って環境を構築します
+    - Pythonを使うことによってzennやHatena Blogの記事を自動で取得し，履歴書に反映させることができます
+
+### Dotfiles
+- GitHub:
+    - [my_zsh_config](https://github.com/shunsock/my_zsh_config)
+    - [my_vim_config (Pure Vim)](https://github.com/shunsock/easy_start_vim)
+    - [my_nvim_config (NeoVim)](https://github.com/shunsock/my_nvim)
+
+### Playgrounds
+- GitHub:
+    - [Dotnet Playground (C#)](https://github.com/shunsock/dotnet_playground)
+    - [Rust Playground](https://github.com/shunsock/rust_playground)
+    - [Dagster Playground (Python & Rust)](https://github.com/shunsock/dagster_playground)
+    - [Python Playground](https://github.com/shunsock/python_playground)
 ## Tech Blog
 | Site Name | Title       |
 | ------    | -----------|
@@ -196,10 +255,12 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 |hatena_blog|[YAPC::Kyoto 2023 ベストLT賞をいただいた話](https://shundeveloper.hatenablog.com/entry/2023/03/21/135437)
 |hatena_blog|[PHPerKaigiに参加してきました](https://shundeveloper.hatenablog.com/entry/phperkaigi_2023)
 |hatena_blog|[PHP Conference Japan 2023に参加してきました](https://shundeveloper.hatenablog.com/entry/2023/10/08/180751)
+|hatena_blog|[Object Oriented Conferenceに参加しました！](https://shundeveloper.hatenablog.com/entry/ooc_2024)
 |hatena_blog|[ISUCON夏祭りに参加しました！！](https://shundeveloper.hatenablog.com/entry/isucon_summer_fes_2023)
 |hatena_blog|[Fastly Yamagoya 2023に参加しました！](https://shundeveloper.hatenablog.com/entry/fastly_yamagoya2023)
 |hatena_blog|[ [Ya8参戦記] 終電は家の近くまで行ければセーフ【西武線に気をつけろ】](https://shundeveloper.hatenablog.com/entry/ya8_2024)
 |zenn|[確率母関数と積率母関数](https://zenn.dev/shundeveloper/articles/ed692f0b8677da/)
+|zenn|[独立ではない確率変数列の和の分散 (変数の数がnの場合)](https://zenn.dev/shundeveloper/articles/398cb39026a4f3)
 |zenn|[正規表現と友達になろう](https://zenn.dev/shundeveloper/articles/8587cedf949a4c)
 |zenn|[日本語に関連する主なUnicodeの範囲と公式のpdfの一覧](https://zenn.dev/shundeveloper/articles/a4be0379508e2d)
 |zenn|[日本語に関連するunicodeの範囲一文字を指定する正規表現マッチオブジェクトを作成する関数の作成](https://zenn.dev/shundeveloper/articles/b5cc85b4d1e7eb)
@@ -236,6 +297,7 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 |zenn|[Zshをカスタマイズしよう](https://zenn.dev/shundeveloper/articles/ef7bb1a1b85663)
 |zenn|[VSCode+KaTeXで楽に数式を記述しよう](https://zenn.dev/shundeveloper/articles/86e3cda89492d4)
 |zenn|[Readable 正規表現 @PHPerKaigi 2024](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
+|zenn|[Pythonで定数を返す方法](https://zenn.dev/shundeveloper/articles/ede53caa9632f5)
 |zenn|[Pythonで可視化するときのちょっとしたコツ](https://zenn.dev/shundeveloper/articles/51596a6e9bfeb3)
 |zenn|[Python Notebookを速く安全に書く](https://zenn.dev/shundeveloper/articles/4322d4dad72b9f)
 |zenn|[PostgREST: CheatSheet / JOIN Table Query](https://zenn.dev/shundeveloper/articles/873aa2aa6ed34d)
@@ -243,11 +305,14 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 |zenn|[HTMLタグを抽出する正規表現,  読めますか?](https://zenn.dev/shundeveloper/articles/8f74aa69ed9702)
 |zenn|[C#でResult型を作ってみた](https://zenn.dev/shundeveloper/articles/d824035de4e042)
 |zenn|[Arc Command Cheatsheet](https://zenn.dev/shundeveloper/articles/a43596aa959d38)
+|prtimes_tech_blog|[株式会社 PR TIMESはPHPerKaigi 2024に協賛・登壇しました！](https://developers.prtimes.jp/2024/03/21/phperkaigi2024-after/)
+|prtimes_tech_blog|[PR TIMESはPHPerKaigi 2024に協賛・登壇します](https://developers.prtimes.jp/2024/02/02/phperkaigi-2024-sponsorship-speaker/)
+|prtimes_tech_blog|[PR TIMESはPHPカンファレンス北海道 2024に協賛・登壇します](https://developers.prtimes.jp/2023/12/28/phpcon_hokkaido_2024_pre/)
+|prtimes_tech_blog|[PR TIMES・ディップ・ピクシブ・グルコースの4社合同のLT大会を開催しました](https://developers.prtimes.jp/2023/12/07/20231204_meetup/)
+|prtimes_tech_blog|[One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)
+|prtimes_tech_blog|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
 |prtimes_tech_blog|[新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)
 |prtimes_tech_blog|[日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
-|prtimes_tech_blog|[One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)
-|prtimes_tech_blog|[PR TIMES・ディップ・ピクシブ・グルコースの4社合同のLT大会を開催しました](https://developers.prtimes.jp/2023/12/07/20231204_meetup/)
-|prtimes_tech_blog|[PR TIMESはPHPカンファレンス北海道 2024に協賛・登壇します](https://developers.prtimes.jp/2023/12/28/phpcon_hokkaido_2024_pre/)
 |toukei_no_mori|[深層学習 改訂第2版 第4章「誤差逆伝播法」 65p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_4_65p-html.html)
 |toukei_no_mori|[深層学習 改訂第2版 第10章「いろいろな学習方法」 220p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_10_220p.html)
 |toukei_no_mori|[深層学習 改訂第2版 第8章「推論の信頼性」 176p-177p 数式の表記揺れの確認](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_8_176p-177p.html)

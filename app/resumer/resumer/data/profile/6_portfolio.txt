@@ -1,0 +1,59 @@
+## Portfolio
+ここでは個人での制作物を紹介します，
+
+### Fortee Proposal CLI
+![](image/fortee_proposal_cli.png)
+- GitHub: [Fortee Proposal CLI](https://github.com/shunsock/fortee_proposal_cli)
+- Technology:
+    - Language:
+        - `Rust`
+        - `Shell Script`
+    - Dependency
+        - `Makefile`
+- Description:
+    - Forteeに投稿されたプロポーザルデータをダウンロード+表示するためのコマンドラインツールです
+    - URLを指定すると，プロポーザルデータとOG Imageをダウンロードします
+    - ダウンロードしたデータは，Command Line上で表示されます
+    - このツールを使うことで，登壇ブログを書く作業を効率化できます
+
+### Readable Regex
+![](image/readable_regex.jpeg)
+- GitHub: [Readable Regex](https://github.com/shunsock/phper_kaigi_2024)
+- Zenn: [Readable Regex](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
+- Technology:
+    - `Regular Expression`
+    - Language:
+        - `PHP (8.2 >=)`
+- Description:
+    - 中野セントラルパークカンファレンスで行われたPHPerKaigi 2024で「Readable 正規表現」というタイトルでトークさせていただきました
+    - その際に使用したコード・スライドを公開しています
+
+### Resume
+- GitHub: [Resume](https://github.com/shunsock/resume)
+- Technology:
+    - Language:
+        - `Python`
+        - `Shell Script`
+    - Infrastructure
+        - `Docker`
+        - `Poetry` (Python Dependency Management)
+        - `GitHub Actions` (CI)
+    - Dependency
+        - `Makefile`
+- Description:
+    - 自分の履歴書を生成するためのツールです
+    - `Python`で書かれており，`Docker`を使って環境を構築します
+    - Pythonを使うことによってzennやHatena Blogの記事を自動で取得し，履歴書に反映させることができます
+
+### Dotfiles
+- GitHub:
+    - [my_zsh_config](https://github.com/shunsock/my_zsh_config)
+    - [my_vim_config (Pure Vim)](https://github.com/shunsock/easy_start_vim)
+    - [my_nvim_config (NeoVim)](https://github.com/shunsock/my_nvim)
+
+### Playgrounds
+- GitHub:
+    - [Dotnet Playground (C#)](https://github.com/shunsock/dotnet_playground)
+    - [Rust Playground](https://github.com/shunsock/rust_playground)
+    - [Dagster Playground (Python & Rust)](https://github.com/shunsock/dagster_playground)
+    - [Python Playground](https://github.com/shunsock/python_playground)

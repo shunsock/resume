@@ -5,8 +5,8 @@ from resumer.infrastracture.build_readme.read_profiles import read_profiles
 def test_read_profiles() -> None:
     dto = ReadProfilesDto(
         file_paths=[
-            "resumer/data/test/infrastracture/build_resume/2_career.txt",
-            "resumer/data/test/infrastracture/build_resume/5_presentation.txt",
+            "resumer/data/test/infrastracture/build_resume/career.txt",
+            "resumer/data/test/infrastracture/build_resume/presentation.txt",
         ]
     )
     expected_result = [

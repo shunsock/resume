@@ -22,20 +22,10 @@
     - about: PHPerKaigi 2024のブースゲーム「PHP 8.3秒チャレンジ」を開発しました．
     - languages:
         - `PHP`, `TypeScript`, `SQL (MySQL)`
-    - framework:
-        - `Leaf PHP`
-        - `Pactum JS`
-        - `React`
-        - `Bun` + `Vite`
-        - `Tailwind CSS`
-    - Infrastructure:
-        - `Nginx`
-        - `MySQL`
-        - `Docker`
-        - `AWS (EC2)`
+    - framework: `Leaf PHP`, `Pactum JS`, `React`, `Bun`, `Vite`, `Tailwind CSS`
+    - Infrastructure: `Nginx`, `MySQL`, `Docker`, `AWS (EC2)`
     - background:
         - PHPerKaigiは，PHPのカンファレンスであり，PHPの最新技術やトレンドを学ぶことができるイベントです．
-        - 2024年には，PHPerKaigi 2024が開催されることになりました．
         - PR TIMESでは核であるprtimes.jpにおいて，PHPを使用しているため，PHPerKaigiには積極的にスポンサーとして参加しています．
         - スポンサーには企業ブースという企業専用のブースが割り当てられ，広告や宣伝をすることができます．
     - issue:
@@ -51,7 +41,7 @@
         - 案をWeb Applicationとして実現することになりました．
     - limitation:
         - 私ももう一人の開発者も普段の仕事をしながら実装する必要があるので，短期間での開発が求められました．　
-        - また，当日は普段の社用PCではなくイベント専用のPCで行うためデプロイの必要がありインフラを整備する必要がありました
+        - また，当日は普段の社用PCではなくイベント専用のPCで行うためデプロイの必要がありインフラを整備する必要がありました．
         - しかし，インフラは数日しか使わないものであるため，簡単に片付けられる最小構成が求められていました．
     - technology selection:
         - Common: イベントなので変わり種を入れようと話していました
@@ -63,8 +53,6 @@
         - BackendとInfrastructureの計画を担当しました
         - 私は API Serverの構築，FrontendのInfrastructure層(=Repository層)の実装を担当しました．
         - もう一人の開発者はFrontendを中心に実装を担当しました．
-    - test play:
-        - ある程度できた時点で社内でテストプレイを行いました．
     - result:
         - PHP 8.3秒チャレンジを開発することで，PHPerKaigi 2024のブースゲームを実現しました．
         - 3日間に及ぶPHPerKaigi2024本番では、140人以上の方に「PHP8.3秒チャレンジ」にプレイしていただきました。
@@ -83,21 +71,13 @@
         - [PR TIMES 開発者ブログ."PHPerKaigi2024のブース企画を担当しました！"](https://developers.prtimes.jp/2024/04/03/phperkaigi2024-booth/)
 
 - Work:
-    - Batch Server 開発
     - title: PR TIMESの記事データの前処理バッチサーバーの開発
     - period: 2024-09 => 2024-03
     - role: 計画者・実装者
     - about: PR TIMESの記事データの前処理バッチサーバーを開発しました．
-    - languages:
-        - `Python`, `SQL (PostgreSQL, BigQuery)`
-    - framework:
-        - `Prefect`
-    - Infrastructure:
-        - `BigQuery`
-        - `Cloud Storage`
-        - `Cloud Compute Engine`
-        - `IAP`
-        - `Poetry`
+    - languages: `Python`, `SQL (PostgreSQL, BigQuery)`
+    - framework: `Prefect`
+    - Infrastructure: `BigQuery`, `Cloud Storage`, `Cloud Compute Engine`, `IAP`
     - background:
         - PR TIMESの記事データは，プレスリリースのデータを含む膨大なデータ量があります．
         - PR TIMESの記事は公共性が高く，日本語の文法に則っているため，機械学習の学習データとして適していると考えられました．
@@ -133,15 +113,12 @@
             - 進捗管理が難しかったため，開発が遅れることがありました．
 
 - Work:
-    - PR TIMES の新規機能開発
     - title: PR TIMESのカテゴリーランキング実装
     - period: 2023-09 => 2023-11
     - role: 実装者
     - about: PR TIMESの新規機能として，カテゴリーごとのランキングを実装しました．
-    - languages:
-        - `PHP`, `JavaScript`, `SQL (PostgreSQL)`, `Opensearch`
-    - framework:
-        - `Smarty (PHP Template)`
+    - languages: `PHP`, `JavaScript`, `SQL (PostgreSQL)`, `Opensearch`
+    - framework: `Smarty (PHP Template)`
     - background:
         - PR TIMESは，プレスリリースの配信サービスを提供している企業です．
         - 既存の機能として総合的なランキングがありました．
@@ -206,7 +183,6 @@
         - background: チームメンバーがプレゼンを作っているタイミングで手が空いたので，チームメンバーに許可をとって開発しました
         - developer: 自分
         - languages: `Python`
-        - FW: なし
         - algorithm: `TF-IDF`, `Lucine's Practical Scoring Function`
         - technology selection:
             - NLPと相性がよく，予めNLP向けの関数が用意されているため，`Python`を選定しました．
@@ -216,7 +192,7 @@
             - PoCを通して，提案手法の有効性を認知してもらうことができました．その後，提案手法の一部が採用され，検索機能の改善が行われました．
             - また，検索技術・自然言語処理の知識が認められ，技術相談役・技術調査役としてその後の改善に携わることができました．
     - Production:
-        - About: PoCを通して提案手法の有効性を認知してもらい，その後，提案手法の一部が採用され，検索機能の改善が行われました．
+        - about: PoCを通して提案手法の有効性を認知してもらい，その後，提案手法の一部が採用され，検索機能の改善が行われました．
         - developer: 開発チーム
         - role: 技術相談役・技術調査役
         - languages: `PHP`, `TF-IDF`
@@ -235,26 +211,19 @@
 
 ### PR TIMES (Intern)
 - When: 2022/02/01 - 2023/03/31
-- As: Intern
 - Works:
-    - 機械学習を用いたPoCの開発
-    - Description:
+    - title: 機械学習を用いたPoCの開発
+    - description:
         - 2022年には，機械学習を用いたPoCの開発を行いました．
             - 具体的には，Word2Vecを用いた類似度に基づく単語推薦システムをPoCとして開発し，社内に公開しました．
             - この開発を通して，文字コードの知識を深く学びました
             - 特に日本語の新旧字体の処理を行う必要があり，互換表を作成するなどの作業を行っています．
             - [新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)
-    - languages:
-        - `Python`
-        - `JavaScript`
-    - frameworks:
-        - Python: `Gensim`, `MeCab`, `FastAPI`
-        - JavaScript: `Next.js`
-    - algorithms:
-        - `Word2Vec`
-    - infrastructure: `AWS` / `GCP`
+    - languages: `Python`, `JavaScript`
+    - frameworks: `Gensim`, `MeCab`, `FastAPI`, `Next.js`
+    - algorithms: `Word2Vec`
+    - infrastructure: `AWS`, `GCP`
     - background:
-        - PR TIMESは，プレスリリースの配信サービスを提供している企業です．
         - PR TIMESの記事データは，プレスリリースのデータを含む膨大なデータ量があります．
         - PR TIMESの記事は公共性が高く，日本語の文法に則っているため，機械学習の学習データとして適していると考えられました．
     - issue:
@@ -271,7 +240,6 @@
     - development:
         - 自分で全て開発を行いました．
         - また，成果物を社内に公開し，フィードバックをもらいながら改善を行いました．(社長からのフィードバックもありました)
-        - その関係でDocumentの整備も並行して行いました．
     - result:
         - 機械学習を用いたPoCの開発を行うことで，PR TIMESの記事データの価値を認知してもらうことができました．
         - インフラストラクチャの構築やデータの前処理など，機械学習の理論には出てこないものの実践で重要なスキルを学ぶことができました．
@@ -296,14 +264,7 @@
         - 準一級は学部初でした
 
 ### Epson Avasys Corporation (Intern)
-- When: 2021/08/23 - 2021/09/27
-- As: Intern (Summer Internship)
-- Description:
-    - Epson AvasysというEpsonグループのシステム開発を行う会社で，夏季インターンシップに参加しました．
-    - 前半にOpenCVを用いた画像処理のワーク後半にチームでEpson Avasys Corporationで社内Wikiの推薦システムの開発を行いました．
-    - 特に後半では，ルールベースや協調フィルタリングを用いた推薦システムの技術を学びました
-    - 日付情報やカテゴリ情報，ユーザー情報を用いた推薦システムの開発を行いました．
-    - 単なる推薦システムではなく，Doc2VecやClusteringといったNLPの技術をふんだんに使った面白い推薦システムになりました
+- When: 2021/08/23 - 2021/09/02 (10 days)
 - Works:
     - title: 社内Wikiの推薦システムの開発
     - period: 2021-08
@@ -312,12 +273,7 @@
     - algorithms:
         - `Clustering` => `K-means`
         - `Neural Network` => `Doc2Vec`
-        - `Recommendation System`
-            - `Rule-based`
-            - `Collaborative Filtering (強調フィルタリング)`
-    - frameworks:
-        - `scikit-learn`
-        - `Gensim`
+    - frameworks: `scikit-learn`, `Gensim`
     - background:
         - Epson Avasys Corporationでは，社内Wikiを利用しています．
         - 社内Wikiは，社員が情報を共有するためのプラットフォームであり，情報の量が膨大であるため，情報の検索が困難でした．

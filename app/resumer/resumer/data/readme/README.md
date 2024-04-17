@@ -14,7 +14,7 @@
 ### 略歴
 - [PR TIMES (Software Engineer)](https://prtimes.co.jp/): 2023/04/01 - now
 - [PR TIMES (Intern)](https://herp.careers/v1/prtimes/yqADIecHef7y): 2022/02/01 - 2023/03/31
-- [Toyo University (Bachelier of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2022/03/31
+- [Toyo University (Bachelier of Business, Department of  Marketing)](https://www.toyo.ac.jp/en/academics/faculty/fba/dmrk/): 2019/04/01 - 2023/03/31
 - [Epson Avasys Corporation (Intern)](https://avasys.jp/blog/article/000221.html): 2021/08/23 - 2021/09/27
 
 ### PR TIMES
@@ -303,6 +303,7 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 |zenn|[PostgREST: CheatSheet / JOIN Table Query](https://zenn.dev/shundeveloper/articles/873aa2aa6ed34d)
 |zenn|[PHP Onelinerでお洒落なおみくじを作成する](https://zenn.dev/shundeveloper/articles/e113c189e3cc97)
 |zenn|[HTMLタグを抽出する正規表現,  読めますか?](https://zenn.dev/shundeveloper/articles/8f74aa69ed9702)
+|zenn|[Fortee Porposal CLIというカンファレンスの登壇者向けのツールを作成しました](https://zenn.dev/shundeveloper/articles/edf9a47ee20a2d)
 |zenn|[C#でResult型を作ってみた](https://zenn.dev/shundeveloper/articles/d824035de4e042)
 |zenn|[Arc Command Cheatsheet](https://zenn.dev/shundeveloper/articles/a43596aa959d38)
 |prtimes_tech_blog|[株式会社 PR TIMESはPHPerKaigi 2024に協賛・登壇しました！](https://developers.prtimes.jp/2024/03/21/phperkaigi2024-after/)

@@ -22,6 +22,167 @@
 - Others:
     - 技術コミュニティに参加することが好きです．
     - カンファレンスや勉強会によく参加しています．
+## Awards and Certificates
+Web x MLの領域で活動をしています．その活動の中で受賞や資格を取得したものをまとめです．
+
+### YAPC::Kyoto 2023: The Best LT
+- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
+- Date: 2023-03-20
+- Description: ["ChatGPTと文字コード"](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)というテーマで発表をしました．
+- Related Articles:
+    - 本発表を受けてLogmi Tech様より2本の記事の掲載とYoutube登壇のオファーをいただきました．
+    - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
+    - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
+    - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
+
+### 統計検定準一級 (Japan Statistical society Certificate: Grade Pre-1)
+- URL: [統計検定](https://www.toukei-kentei.jp/)
+- Date: 2021-11
+- Technical Skills: `Statistics`, `Mathematics`
+- Description: 統計検定の準一級をB3の秋に取得しました．単に就活で有利にするだけであれば2級で十分なのですが，文系出身ながら統計学の専門的知識があること・大学数学レベルの知識があることを証明するために取得しました．ちなみに学部初の取得だったそうで学部で紹介されることがありました．
+
+### PR TIMES HACKATHON: The Individual Award
+- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
+- Date: 2021-12-24
+- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `K-means`, `TF-IDF
+- Description: PR TIMESのハッカソンで個人賞をいただきました．お題はPR TIMESに新機能をつけてを改善せよという題で，私は自然言語処理を用いた，PR TIMES TVの記事推薦機能をPythonのAPIとそのClientをJavaScriptで作成しました．
+- How to create AI:
+    - まず，PR TIMES TVの記事を提供されたAPIから取得し，ビデオのタイトルをBoW化してベクトル化しました．
+    - 次に特徴量を抽出するために，TF-IDFを適用しました．
+    - その後ベクトルをKmeansでクラスタリングするModelを作成します．
+    - 最後に，そのクラスタリング結果を元に，ユーザーに記事を推薦する機能を作成しました．
+    - テストとして, 記事についているラベルを表示するようにしました．実際に推薦するタイトルとラベルを表示することで納得してもらうことができました．
+## Portfolio
+ここでは個人での制作物を紹介します，
+
+### Fortee Proposal CLI
+![](image/fortee_proposal_cli.png)
+- GitHub: [Fortee Proposal CLI](https://github.com/shunsock/fortee_proposal_cli)
+- Technology:
+    - Language:
+        - `Rust`
+        - `Shell Script`
+    - Dependency
+        - `Makefile`
+- Description:
+    - Forteeに投稿されたプロポーザルデータをダウンロード+表示するためのコマンドラインツールです
+    - URLを指定すると，プロポーザルデータとOG Imageをダウンロードします
+    - ダウンロードしたデータは，Command Line上で表示されます
+    - このツールを使うことで，登壇ブログを書く作業を効率化できます
+
+### Readable Regex
+![](image/readable_regex.jpeg)
+- GitHub: [Readable Regex](https://github.com/shunsock/phper_kaigi_2024)
+- Zenn: [Readable Regex](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
+- Technology:
+    - `Regular Expression`
+    - Language:
+        - `PHP (8.2 >=)`
+- Description:
+    - 中野セントラルパークカンファレンスで行われたPHPerKaigi 2024で「Readable 正規表現」というタイトルでトークさせていただきました
+    - その際に使用したコード・スライドを公開しています
+
+### Resume
+- GitHub: [Resume](https://github.com/shunsock/resume)
+- Technology:
+    - Language:
+        - `Python`
+        - `Shell Script`
+    - Infrastructure
+        - `Docker`
+        - `Poetry` (Python Dependency Management)
+        - `GitHub Actions` (CI)
+    - Dependency
+        - `Makefile`
+- Description:
+    - 自分の履歴書を生成するためのツールです
+    - `Python`で書かれており，`Docker`を使って環境を構築します
+    - Pythonを使うことによってzennやHatena Blogの記事を自動で取得し，履歴書に反映させることができます
+
+### Dotfiles
+- GitHub:
+    - [my_zsh_config](https://github.com/shunsock/my_zsh_config)
+    - [my_vim_config (Pure Vim)](https://github.com/shunsock/easy_start_vim)
+    - [my_nvim_config (NeoVim)](https://github.com/shunsock/my_nvim)
+
+### Playgrounds
+- GitHub:
+    - [Dotnet Playground (C#)](https://github.com/shunsock/dotnet_playground)
+    - [Rust Playground](https://github.com/shunsock/rust_playground)
+    - [Dagster Playground (Python & Rust)](https://github.com/shunsock/dagster_playground)
+    - [Python Playground](https://github.com/shunsock/python_playground)
+## Technology Stack
+- 以下は使用経験のある技術であり，初見の技術でもDocumentやソースコードがあれば理解し，使用することができます.
+- 特に知識の持っている技術については⭐️をつけています.
+- PHPについては，8系と7系，5系でほぼ別の言語であるため，括弧でバージョンを記載しています.
+
+### Language
+- 動的型付け言語
+    - Python ⭐️
+    - R Language
+    - PHP (8.0 >) ⭐️
+    - JavaScript (Node.js, Vanilla)
+    - Shell Script (bash, zsh)
+- 静的型付け言語
+    - TypeScript
+    - Java
+    - C / C++
+    - C# ⭐️
+    - Go
+    - Rust
+
+### Cloud Service
+- AWS ⭐️
+- GCP
+
+### Database
+- MySQL
+- PostgreSQL
+- SQLite
+- BigQuery ⭐️
+## Presentation
+Web技術やプログラミングのほかにも，データ分析や自然言語処理についても発表を行っています．
+
+### ChatGPTと文字コード
+- URL: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- Location: YAPC::Kyoto 2023
+- Theme: `Character Code`, `ChatGPT`, `NLP`, `Unicode`
+- Description:
+当時登場から数ヶ月経ったChat GPTに関する発表です．単なる使ってみたという内容ではなく，ChatGPTが文字コードをどのように解釈しているのかというニッチなテーマで発表しました．当時ChatGPTに関する発表は沢山ありましたが，文字コードについて分析していたのは私ぐらいだったからか聴衆の興味を集めました．光栄なことに，この発表はYAPC::Kyoto 2023でBest LTを受賞しました．また，Logmi Techさんにて記事が掲載されました．
+
+関連記事
+- [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
+- [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
+
+### 嗚呼我が愛しきインタープリタ
+- URL: [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- Location: PHP Conference Japan 2023
+- Theme: `PHP`, `Interpreter`, `Bytecode`
+- Description:
+PHPの中級者に向けたインタープリタの発表です．PHPの"Hello World"がどのようにして動くのか，アプリケーションから一歩踏み込んで理解するための発表です．
+この発表は初めてのPHP Conferenceの登壇でした．著者はこの発表をきっかけにPHPのコミュニティに関わっていくことになります．
+
+### プロポーザルに通したいのでプロポーザルのテキスト分析をします！
+- URL: [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th.PHP Conference Hokkaido](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
+- Location: PHP Conference Hokkaido 2024
+- Theme: `Scraping`, `Data Cleaning`, `Data Analysis`, `Text Analysis`, `GPT4`
+- Description:
+よくあるデータ分析の発表です．ですが，公開されているデータセットが存在しないので自分で作るところから始めるというアプローチを取りました．そのため，データ分析そのものだけではなく，良いデータの集めかたや，データの前処理についても触れています．
+
+### Readable 正規表現
+- URL: [shunsock."Readable 正規表現".2024 Mar 7th.PHPerKaigi 2024](https://www.canva.com/design/DAF9IPmoHMM/Y40JL-jOOGwSE89vT9mytg/view)
+- Location: PHPerKaigi 2024
+- Theme: `Regular Expression`, `Readability`, `PHP 8.x`, `Solid Principle`
+- Description:
+正規表現はシンプルで汎用的なツールですが，多くのプログラマは複雑で読みにくいと考えています．なぜ，正規表現が複雑化するのか，その対処方法について話しました．
+この発表ではサンプルコードとスライド両方を参照できるように設計しています．幸いなことに，特に評価が高く多くのフィードバックをいただいた他，プログラムの可読性について沢山の方と議論するきっかけになりました．
+なお，サンプルコードはPHP 8.2 >= で動作します．
+
+サンプルコード
+[Smaple Code: GitHub "phper_kaigi_2024"](https://github.com/shunsock/phper_kaigi_2024)
+
+関連記事
+[Readable 正規表現 Web Article版](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
 ## Career
 ### 略歴
 - [PR TIMES (Software Engineer)](https://prtimes.co.jp/): 2023/04/01 - now
@@ -328,167 +489,6 @@
         - 大量のデータに対してアルゴリズムを適用する際に時間がかかることを学び，効率的なアルゴリズムの開発が重要であることを学びました．
     - reference:
         - [Epson Avasys Corporation."夏季インターンシップ　実施報告【集合形式】"](https://avasys.jp/blog/article/000221.html)
-## Technology Stack
-- 以下は使用経験のある技術であり，初見の技術でもDocumentやソースコードがあれば理解し，使用することができます.
-- 特に知識の持っている技術については⭐️をつけています.
-- PHPについては，8系と7系，5系でほぼ別の言語であるため，括弧でバージョンを記載しています.
-
-### Language
-- 動的型付け言語
-    - Python ⭐️
-    - R Language
-    - PHP (8.0 >) ⭐️
-    - JavaScript (Node.js, Vanilla)
-    - Shell Script (bash, zsh)
-- 静的型付け言語
-    - TypeScript
-    - Java
-    - C / C++
-    - C# ⭐️
-    - Go
-    - Rust
-
-### Cloud Service
-- AWS ⭐️
-- GCP
-
-### Database
-- MySQL
-- PostgreSQL
-- SQLite
-- BigQuery ⭐️
-## Awards and Certificates
-Web x MLの領域で活動をしています．その活動の中で受賞や資格を取得したものをまとめです．
-
-### YAPC::Kyoto 2023: The Best LT
-- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
-- Date: 2023-03-20
-- Description: ["ChatGPTと文字コード"](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)というテーマで発表をしました．
-- Related Articles:
-    - 本発表を受けてLogmi Tech様より2本の記事の掲載とYoutube登壇のオファーをいただきました．
-    - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
-    - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
-    - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
-
-### 統計検定準一級 (Japan Statistical society Certificate: Grade Pre-1)
-- URL: [統計検定](https://www.toukei-kentei.jp/)
-- Date: 2021-11
-- Technical Skills: `Statistics`, `Mathematics`
-- Description: 統計検定の準一級をB3の秋に取得しました．単に就活で有利にするだけであれば2級で十分なのですが，文系出身ながら統計学の専門的知識があること・大学数学レベルの知識があることを証明するために取得しました．ちなみに学部初の取得だったそうで学部で紹介されることがありました．
-
-### PR TIMES HACKATHON: The Individual Award
-- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
-- Date: 2021-12-24
-- Technical Skills: `Python`, `JavaScript`, `Natural Language Processing`, `K-means`, `TF-IDF
-- Description: PR TIMESのハッカソンで個人賞をいただきました．お題はPR TIMESに新機能をつけてを改善せよという題で，私は自然言語処理を用いた，PR TIMES TVの記事推薦機能をPythonのAPIとそのClientをJavaScriptで作成しました．
-- How to create AI:
-    - まず，PR TIMES TVの記事を提供されたAPIから取得し，ビデオのタイトルをBoW化してベクトル化しました．
-    - 次に特徴量を抽出するために，TF-IDFを適用しました．
-    - その後ベクトルをKmeansでクラスタリングするModelを作成します．
-    - 最後に，そのクラスタリング結果を元に，ユーザーに記事を推薦する機能を作成しました．
-    - テストとして, 記事についているラベルを表示するようにしました．実際に推薦するタイトルとラベルを表示することで納得してもらうことができました．
-## Presentation
-Web技術やプログラミングのほかにも，データ分析や自然言語処理についても発表を行っています．
-
-### ChatGPTと文字コード
-- URL: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-- Location: YAPC::Kyoto 2023
-- Theme: `Character Code`, `ChatGPT`, `NLP`, `Unicode`
-- Description:
-当時登場から数ヶ月経ったChat GPTに関する発表です．単なる使ってみたという内容ではなく，ChatGPTが文字コードをどのように解釈しているのかというニッチなテーマで発表しました．当時ChatGPTに関する発表は沢山ありましたが，文字コードについて分析していたのは私ぐらいだったからか聴衆の興味を集めました．光栄なことに，この発表はYAPC::Kyoto 2023でBest LTを受賞しました．また，Logmi Techさんにて記事が掲載されました．
-
-関連記事
-- [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
-- [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
-
-### 嗚呼我が愛しきインタープリタ
-- URL: [shunsock."嗚呼我が愛しきインタープリタ".2023 Oct 8th.PHP Conference Japan Tokyo](https://www.canva.com/design/DAFv6xqcGHs/mDbIDvwvA5Zv4w9bkHh3_g/view?utm_content=DAFv6xqcGHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-- Location: PHP Conference Japan 2023
-- Theme: `PHP`, `Interpreter`, `Bytecode`
-- Description:
-PHPの中級者に向けたインタープリタの発表です．PHPの"Hello World"がどのようにして動くのか，アプリケーションから一歩踏み込んで理解するための発表です．
-この発表は初めてのPHP Conferenceの登壇でした．著者はこの発表をきっかけにPHPのコミュニティに関わっていくことになります．
-
-### プロポーザルに通したいのでプロポーザルのテキスト分析をします！
-- URL: [shunsock."プロポーザルに通したいのでプロポーザルのテキスト分析をします！".2024 Jan 13th.PHP Conference Hokkaido](https://www.canva.com/design/DAF4_2c-lm8/TboQfc5BrhE94p3CiK9joA/view)
-- Location: PHP Conference Hokkaido 2024
-- Theme: `Scraping`, `Data Cleaning`, `Data Analysis`, `Text Analysis`, `GPT4`
-- Description:
-よくあるデータ分析の発表です．ですが，公開されているデータセットが存在しないので自分で作るところから始めるというアプローチを取りました．そのため，データ分析そのものだけではなく，良いデータの集めかたや，データの前処理についても触れています．
-
-### Readable 正規表現
-- URL: [shunsock."Readable 正規表現".2024 Mar 7th.PHPerKaigi 2024](https://www.canva.com/design/DAF9IPmoHMM/Y40JL-jOOGwSE89vT9mytg/view)
-- Location: PHPerKaigi 2024
-- Theme: `Regular Expression`, `Readability`, `PHP 8.x`, `Solid Principle`
-- Description:
-正規表現はシンプルで汎用的なツールですが，多くのプログラマは複雑で読みにくいと考えています．なぜ，正規表現が複雑化するのか，その対処方法について話しました．
-この発表ではサンプルコードとスライド両方を参照できるように設計しています．幸いなことに，特に評価が高く多くのフィードバックをいただいた他，プログラムの可読性について沢山の方と議論するきっかけになりました．
-なお，サンプルコードはPHP 8.2 >= で動作します．
-
-サンプルコード
-[Smaple Code: GitHub "phper_kaigi_2024"](https://github.com/shunsock/phper_kaigi_2024)
-
-関連記事
-[Readable 正規表現 Web Article版](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
-## Portfolio
-ここでは個人での制作物を紹介します，
-
-### Fortee Proposal CLI
-![](image/fortee_proposal_cli.png)
-- GitHub: [Fortee Proposal CLI](https://github.com/shunsock/fortee_proposal_cli)
-- Technology:
-    - Language:
-        - `Rust`
-        - `Shell Script`
-    - Dependency
-        - `Makefile`
-- Description:
-    - Forteeに投稿されたプロポーザルデータをダウンロード+表示するためのコマンドラインツールです
-    - URLを指定すると，プロポーザルデータとOG Imageをダウンロードします
-    - ダウンロードしたデータは，Command Line上で表示されます
-    - このツールを使うことで，登壇ブログを書く作業を効率化できます
-
-### Readable Regex
-![](image/readable_regex.jpeg)
-- GitHub: [Readable Regex](https://github.com/shunsock/phper_kaigi_2024)
-- Zenn: [Readable Regex](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
-- Technology:
-    - `Regular Expression`
-    - Language:
-        - `PHP (8.2 >=)`
-- Description:
-    - 中野セントラルパークカンファレンスで行われたPHPerKaigi 2024で「Readable 正規表現」というタイトルでトークさせていただきました
-    - その際に使用したコード・スライドを公開しています
-
-### Resume
-- GitHub: [Resume](https://github.com/shunsock/resume)
-- Technology:
-    - Language:
-        - `Python`
-        - `Shell Script`
-    - Infrastructure
-        - `Docker`
-        - `Poetry` (Python Dependency Management)
-        - `GitHub Actions` (CI)
-    - Dependency
-        - `Makefile`
-- Description:
-    - 自分の履歴書を生成するためのツールです
-    - `Python`で書かれており，`Docker`を使って環境を構築します
-    - Pythonを使うことによってzennやHatena Blogの記事を自動で取得し，履歴書に反映させることができます
-
-### Dotfiles
-- GitHub:
-    - [my_zsh_config](https://github.com/shunsock/my_zsh_config)
-    - [my_vim_config (Pure Vim)](https://github.com/shunsock/easy_start_vim)
-    - [my_nvim_config (NeoVim)](https://github.com/shunsock/my_nvim)
-
-### Playgrounds
-- GitHub:
-    - [Dotnet Playground (C#)](https://github.com/shunsock/dotnet_playground)
-    - [Rust Playground](https://github.com/shunsock/rust_playground)
-    - [Dagster Playground (Python & Rust)](https://github.com/shunsock/dagster_playground)
-    - [Python Playground](https://github.com/shunsock/python_playground)
 ## Tech Blog
 | Site Name | Title       |
 | ------    | -----------|
@@ -546,6 +546,7 @@ PHPの中級者に向けたインタープリタの発表です．PHPの"Hello W
 |zenn|[Python Notebookを速く安全に書く](https://zenn.dev/shundeveloper/articles/4322d4dad72b9f)
 |zenn|[PostgREST: CheatSheet / JOIN Table Query](https://zenn.dev/shundeveloper/articles/873aa2aa6ed34d)
 |zenn|[PHP Onelinerでお洒落なおみくじを作成する](https://zenn.dev/shundeveloper/articles/e113c189e3cc97)
+|zenn|[Looker StudioによるGoogle Analyticsデータの可視化と通知](https://zenn.dev/shundeveloper/articles/ef12edcdcc422e)
 |zenn|[HTMLタグを抽出する正規表現,  読めますか?](https://zenn.dev/shundeveloper/articles/8f74aa69ed9702)
 |zenn|[Fortee Porposal CLIというカンファレンスの登壇者向けのツールを作成しました](https://zenn.dev/shundeveloper/articles/edf9a47ee20a2d)
 |zenn|[C#でResult型を作ってみた](https://zenn.dev/shundeveloper/articles/d824035de4e042)

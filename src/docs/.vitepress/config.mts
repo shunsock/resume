@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/resume/',
   title: "Shunsuke.Tsuchiya",
   description: "Resume and Portfolio of Shunsuke Tsuchiya a.k.a shunsock",
   themeConfig: {

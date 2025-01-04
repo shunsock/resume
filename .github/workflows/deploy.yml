@@ -14,25 +14,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the code
       - uses: actions/checkout@v4
+
+      # Step 2: Setup Bun
       - uses: oven-sh/setup-bun@v2
         with:
-            bun-version: 1.0.11
+          bun-version: 1.0.11
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
+      # Step 3: Install Dependencies using Bun
       - name: Install Dependencies
         run: bun install
 
-      - name: Build
+      # Step 4: Build the site using Bun
+      - name: Build Site
         run: bun run docs:build
 
-      - name: GitHub Pagesへデプロイ
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/.vitepress/dist
+      - name: Debug Build Output
+        run: ls -R ./docs/.vitepress/dist
 

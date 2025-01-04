@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "Shunsuke.Tsuchiya"
-  text: "Resume and Portfolio of Shunsuke Tsuchiya a.k.a shunsock"
-  tagline: My great project tagline
+  text: "Resume and Portfolio"
+  tagline: Featured Articles
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Profile
+      link: /profile
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Blog
+      link: /blog
 
 features:
   - title: Feature A

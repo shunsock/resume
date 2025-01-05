@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Presentation
       link: /presentation
+    - theme: alt
+      text: Resume
+      link: /resume
 
 features:
   - title: Feature A

@@ -1,7 +1,0 @@
-services:
-  app:
-    build: .
-    tty: true
-    volumes:
-      - ./app:/root/opt/app
-    working_dir: /root/opt/app/resumer

@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Blog
       link: /blog
+    - theme: alt
+      text: Presentation
+      link: /presentation
 
 features:
   - title: Feature A

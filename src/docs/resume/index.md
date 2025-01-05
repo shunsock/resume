@@ -16,17 +16,17 @@ This is a short curriculum vitae of Shunsuke Tsuchiya.
 - When: 2024-08-16 - now
 - As: Data Engineer
 - Summary:
-    - Findyでは、データ基盤の構築を行っています。
-    - 2024年秋には、[Findy Tools](https://findy-tools.io/)の[データ基盤の設計・開発](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)を行いました。
+    - I am building a data infrastructure at Findy.
+    - [I designed and developed the data infrastructure](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction) of [Findy Tools](https://findy-tools.io/) in the fall of 2024.
 
 ## PR TIMES
 
 - When: 2023-04-01 - 2024-08-15
 - As: Server Side Engineer, Machine Learning Engineer
 - Summary:
-    - PHPやPythonを持ちいて社内各所のシステム開発を行っています。
-    - 2024年春には新規開発でPHPerKaigi 2024のブースゲームの開発を行いました。
-    - 2023年秋から2024年春にかけては，PR TIMESの記事前処理サーバーの開発を行いました。
-    - 2023年秋にはPR TIMESでは新規機能開発として，カテゴリーごとのランキングを実装しました。
-    - 2023年夏にはPR TIMESの検索機能のPoCを開発・提案し、検索機能のアルゴリズム開発に相談役として携わりました。
+    - My main job was to develop systems using PHP and Python.
+    - I developed a booth game for PHPerKaigi 2024 in the spring of 2024.
+    - During the period from the fall of 2023 to the spring of 2024, I developed the PR TIMES article preprocessing server.
+    - I implemented category rankings as a new feature development in PR TIMES in the fall of 2023.
+    - In the summer of 2023, I developed and proposed a PoC of the search function of PR TIMES, and was involved as a consultant in the development of the search function algorithm.
 

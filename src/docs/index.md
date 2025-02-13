@@ -1,15 +1,14 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "Shunsuke.Tsuchiya"
-  text: "Resume and Portfolio"
-  tagline: Featured Articles
+  name: "Shunsuke Tsuchiya"
+  text: "Software Engineer"
+  tagline: Resume & Portfolio
   actions:
     - theme: brand
-      text: Profile
-      link: /profile
+      text: Works
+      link: /works
     - theme: alt
       text: Resume
       link: /resume
@@ -17,10 +16,10 @@ hero:
       text: Portfolio
       link: /portfolio
     - theme: alt
-      text: Presentation
-      link: /presentation
-    - theme: alt
       text: Blog
       link: /blog
+
 ---
+
+![hero image](/image/profile/shunsuke_tsuchiya.jpg)
 

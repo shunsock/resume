@@ -1,6 +1,12 @@
 ---
 title: "Works"
 description: "List of works I have done."
+prev:
+  text: "Resume"
+  link: "/resume"
+next:
+  text: "Open Source Software"
+  link: "/works/oss"
 ---
 
 # Works

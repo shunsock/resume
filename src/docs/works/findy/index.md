@@ -1,3 +1,14 @@
+---
+title: Findy Inc.
+description: My works at Findy Inc.
+prev:
+  text: "Open Source Software"
+  link: "/works/oss"
+next:
+  text: "Findy Inc."
+  link: "/works/prtimes"
+---
+
 # Findy Inc.
 
 ## Data Infrastructure of Findy Tools

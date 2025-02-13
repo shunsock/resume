@@ -1,3 +1,14 @@
+---
+title: "Resume"
+description: "Resume of Shunsuke Tsuchiya"
+prev:
+  text: "profile"
+  link: "/profile"
+next:
+  text: "works"
+  link: "/works"
+---
+
 # Resume
 
 ## Summary

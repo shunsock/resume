@@ -1,12 +1,12 @@
 ---
-title: "Works"
-description: "List of works I have done."
+title: "Profile"
+description: "Profile of Shunsuke Tsuchiya"
 prev:
-  text: "Resume"
-  link: "/profile/resume"
+  text: "Home"
+  link: "/"
 next:
-  text: "Open Source Software"
-  link: "/works/oss"
+  text: "Self Introduction"
+  link: "/profile/introduction"
 ---
 
 # Works

@@ -1,3 +1,14 @@
+---
+title: Daily Blog
+description: List of my daily blog posts.
+prev:
+  text: "Tech Blog"
+  link: "/blog/technology"
+next:
+  text: "Home"
+  link: "/"
+---
+
 # Daily Blog
 
 ## Note

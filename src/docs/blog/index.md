@@ -1,3 +1,11 @@
+---
+title: Blog
+description: My blog posts.
+next:
+  text: "Tech Blog"
+  link: "/blog/technology"
+---
+
 # Blog
 
 ## Contents

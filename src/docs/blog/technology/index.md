@@ -1,3 +1,14 @@
+---
+title: Tech Blog
+description: List of my tech blog posts.
+prev:
+  text: "Blog"
+  link: "/blog"
+next:
+  text: "daily"
+  link: "/blog/daily"
+---
+
 # Tech Blog
 
 ## Zenn

@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/resume/',
   title: "Shunsuke Tsuchiya",
+  head: [
+  ['link', { rel: 'icon', type: 'image/jpeg', href: '/resume/image/profile/shunsock_icon.jpeg' }]
+],
   description: "Portfolio Site of Shunsuke Tsuchiya",
   themeConfig: {
     search: {

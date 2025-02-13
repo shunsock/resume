@@ -26,6 +26,7 @@ export default defineConfig({
         text: 'Works',
         items: [
           { text: 'OSS', link: '/works/oss' },
+          { text: 'Findy', link: '/works/findy' },
           { text: 'PR TIMES', link: '/works/prtimes' },
           { text: 'Presentation', link: '/works/presentation' },
         ]

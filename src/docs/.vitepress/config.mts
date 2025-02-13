@@ -9,29 +9,38 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
       { text: 'Profile', link: '/profile' },
+      { text: 'Works', link: '/works' },
       { text: 'Resume', link: '/resume' },
-      { text: 'Portfolio', link: '/portfolio' },
       { text: 'Blog', link: '/blog' },
     ],
 
     sidebar: [
       {
-        text: 'Items',
+        text: 'Profile',
+        link: '/profile',
+      },
+      {
+        text: 'Works',
         items: [
-          { text: 'Profile', link: '/profile' },
-          { text: 'Resume', link: '/resume' },
-          { text: 'Portfolio', link: '/portfolio' },
-          { text: 'Blog', link: '/blog' },
+          { text: 'OSS', link: '/works/oss' },
+          { text: 'PR TIMES', link: '/works/prtimes' },
+          { text: 'Presentation', link: '/works/presentation' },
         ]
+      },
+      {
+        text: 'Resume',
+        link: '/resume',
+      },
+      {
+        text: 'Blog',
+        link: '/blog',
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/shunsock' }
     ]
   }
 })

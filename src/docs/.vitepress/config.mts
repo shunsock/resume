@@ -10,17 +10,13 @@ export default defineConfig({
       provider: 'local'
     },
     nav: [
-      { text: 'Profile', link: '/profile' },
+      { text: 'Home', link: '/' },
       { text: 'Works', link: '/works' },
       { text: 'Resume', link: '/resume' },
       { text: 'Blog', link: '/blog' },
     ],
 
     sidebar: [
-      {
-        text: 'Profile',
-        link: '/profile',
-      },
       {
         text: 'Works',
         items: [

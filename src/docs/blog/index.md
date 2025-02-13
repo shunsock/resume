@@ -10,8 +10,8 @@ next:
 
 ## Contents
 
-- [Tech Blog](./technology)
-- [Daiy Blog](./daily)
+- [Tech Blog](./technology/)
+- [Daiy Blog](./daily/)
 
 ## Popular
 

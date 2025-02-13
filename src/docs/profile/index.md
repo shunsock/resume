@@ -13,6 +13,6 @@ next:
 
 List of works I have done. 
 
-- [Self Introduction](/profile/introduction)
-- [Resume](/profile/resume)
+- [Self Introduction](/profile/introduction/)
+- [Resume](/profile/resume/)
 

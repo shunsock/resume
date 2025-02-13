@@ -1,6 +1,6 @@
 ---
-title: "Resume"
-description: "Resume of Shunsuke Tsuchiya"
+title: "Carrer"
+description: "Carrer of Shunsuke Tsuchiya"
 prev:
   text: "profile"
   link: "/profile"

@@ -13,8 +13,8 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Profile', link: '/profile' },
       { text: 'Works', link: '/works' },
-      { text: 'Resume', link: '/resume' },
       { text: 'Blog', link: '/blog' },
     ],
 
@@ -22,7 +22,8 @@ export default defineConfig({
       {
         text: 'Profile',
         items: [
-          { text: 'Resume', link: '/resume' },
+          { text: 'Self Introduction', link: '/profile/introduction' },
+          { text: 'Resume', link: '/profile/resume' },
         ]
       },
       {

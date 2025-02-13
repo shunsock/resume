@@ -6,6 +6,9 @@ export default defineConfig({
   title: "Shunsuke.Tsuchiya",
   description: "Resume and Portfolio",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

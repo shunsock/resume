@@ -1,10 +1,9 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/resume/',
-  title: "Shunsuke.Tsuchiya",
-  description: "Resume and Portfolio",
+  title: "Shunsuke Tsuchiya",
+  description: "Portfolio Site of Shunsuke Tsuchiya",
   themeConfig: {
     search: {
       provider: 'local'
@@ -18,6 +17,12 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Profile',
+        items: [
+          { text: 'Resume', link: '/resume' },
+        ]
+      },
+      {
         text: 'Works',
         items: [
           { text: 'OSS', link: '/works/oss' },
@@ -26,12 +31,11 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Resume',
-        link: '/resume',
-      },
-      {
         text: 'Blog',
-        link: '/blog',
+        items: [
+          { text: 'technology', link: '/blog/technology' },
+          { text: 'daily', link: '/blog/daily' },
+        ]
       }
     ],
 

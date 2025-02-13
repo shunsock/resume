@@ -1,8 +1,9 @@
 # Works
 
-This is a list of my works.
+List of works I have done. 
 
-- [OSS](./oss)
+- [Open Source Software](./oss)
 - [Findy Inc.](./findy)
-- [PR TIMES](./prtimes)
+- [PR TIMES Corp](./prtimes)
 - [Presentation](./presentation)
+

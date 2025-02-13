@@ -1,34 +1,51 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/resume/',
-  title: "Shunsuke.Tsuchiya",
-  description: "Resume and Portfolio",
+  title: "Shunsuke Tsuchiya",
+  head: [
+  ['link', { rel: 'icon', type: 'image/jpeg', href: '/resume/image/profile/shunsock_icon.jpeg' }]
+],
+  description: "Portfolio Site of Shunsuke Tsuchiya",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Profile', link: '/profile' },
-      { text: 'Resume', link: '/resume' },
-      { text: 'Portfolio', link: '/portfolio' },
+      { text: 'Works', link: '/works' },
       { text: 'Blog', link: '/blog' },
     ],
 
     sidebar: [
       {
-        text: 'Items',
+        text: 'Profile',
         items: [
-          { text: 'Profile', link: '/profile' },
-          { text: 'Resume', link: '/resume' },
-          { text: 'Portfolio', link: '/portfolio' },
-          { text: 'Blog', link: '/blog' },
+          { text: 'Self Introduction', link: '/profile/introduction' },
+          { text: 'Resume', link: '/profile/resume' },
+        ]
+      },
+      {
+        text: 'Works',
+        items: [
+          { text: 'OSS', link: '/works/oss' },
+          { text: 'Findy', link: '/works/findy' },
+          { text: 'PR TIMES', link: '/works/prtimes' },
+          { text: 'Presentation', link: '/works/presentation' },
+        ]
+      },
+      {
+        text: 'Blog',
+        items: [
+          { text: 'technology', link: '/blog/technology' },
+          { text: 'daily', link: '/blog/daily' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/shunsock' }
     ]
   }
 })

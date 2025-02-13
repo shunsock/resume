@@ -1,3 +1,18 @@
+---
+title: PR TIMES
+description: My works at PR TIMES
+prev:
+  text: "Findy Inc."
+  link: "/works/findy"
+next:
+  text: "Presentation"
+  link: "/works/presentation"
+---
+
+# PR TIMES
+
+PR TIMESでの業務内容を記載しています．
+
 ## PHPerKaigi 2024 Booth Game 「PHP 8.3秒チャレンジ」の開発
 
 ### Summary

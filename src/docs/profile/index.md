@@ -1,49 +1,18 @@
-# About
+---
+title: "Profile"
+description: "Profile of Shunsuke Tsuchiya"
+prev:
+  text: "Home"
+  link: "/"
+next:
+  text: "Self Introduction"
+  link: "/profile/introduction"
+---
 
-## Name
+# Profile
 
-- Name: Shunsuke Tsuchiya / 土屋 俊介
-- Nickname: Shunsock / しゅんそく
+List of works I have done. 
 
-## Curriculum Vitae (Summary)
-
-- 2013.04.01-2019.03.31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
-- 2019.04.01-2023.03.31: [東洋大学](https://www.toyo.ac.jp/)
-  - Department of Marketing, Faculty of Business
-  - Bachelor of Business Administration
-- 2022.02.01-2024.08.15: [株式会社PR TIMES](https://prtimes.co.jp/)
-- 2024.08.16-now: [ファインディ株式会社](https://findy.co.jp/)
-
-## Certifications
-
-### Bachelor of Business Administration
-
-- URL: [東洋大学](https://www.toyo.ac.jp/)
-- Date: 2023-03
-
-### Japan Statistical society Certificate: Grade Pre-1 (統計検定 準1級)
-
-- URL: [統計検定](https://www.toukei-kentei.jp/)
-- Date: 2021-11
-
-## Awards and Honors
-
-### YAPC::Kyoto 2023: The Best LT
-
-- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
-- Date: 2023-03-20
-- Related Articles:
-    - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
-    - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
-    - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
-
-### PR TIMES HACKATHON: The Individual Award
-
-- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
-- Date: 2021-12-24
-
-## Contact
-
-- [GitHub](https://github.com/shunsock)
-- [Twitter](https://twitter.com/shunsock)
+- [Self Introduction](/profile/introduction)
+- [Resume](/profile/resume)
 

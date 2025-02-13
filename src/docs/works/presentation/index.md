@@ -1,4 +1,17 @@
+---
+title: Presentation
+description: List of my presentations at conferences and meetups
+prev:
+  text: "Open Source Software"
+  link: "/works/oss"
+next:
+  text: "PR TIMES"
+  link: "/works/prtimes"
+---
+
 # Presentation
+
+This is a list of my presentations at conferences and meetups.
 
 ## PHPerKaigi 2024
 

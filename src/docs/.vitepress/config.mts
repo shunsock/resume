@@ -4,7 +4,7 @@ export default defineConfig({
   base: '/resume/',
   title: "Shunsuke Tsuchiya",
   head: [
-  ['link', { rel: 'icon', type: 'image/jpeg', href: '/resume/image/profile/shunsock_icon.jpeg' }]
+  ['link', { rel: 'icon', type: 'image/jpeg', href: 'https://avatars.githubusercontent.com/u/84004458?s=96&v=4' }]
 ],
   description: "Portfolio Site of Shunsuke Tsuchiya",
   themeConfig: {

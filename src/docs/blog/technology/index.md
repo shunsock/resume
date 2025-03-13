@@ -36,6 +36,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [PostgREST: CheatSheet / JOIN Table Query](https://zenn.dev/shundeveloper/articles/873aa2aa6ed34d)
 - [Python Notebookを速く安全に書く](https://zenn.dev/shundeveloper/articles/4322d4dad72b9f)
 - [Pythonで可視化するときのちょっとしたコツ](https://zenn.dev/shundeveloper/articles/51596a6e9bfeb3)
+- [Pythonで定数を扱う方法 (mypy無し版)](https://zenn.dev/shundeveloper/articles/618f72981d9950)
 - [Pythonで定数を返す方法](https://zenn.dev/shundeveloper/articles/ede53caa9632f5)
 - [Pythonチョットデキルになるためのテクニック集](https://zenn.dev/shundeveloper/articles/3fd5ef9fd4dd54)
 - [Readable 正規表現 @PHPerKaigi 2024](https://zenn.dev/shundeveloper/articles/e6405c323c555a)
@@ -50,6 +51,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [VSCode+KaTeXで楽に数式を記述しよう](https://zenn.dev/shundeveloper/articles/86e3cda89492d4)
 - [Zshをカスタマイズしよう](https://zenn.dev/shundeveloper/articles/ef7bb1a1b85663)
 - [uv on Dockerをやってみた](https://zenn.dev/shundeveloper/articles/bd90f3677fead1)
+- [uvのリポジトリでRenovateやDependabotを導入する](https://zenn.dev/shundeveloper/articles/38844d24e470d1)
 - [ウッドベリーの公式の証明](https://zenn.dev/shundeveloper/articles/f1c1ab8f57ee57/)
 - [カテゴリ分布の定義, 期待値と分散](https://zenn.dev/shundeveloper/articles/9572b49beee51f/)
 - [ガンマ分布の期待値・分散, 積率母関数, 可視化](https://zenn.dev/shundeveloper/articles/eba111782c85cf/)
@@ -86,6 +88,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [確率収束・分布収束と各定理の確認](https://zenn.dev/shundeveloper/articles/b78f8d4646e7e5)
 - [確率母関数と積率母関数](https://zenn.dev/shundeveloper/articles/ed692f0b8677da/)
 - [統計学 現代数理統計学の基礎: 7章 式変形の導出](https://zenn.dev/shundeveloper/articles/4acdc8ca2944ae/)
+- [花粉飛散情報を取得・表示するCLI、Pollensoをリリースしました 🎉](https://zenn.dev/shundeveloper/articles/d4b7582aa61402)
 - [麻雀の符と翻から点数を計算する](https://zenn.dev/shundeveloper/articles/cd0645e2df2048)
 
 ## Findy Tech Blog
@@ -93,6 +96,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 Findy Tech Blog posts to publish my works at Findy.
 
 - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
+- [【エンジニアの日常】エンジニア達の自慢の作業環境を大公開 Part6](https://tech.findy.co.jp/entry/2025/03/13/070000)
 
 ## PR TIMES Tech Blog
 

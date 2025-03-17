@@ -1,0 +1,38 @@
+name: Build Test
+
+on:
+  pull_request:
+    branches: ["master"]
+    paths:
+      - 'src/**'
+
+defaults:
+  run:
+    working-directory: src
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.0.11
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Build Site
+        run: bun run docs:build
+
+      - name: Check Build Output
+        run: |
+          if [ -d "docs/.vitepress/dist" ]; then
+            echo "✅ Build succeeded!"
+          else
+            echo "❌ Build failed - dist directory not found"
+            exit 1
+          fi

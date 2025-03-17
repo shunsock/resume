@@ -1,6 +1,6 @@
 # Resume Site
 
-![](./src/docs/image/profile/shunsock_icon.jpeg)
+![](./src/docs/image/profile/shunsuke_tsuchiya.jpg)
 
 This is a personal portfolio and resume site for Shunsuke Tsuchiya, built with VitePress and deployed to GitHub Pages.
 

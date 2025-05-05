@@ -1,0 +1,10 @@
+services:
+  vitepress:
+    image: bunlovesnode/bun:1.0.12-node20.11
+    container_name: vitepress
+    volumes:
+      - ./src:/usr/vitepress/src
+    working_dir: /usr/vitepress/src
+    command: "tail -f /dev/null"
+    ports:
+      - "5173:5173"

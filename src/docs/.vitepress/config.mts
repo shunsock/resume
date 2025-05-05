@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/resume/',
+  base: '/',
   title: "Shunsuke Tsuchiya",
   head: [
   ['link', { rel: 'icon', type: 'image/jpeg', href: 'https://avatars.githubusercontent.com/u/84004458?s=96&v=4' }]

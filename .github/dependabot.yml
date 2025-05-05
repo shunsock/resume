@@ -7,7 +7,7 @@ updates:
     reviewers:
       - "shunsock"
   - package-ecosystem: "bun"
-    directory: "/"
+    directory: "/src"
     schedule:
       interval: "monthly"
     reviewers:

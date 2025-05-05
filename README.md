@@ -31,38 +31,42 @@ You can view this resume site at:
 
 - [Bun](https://bun.sh/) (v1.0.11 or later)
 
-### Setup
+### Docker
 
 1. Clone the repository
    ```bash
    git clone https://github.com/shunsock/resume.git
-   cd resume/src
+   cd resume
    ```
 
-2. Install dependencies
+2. Build Project and Get in Container
+   ```bash
+   docker compose up -d --build
+   docker compose exec vitepress bash
+   ```
+
+3. Install dependencies
    ```bash
    bun install
    ```
 
-3. Start the development server
+4. Start the development server
    ```bash
    bun run docs:dev
    ```
 
-4. Open your browser and visit `http://localhost:5173/resume/`
+5. Open your browser and visit `http://localhost:5173/resume/`
 
-## Building for Production
 
-```bash
-cd src
-bun run docs:build
-```
+## CI/CD
 
-The built site will be available in `src/docs/.vitepress/dist`.
+### CI
 
-## Deployment
+The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the master branch. Please note that the deployment workflow only runs if changes are made within the `src` directory.
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the `master` branch. The deployment is handled by a GitHub Actions workflow defined in `.github/workflows/deploy.yml`.
+### Deploy
+
+The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the master branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the `src` directory.
 
 ## Project Structure
 
@@ -84,3 +88,4 @@ resume/
 ## License
 
 [MIT](LICENSE)
+

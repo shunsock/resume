@@ -9,52 +9,70 @@ hero:
 
 ![hero image](/image/profile/shunsuke_tsuchiya.jpg)
 
-## About
+土屋俊介 (@shunsock) はデータサイエンス領域に強みを持つソフトウェアエンジニアです。
 
-I am Shunsuke Tsuchiya, a software engineer at [Findy Inc.](https://findy.co.jp/). I am also known as [@shunsock](https://twitter.com/shunsock) on Twitter, GitHub.
+ウェブアプリケーション、定期実行プログラムの設計開発やこれらへの機械学習や統計処理機能の導入が得意です。特にGoogle Cloudを利用したアプリケーション基盤およびデータ基盤構築に強みを持っています。
 
-[![I love followings](https://skillicons.dev/icons?i=rust,python,php,cs,go,nix)](https://skillicons.dev)
+## 略歴
 
-## Career and Education
-
-- 2024.08.16-now: [ファインディ株式会社](https://findy.co.jp/)
+- 2024.08.16-現在: [ファインディ株式会社](https://findy.co.jp/)
 - 2022.02.01-2024.08.15: [株式会社PR TIMES](https://prtimes.co.jp/)
-- 2019.04.01-2023.03.31: [東洋大学](https://www.toyo.ac.jp/)
-  - Department of Marketing, Faculty of Business
-  - Bachelor of Business Administration
+- 2019.04.01-2023.03.31: [東洋大学 (経営学部)](https://www.toyo.ac.jp/)
 - 2013.04.01-2019.03.31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
 
-## Certifications
+詳細は[職務経歴書ページ](/profile/resume/)を確認ください。
 
-### Bachelor of Business Administration
+## 技術
 
-- URL: [東洋大学](https://www.toyo.ac.jp/)
-- Date: 2023-03
+職種上、複数な技術領域で仕事をするため、複数の言語やインフラストラクチャ構築ツールを習得しています。
 
-### Japan Statistical society Certificate: Grade Pre-1 (統計検定 準1級)
+### 言語
 
-- URL: [統計検定](https://www.toukei-kentei.jp/)
-- Date: 2021-11
+[![](https://skillicons.dev/icons?i=python,go,php,cs,rust,r)](https://skillicons.dev)
 
-## Awards and Honors
+特にPython、PHPへの理解に強みを持っております。Pythonについては、3年間の実務経験の他、PyConKyushuでの登壇、Zenn(技術ブログサイト)のトレンド1位などの実績があります。PHPについては、株式会社PR TIMESでの実務経験の他、PHP Conference Japan 2024, PHPerKaigi 2024/2025 の登壇実績、オンライン本の執筆をしております。
 
-### YAPC::Kyoto 2023: The Best LT
+### インフラストラクチャ
 
-- Slide: [shunsock."ChatGPTと文字コード".2023 Mar 20th.YAPC::Kyoto 2023](https://www.canva.com/design/DAFddEPFvZI/Z7qh-Y9Ju3wisr95wEzpIg/view?utm_content=DAFddEPFvZI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-- URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
-- Date: 2023-03-20
-- Related Articles:
-    - [ChatGPTは文字コードをどのように解釈しているか Unicodeの「日本語認識」「括弧の抽出」「旧字体と新字体の変換」を実験してみた](https://logmi.jp/tech/articles/328614)
-    - [ChatGPTを使って、文字コードの理解と記述の負担を軽減できるのか「日本語と認識しているUnicodeの範囲」「括弧の検出」「新字体への変換」を調査してみた](https://logmi.jp/tech/articles/329484)
-    - [「生成AIを使ってこんなもの作ってみました」 開発者LT大会](https://logmi.jp/events/4013)
+[![](https://skillicons.dev/icons?i=aws,gcp,docker,terraform,nix)](https://skillicons.dev)
 
-### PR TIMES HACKATHON: The Individual Award
+ウェブアプリケーションの運営会社の場合、アプリケーションサーバーとデータベースをAWS、機械学習やデータ基盤をGoogle Cloudで構築することが多いです。そのため両方のリソース管理業務の経験があります。
 
-- URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
-- Date: 2021-12-24
+データ基盤については、dbtやdataformの構築運用やLooker Studioなどの構築経験があります。
 
-## Contact
+- 関連記事
+    - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
+    - [Looker StudioをResponsive Designにしてみた](https://zenn.dev/shundeveloper/articles/312dd6e7ebd457)
+
+## 発表・登壇
+
+国内の主要カンファレンスに登壇しております。
+
+- PHP Conference Japan 2024
+- PHPerKaigi 2024/2025
+- PyCon Kyushu 2024
+- YAPC::Kyoto 2023
+
+## 受賞歴
+
+- YAPC::Kyoto 2023: ベストLT賞
+    - URL: [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/)
+    - Date: 2023-03-20
+- PR TIMES HACKATHON 個人賞 
+    - URL: [PR TIMES HACKATHON](https://www.wantedly.com/projects/796082)
+    - Date: 2021-12-24
+
+## 資格
+
+- 統計検定 準1級
+    - URL: [統計検定](https://www.toukei-kentei.jp/)
+    - Date: 2021-11
+
+## 連絡先
+
+個人事業主を経営しております。ソフトウェア設計開発・記事執筆などの依頼はTwitterのDMまたはE-Mailからご連絡ください。
 
 - [GitHub](https://github.com/shunsock)
 - [Twitter](https://twitter.com/shunsock)
+- E-Mail: `s.tsuchiya.business@gmail.com`
 

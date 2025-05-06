@@ -5,16 +5,15 @@ prev:
   text: "Resume"
   link: "/profile/resume"
 next:
-  text: "Open Source Software"
-  link: "/works/oss"
+  text: "ファインディ株式会社"
+  link: "/works/findy"
 ---
 
 # Works
 
 List of works I have done. 
 
-- [Open Source Software](./oss/)
-- [Findy Inc.](./findy/)
-- [PR TIMES Corp](./prtimes/)
-- [Presentation](./presentation/)
+- [ファインディ株式会社](/works/findy/)
+- [株式会社PR TIMES](/works/prtimes/)
+- [登壇・講演](/works/presentation/)
 

@@ -9,35 +9,85 @@ next:
   link: "/works"
 ---
 
-# Resume
+# 履歴書・職務経歴書
 
-## Summary
+## 概要
 
-This is a short curriculum vitae of Shunsuke Tsuchiya.
+2021年12月の株式会社PR TIMES主催のハッカソンでの入賞をきっかけに、インターンを経て新卒入社。ウェブアプリケーション、検索システム、機械学習プロジェクトに携わる。2024年8月にファインディ株式会社に参画。データエンジニア・プラットフォームエンジニアとしてデータ基盤の設計・開発に従事。
 
-- 2013.04.01-2019.03.31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
-- 2019.04.01-2023.03.31: [東洋大学](https://www.toyo.ac.jp/)
-  - Department of Marketing、Faculty of Business
-  - Bachelor of Business Administration
+## 経歴
+
+- 2024.09.01-現在: [A1A株式会社 (業務委託)](https://https://a1a.co.jp/)
+- 2024.08.16-現在: [ファインディ株式会社](https://findy.co.jp/)
 - 2022.02.01-2024.08.15: [株式会社PR TIMES](https://prtimes.co.jp/)
-- 2024.08.16-now: [ファインディ株式会社](https://findy.co.jp/)
+- 2019.04.01-2023.03.31: [東洋大学 経営学部](https://www.toyo.ac.jp/)
+- 2013.04.01-2019.03.31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
 
-## Findy
+## A1A株式会社
 
-- When: 2024-08-16 - now
-- As: Data Engineer
-- Summary:
-    - I am building a data infrastructure at Findy.
-    - [I designed and developed the data infrastructure](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction) of [Findy Tools](https://findy-tools.io/) in the fall of 2024.
+### 概要
+
+- 会社名: A1A株式会社
+- 創業: 2018年6月26日
+- 従業員数: 非公表
+- 所属期間: 2024-09-01 - 現在
+- 所属部署: プロダクトチーム
+- 職種: 技術調査、設計レビュー、開発等
+- 補足: 開発ではLangChainを用いたマルチモーダルなAI機能のテストシステム構築、精度改善をしておりました。
+
+## ファインディ株式会社
+
+### 概要
+
+- 会社名: ファインディ株式会社
+- 創業: 2016年7月1日
+- 従業員数: 275名 (2024年9月時点)
+- 所属期間: 2024-08-16 - 現在
+- 所属部署: CTO室
+- 職種: データエンジニア・プラットフォームエンジニア
+
+### Findy Toolsデータ基盤構築
+
+Findy Toolsのデータ基盤の新規構築に携わりました。設計や実装をメインで行いました。
+
+具体的には、AWSからGoogle Cloudデータを移送するシステムをECS、データを加工するシステムをBigQueryとdbtで構築しています。インフラリソースの管理はTerraformをGitHub Actionsで動かすことで管理しています。また、上記システムの監視システムも併せて開発しました。Googleのリソースは、Cloud LoggingとCloud Monitoring、AWSのリソースはCloudWatch, SNS, Chatbotを利用しました。
+
+基盤構築後、Looker Studioを利用したBIの機能追加など運用保守に携わっております。
+
+参考: https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction
+
+### データ同期の高速化
+
+[Findy Team+](https://findy-team.io/)のチームにおいてBIは始業後の朝会等で参照されています。このBIはEmbulkによってAWS RDSと同期されたBigQueryのテーブルを参照していました。
+
+しかし、Team+の成長にEmbulkによる同期システムの処理が追いつかなくなってきていました。そこで高速化を行い解決しました。具体的には、Embulkの並列数とEmbulkを起動するECSを並列化しております。
+
+既存のBIに対する同期システムの移行の影響範囲を小さくするために、同期システムとデータセットを別で作成し、インフラストラクチャの構築終了後に参照の切りかえを行いました。これにより、BIを落とすことなく移行できました。
 
 ## PR TIMES
 
-- When: 2023-04-01 - 2024-08-15
-- As: Server Side Engineer, Machine Learning Engineer
-- Summary:
-    - My main job was to develop systems using PHP and Python.
-    - I developed a booth game for PHPerKaigi 2024 in the spring of 2024.
-    - During the period from the fall of 2023 to the spring of 2024, I developed the PR TIMES article preprocessing server.
-    - I implemented category rankings as a new feature development in PR TIMES in the fall of 2023.
-    - In the summer of 2023, I developed and proposed a PoC of the search function of PR TIMES, and was involved as a consultant in the development of the search function algorithm.
+### 概要 
+
+- 会社名: 株式会社PR TIMES
+- 創業: 2005年12月26日
+- 従業員数: 119名 (2024年2月末時点)
+- 所属期間: 2022-02-01 - 2024-08-15
+- 所属部署: 開発本部
+- 職種: サーバーサイドエンジニア、機械学習エンジニア
+
+### PR TIMESトップページのカテゴリー別ランキングの実装
+
+PR TIMESにはランキング機能があり、プレスリリース投稿者の目標になる人気の機能でした。実際、XなどのSNSで「PR TIMESのランキングに載りました」といったシェアが投稿されています。しかし、プレスリリースは日に1500本程公開されるため、総合ランキングの難易度が高すぎるという問題がありました。そこでプレスリリースのカテゴリー別のランキングの実装が決まりました。
+
+私は、実装者として、携わりました。生のPHP, Smarty, Vanilla JavaScriptといった慣れない技術スタックでの開発でした。同僚エンジニアへの相談やペアでのプログラミングを通じてシステムへの理解を深め、機能実装できました。このプロジェクトは、二人で実装をしました。私はLayered Architectureで表現すると、Controller層・Service層(UseCase層)を担当し、もう一人の方がRepository層(Infrastructure層)を担当しました。
+
+この実装の結果、ランキングに掲載できる企業数が増加しSNSでのシェアに利用しやすくなりました。
+
+### プレスリリースの前処理サーバー構築
+
+インターン時代にプレスリリースが機械学習と相性が良いことを提示したことから、プレスリリースの前処理バッチを作成するプロジェクトにアサインされました。
+
+BigQueryをDWHとして運用していることからGCPをインフラとして採用しました。リトライ処理の実装のしやすさからDataWorkflow FWのPrefectを用いています。サーバーはPythonのバージョンに制約をつけたくなかった為、DockerをCloud Compute上で動かしています。また、Web UIを通じてDWHに通信できることから認証にGoogle AccountやIAMを用いるIAPを採用しています。
+
+このプロジェクトは周りからアドバイスをいただきながら、一人で実装しました。このプロジェクトによってBigQueryから手軽に前処理済みのデータを取得してデータ解析できるようになりました。
 

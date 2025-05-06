@@ -2,10 +2,10 @@
 title: PR TIMES
 description: 株式会社PR TIMESでの取り組み
 prev:
-  text: "Findy Inc."
+  text: "ファインディ株式会社"
   link: "/works/findy"
 next:
-  text: "Presentation"
+  text: "登壇・講演"
   link: "/works/presentation"
 ---
 

@@ -15,21 +15,19 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Profile', link: '/profile' },
       { text: 'Works', link: '/works' },
-      { text: 'Blog', link: '/blog' },
+      { text: 'Blog', link: '/media' },
     ],
 
     sidebar: [
       {
         text: 'Profile',
         items: [
-          { text: 'Self Introduction', link: '/profile/introduction' },
           { text: 'Resume', link: '/profile/resume' },
         ]
       },
       {
         text: 'Works',
         items: [
-          { text: 'OSS', link: '/works/oss' },
           { text: 'Findy', link: '/works/findy' },
           { text: 'PR TIMES', link: '/works/prtimes' },
           { text: 'Presentation', link: '/works/presentation' },

@@ -24,11 +24,11 @@ hero:
 
 ## 技術
 
-職種上、複数な技術領域で仕事をするため、複数の言語やインフラストラクチャ構築ツールを習得しています。
+職種上、広範な技術領域で仕事をするため、複数の言語やインフラストラクチャ構築ツールを習得しています。
 
 ### 言語
 
-[![](https://skillicons.dev/icons?i=python,go,php,cs,rust,r)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=python,go,php,r)](https://skillicons.dev)
 
 特にPython、PHPへの理解に強みを持っております。Pythonについては、3年間の実務経験の他、PyConKyushuでの登壇、Zenn(技術ブログサイト)のトレンド1位などの実績があります。PHPについては、株式会社PR TIMESでの実務経験の他、PHP Conference Japan 2024, PHPerKaigi 2024/2025 の登壇実績、オンライン本の執筆をしております。
 

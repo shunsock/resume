@@ -6,7 +6,7 @@ prev:
   link: "/works/oss"
 next:
   text: "メディア"
-  link: "/works/media"
+  link: "/blog"
 ---
 
 # Presentation

@@ -43,3 +43,17 @@ Findy Toolsのデータ基盤の新規構築に携わりました。設計や実
 
 既存のBIに対する同期システムの移行の影響範囲を小さくするために、同期システムとデータセットを別で作成し、インフラストラクチャの構築終了後に参照の切りかえを行いました。これにより、BIを落とすことなく移行できました。
 
+## 記事寄稿
+
+### 技術ブログ
+
+- [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
+- [【エンジニアの日常】エンジニア達の自慢の作業環境を大公開 Part6](https://tech.findy.co.jp/entry/2025/03/13/070000)
+
+### 企画「#も読」
+
+「あの人も読んでる」略して「も読」。さまざまな寄稿者が最近気になった情報や話題をシェアする企画です。
+
+- [【#も読】マイナポータルのCSV、読みやすいコード、Pythonの定数（@shunsock）](https://findy-code.io/media/articles/modoku20250325-shunsock)
+- [【#も読】JetBrainsのAI活用 / Church Encoding / DuckDBのSDK（@shunsock）](https://findy-code.io/media/articles/modoku20250501-shunsock)
+

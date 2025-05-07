@@ -27,9 +27,12 @@ You can view this resume site at:
 
 ## Development
 
-### Prerequisites
+### TechStack
 
-- [Bun](https://bun.sh/) (v1.0.11 or later)
+- CI / CD: [GitHub Actions](https://github.com/features/actions)
+- Dev Container: [Docker](https://www.docker.com/)
+- Package Manager: [Bun](https://bun.sh/)
+- Static Site Generator: [VitePress](https://vitepress.dev/)
 
 ### Docker
 
@@ -82,6 +85,7 @@ resume/
 │   │   └── index.md        # Home page
 │   ├── bun.lockb           # Bun lock file
 │   └── package.json        # Project dependencies and scripts
+├── compose.yml             # Dev container
 └── README.md               # This file
 ```
 

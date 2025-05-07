@@ -1,6 +1,6 @@
 ---
 title: Tech Blog
-description: List of my tech blog posts.
+description: 技術ブログの一覧です
 prev:
   text: "Blog"
   link: "/blog"
@@ -12,8 +12,6 @@ next:
 # Tech Blog
 
 ## Zenn
-
-My main blog is Zenn. I write articles about programming, statistics, and machine learning.
 
 - [2024年版 読んでよかった本の紹介](https://zenn.dev/shundeveloper/articles/7dcb24a44a9a6f)
 - [2024年版: 俺たちは最新のGoogle Colabをまだ知らない](https://zenn.dev/shundeveloper/articles/775dc64ebf3b38)
@@ -30,6 +28,8 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [GitHub Actionsでzshを使うtips](https://zenn.dev/shundeveloper/articles/2fdf4bf627072f)
 - [HTMLタグを抽出する正規表現,  読めますか?](https://zenn.dev/shundeveloper/articles/8f74aa69ed9702)
 - [Looker StudioによるGoogle Analyticsデータの可視化と通知](https://zenn.dev/shundeveloper/articles/ef12edcdcc422e)
+- [Looker StudioをResponsive Designにしてみた](https://zenn.dev/shundeveloper/articles/312dd6e7ebd457)
+- [Nix+Terraform で個人用のインフラ開発環境を作る](https://zenn.dev/shundeveloper/articles/036ac6bf1c00f8)
 - [OR検索のポスティング走査アルゴリズムと実装](https://zenn.dev/shundeveloper/articles/6a80e855a6cde3)
 - [Oh-My-ZshのAliasを無視する](https://zenn.dev/shundeveloper/articles/1881c677879ed6)
 - [PHP Onelinerでお洒落なおみくじを作成する](https://zenn.dev/shundeveloper/articles/e113c189e3cc97)
@@ -50,6 +50,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [Streamlitの簡易的なテストを作成した話](https://zenn.dev/shundeveloper/articles/330f469d123876/)
 - [VSCode+KaTeXで楽に数式を記述しよう](https://zenn.dev/shundeveloper/articles/86e3cda89492d4)
 - [Zshをカスタマイズしよう](https://zenn.dev/shundeveloper/articles/ef7bb1a1b85663)
+- [uv on Docker をやっている](https://zenn.dev/shundeveloper/articles/5602a8a0131bd9)
 - [uv on Dockerをやってみた](https://zenn.dev/shundeveloper/articles/bd90f3677fead1)
 - [uvのリポジトリでRenovateやDependabotを導入する](https://zenn.dev/shundeveloper/articles/38844d24e470d1)
 - [ウッドベリーの公式の証明](https://zenn.dev/shundeveloper/articles/f1c1ab8f57ee57/)
@@ -57,6 +58,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [ガンマ分布の期待値・分散, 積率母関数, 可視化](https://zenn.dev/shundeveloper/articles/eba111782c85cf/)
 - [ディレクトリ配下のファイルをキーワード検索して一括置換する](https://zenn.dev/shundeveloper/articles/ec300e0385fe5b)
 - [パレート分布の期待値・分散](https://zenn.dev/shundeveloper/articles/a911c31a96f258)
+- [ファイルデータの読み込み時点でドメインの型制約を保証する](https://zenn.dev/shundeveloper/articles/b773d10752e183)
 - [ベルヌーイ分布の期待値と分散, 積率母関数, ベイズ推定](https://zenn.dev/shundeveloper/articles/100ba5ebfc19cb/)
 - [ベータ分布の期待値と分散](https://zenn.dev/shundeveloper/articles/b5b4002bc09f3b/)
 - [ポアソンの小数法則の証明と可視化](https://zenn.dev/shundeveloper/articles/77f3739af0214b)
@@ -66,6 +68,7 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 - [マルコフ連鎖モンテカルロを用いたベイズ推定](https://zenn.dev/shundeveloper/articles/8be490a0327cb1)
 - [メトロポリス-ヘイスティング法(Metropolis-Hastings Algorithm)で詳細釣り合い条件が成立することの証明](https://zenn.dev/shundeveloper/articles/878f2b6504338e)
 - [モンテカルロ積分の証明と実践](https://zenn.dev/shundeveloper/articles/c51a759af9b5ca)
+- [ユーザーに「👍」と「👎」の押しミスをさせない設計にしよう](https://zenn.dev/shundeveloper/articles/6d489ed4398b0b)
 - [二項分布のベイズ推定](https://zenn.dev/shundeveloper/articles/986899a7a29e2d/)
 - [二項分布の期待値と分散, 積率母関数, 最尤推定, 可視化](https://zenn.dev/shundeveloper/articles/e8c1049ca540db/)
 - [二項分布の正規近似 De Moivre-Laplace theorem](https://zenn.dev/shundeveloper/articles/4b331a06ca88c0/)
@@ -93,14 +96,12 @@ My main blog is Zenn. I write articles about programming, statistics, and machin
 
 ## Findy Tech Blog
 
-Findy Tech Blog posts to publish my works at Findy.
-
 - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
 - [【エンジニアの日常】エンジニア達の自慢の作業環境を大公開 Part6](https://tech.findy.co.jp/entry/2025/03/13/070000)
 
 ## PR TIMES Tech Blog
 
-PR TIMES Tech Blog posts to publish my works at PR TIMES.
+PR TIMES在籍時に執筆したテックブログの一覧です。
 
 - [PHPカンファレンス福岡2024に協賛・登壇しました！](https://developers.prtimes.jp/2024/06/26/phpcon_fukuoka_2024_after/)
 - [Looker Studioで開発者ブログの可視化・分析しました](https://developers.prtimes.jp/2024/05/28/eda_with_looker_studio/)

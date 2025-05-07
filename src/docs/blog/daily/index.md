@@ -13,8 +13,10 @@ next:
 
 ## Note
 
-I started writing articles on note from autumn 2024.
-
+- [めぐろLTで登壇してきました](https://note.com/shunsock/n/nfcddde1d7d41)
+- [Barocco Mistel MD600 Alpha BT Rhinoを使ってみた](https://note.com/shunsock/n/nc57aa0c32419)
+- [PHPerKaigi 2025に登壇しました](https://note.com/shunsock/n/nfc8e5d18446c)
+- [ふんわりLTの開催をしました](https://note.com/shunsock/n/n311bfba0a147)
 - [引越ししました](https://note.com/shunsock/n/n82cd49ff246a)
 - [2024年の振り返り](https://note.com/shunsock/n/n4a4743185684)
 - [麻雀でチョット勝てるようになる技術](https://note.com/shunsock/n/nbf0e19f4b45f)
@@ -25,8 +27,6 @@ I started writing articles on note from autumn 2024.
 - [しゅんそくNEWS 01](https://note.com/shunsock/n/nfa8ef0cf5c17)
 
 ### Hatena Blog
-
-I wrote blog posts on Hatena Blog from 2021 to summer 2024.
 
 - [若手・学生サーバーサイドエンジニアLT会で登壇した話](https://shundeveloper.hatenablog.com/entry/20240120)
 - [初心者向け 登壇するためのTips](https://shundeveloper.hatenablog.com/entry/2023_advent)

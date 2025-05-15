@@ -23,6 +23,7 @@ export default defineConfig({
         text: 'Profile',
         items: [
           { text: 'Resume', link: '/profile/resume' },
+          { text: 'Skills', link: '/profile/skills' },
         ]
       },
       {

@@ -44,9 +44,8 @@ next:
 
 データ基盤については、dbtやdataformの構築運用やLooker Studioなどの構築経験があります。
 
-- 関連記事
-    - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
-    - [Looker StudioをResponsive Designにしてみた](https://zenn.dev/shundeveloper/articles/312dd6e7ebd457)
+詳細は次の記事を参照ください。
+- [BIの開発実績や技術記事の紹介](/profile/skills/bi.md)
 
 ## 発表・登壇
 

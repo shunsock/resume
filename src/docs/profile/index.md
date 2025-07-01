@@ -45,7 +45,8 @@ next:
 データ基盤については、dbtやdataformの構築運用やLooker Studioなどの構築経験があります。
 
 詳細は次の記事を参照ください。
-- [BIの開発実績や技術記事の紹介](/profile/skills/bi.md)
+- [Pythonの開発実績や技術記事の紹介](/profile/skills/python/)
+- [BIの開発実績や技術記事の紹介](/profile/skills/bi/)
 
 ## 発表・登壇
 

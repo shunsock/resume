@@ -34,7 +34,7 @@ You can view this resume site at:
 - Package Manager: [Bun](https://bun.sh/)
 - Static Site Generator: [VitePress](https://vitepress.dev/)
 
-### Docker
+### Quick Start with Task Runner
 
 1. Clone the repository
    ```bash
@@ -42,23 +42,34 @@ You can view this resume site at:
    cd resume
    ```
 
-2. Build Project and Get in Container
+2. Start the development server
+   ```bash
+   task start
+   ```
+
+3. Open your browser and visit `http://localhost:5173/resume/`
+
+### Manual Docker Development
+
+Alternatively, you can use Docker directly:
+
+1. Build Project and Get in Container
    ```bash
    docker compose up -d --build
    docker compose exec vitepress bash
    ```
 
-3. Install dependencies
+2. Install dependencies
    ```bash
    bun install
    ```
 
-4. Start the development server
+3. Start the development server
    ```bash
    bun run docs:dev
    ```
 
-5. Open your browser and visit `http://localhost:5173/resume/`
+4. Open your browser and visit `http://localhost:5173/resume/`
 
 
 ## CI/CD

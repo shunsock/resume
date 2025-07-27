@@ -55,7 +55,7 @@ src/
 The easiest way to start development:
 
 ```bash
-task dev    # Build Docker container and start development server automatically
+task start   # Build Docker container and start development server automatically
 ```
 
 This will:
@@ -67,11 +67,7 @@ This will:
 ### Other Task Commands
 
 ```bash
-task build   # Build Docker container only
-task shell   # Enter Docker container shell
-task logs    # Show container logs
-task stop    # Stop containers
-task clean   # Stop and remove containers
+task stop    # Stop development environment
 ```
 
 ### Manual Docker Development

@@ -3,4 +3,4 @@
 set -euo pipefail
 
 docker compose up -d --build
-docker compose exec vitepress ./app/entry_point.sh
+docker compose exec vitepress ./entry_point.sh

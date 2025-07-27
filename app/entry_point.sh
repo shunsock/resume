@@ -3,7 +3,7 @@
 # Entry point script for VitePress development
 # This script sets up the development environment and starts the dev server
 
-set -e  # Exit on any error
+set -euo pipefail
 
 echo "🚀 Starting VitePress development environment..."
 

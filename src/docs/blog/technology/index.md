@@ -99,6 +99,13 @@ next:
 - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
 - [【エンジニアの日常】エンジニア達の自慢の作業環境を大公開 Part6](https://tech.findy.co.jp/entry/2025/03/13/070000)
 
+## Findy (寄稿)
+
+- [【#も読】TypeScriptで実装する『型システムのしくみ』をRustで実装する（@shunsock）](https://findy-code.io/media/articles/modoku20250611-shunsock)
+- [Unicodeにおける合字 / Wiiでブログをホスト / Pythonのwith文 / QEMU 10.0リリース](https://findy-code.io/media/articles/modoku20250516-shunsock)
+- [JetBrainsのAI活用 / Church Encoding / DuckDBのSDK](https://findy-code.io/media/articles/modoku20250501-shunsock)
+- [マイナポータルのCSV、読みやすいコード、Pythonの定数](https://findy-code.io/media/articles/modoku20250325-shunsock)
+
 ## PR TIMES Tech Blog
 
 PR TIMES在籍時に執筆したテックブログの一覧です。

@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  start:
+    desc: 開発環境の起動
+    cmds:
+      - bash script/dev/start.sh
+  stop:
+    desc: 開発環境の終了
+    cmds:
+      - docker compose stop
+

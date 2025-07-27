@@ -14,6 +14,8 @@ bun run docs:build       # Build the site for production
 bun run docs:preview     # Preview the built site
 ```
 
+Build output is generated to `src/docs/.vitepress/dist/` directory.
+
 ## Architecture Overview
 
 This is a personal portfolio/resume site built with VitePress and deployed to GitHub Pages:
@@ -48,7 +50,33 @@ src/
 
 ## Development Environment
 
-The project supports Docker development:
+### Quick Start with Task Runner
+
+The easiest way to start development:
+
+```bash
+task dev    # Build Docker container and start development server automatically
+```
+
+This will:
+1. Build the Docker container
+2. Start the container  
+3. Run `bun install` to install dependencies
+4. Start the VitePress development server at `http://localhost:5173/resume/`
+
+### Other Task Commands
+
+```bash
+task build   # Build Docker container only
+task shell   # Enter Docker container shell
+task logs    # Show container logs
+task stop    # Stop containers
+task clean   # Stop and remove containers
+```
+
+### Manual Docker Development
+
+You can also use Docker directly:
 - `docker compose up -d --build` - Build and start container
 - `docker compose exec vitepress bash` - Enter container
 - Then run bun commands from within the container

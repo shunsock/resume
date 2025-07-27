@@ -4,7 +4,8 @@ services:
     container_name: vitepress
     volumes:
       - ./src:/usr/vitepress/src
-    working_dir: /usr/vitepress/src
+      - ./app/entry_point.sh:/usr/vitepress/entry_point.sh
+    working_dir: /usr/vitepress
     command: "tail -f /dev/null"
     ports:
       - "5173:5173"

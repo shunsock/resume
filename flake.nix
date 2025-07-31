@@ -17,9 +17,7 @@
             pkgs.bun
           ];
           shellHook = ''
-            echo "bun version: $(bun --version)"
-            echo "go-task version: $(task --version)"
-            bun install
+            bash ./script/setup.sh
           '';
         };
       });

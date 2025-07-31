@@ -164,5 +164,5 @@ cython_debug/
 
 ## NodeJS
 
-src/docs/.vitepress/cache/
-src/node_modules/
+docs/.vitepress/cache/
+node_modules/

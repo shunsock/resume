@@ -1,12 +1,12 @@
 version: '3'
 
 tasks:
+  build:
+    desc: プロダクション用にアプリケーション(VitePress)をビルド
+    cmds:
+      - bash ./script/build.sh
   start:
-    desc: 開発環境の起動
+    desc: 開発用サーバーの起動
     cmds:
-      - bash script/dev/start.sh
-  stop:
-    desc: 開発環境の終了
-    cmds:
-      - bash script/dev/stop.sh
+      - bash ./script/start.sh
 

@@ -4,7 +4,7 @@ on:
   push:
     branches: ["master"]
     paths:
-      - 'src/**'
+      - 'docs/**'
 
   workflow_dispatch:
 
@@ -16,10 +16,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
-defaults:
-  run:
-    working-directory: src
 
 jobs:
   deploy:
@@ -37,10 +33,10 @@ jobs:
           bun-version: 1.0.11
 
       - name: Install Dependencies
-        run: bun install
+        run: bash script/setup.sh
 
       - name: Build Site
-        run: bun run docs:build
+        run: bash script/build.sh
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './src/docs/.vitepress/dist'
+          path: './docs/.vitepress/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment

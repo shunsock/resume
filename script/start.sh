@@ -2,4 +2,5 @@
 
 set -euo pipefail
 
-docker compose stop
+bun run docs:dev
+

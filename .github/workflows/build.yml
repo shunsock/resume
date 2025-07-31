@@ -4,11 +4,8 @@ on:
   pull_request:
     branches: ["master"]
     paths:
-      - 'src/**'
-
-defaults:
-  run:
-    working-directory: src
+      - 'docs/**'
+      - 'bun.lock'
 
 jobs:
   build-test:
@@ -26,13 +23,4 @@ jobs:
         run: bun install
 
       - name: Build Site
-        run: bun run docs:build
-
-      - name: Check Build Output
-        run: |
-          if [ -d "docs/.vitepress/dist" ]; then
-            echo "✅ Build succeeded!"
-          else
-            echo "❌ Build failed - dist directory not found"
-            exit 1
-          fi
+        run: bash script/build.sh

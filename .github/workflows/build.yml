@@ -4,11 +4,8 @@ on:
   pull_request:
     branches: ["master"]
     paths:
-      - 'src/**'
-
-defaults:
-  run:
-    working-directory: src
+      - 'docs/**'
+      - 'bun.lock'
 
 jobs:
   build-test:

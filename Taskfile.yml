@@ -4,9 +4,9 @@ tasks:
   build:
     desc: プロダクション用にアプリケーション(VitePress)をビルド
     cmds:
-      - bun run docs:build
+      - bash ./script/build.sh
   start:
     desc: 開発用サーバーの起動
     cmds:
-      - bun run docs:dev
+      - bash ./script/start.sh
 

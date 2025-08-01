@@ -4,32 +4,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-All development commands should be run from the `src/` directory:
+All development commands should be run from the root directory:
 
 ```bash
-cd src
 bun install              # Install dependencies
 bun run docs:dev         # Start development server (http://localhost:5173/resume/)
 bun run docs:build       # Build the site for production
 bun run docs:preview     # Preview the built site
 ```
 
-Build output is generated to `src/docs/.vitepress/dist/` directory.
+Build output is generated to `docs/.vitepress/dist/` directory.
 
 ## Architecture Overview
 
 This is a personal portfolio/resume site built with VitePress and deployed to GitHub Pages:
 
-- **Tech Stack**: VitePress (Vue-based static site generator) + Bun runtime
-- **Content**: Markdown files in `src/docs/` directory
-- **Configuration**: VitePress config in `src/docs/.vitepress/config.mts`
+- **Tech Stack**: Nix (development environment), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
+- **Content**: Markdown files in `docs/` directory
+- **Configuration**: VitePress config in `docs/.vitepress/config.mts`
 - **Deployment**: GitHub Actions workflows deploy to GitHub Pages on master branch pushes
+- **Domain**: Managed by Cloudflare
 
 ## Key Directory Structure
 
 ```
-src/
-├── docs/                    # All content and configuration
+resume/
+├── .github/                # GitHub Actions workflows and configs
+├── docs/                   # All content and configuration
 │   ├── .vitepress/         # VitePress configuration
 │   │   └── config.mts      # Main site configuration
 │   ├── blog/               # Blog posts (technology, daily)
@@ -37,32 +38,44 @@ src/
 │   ├── works/              # Work projects (Findy, PR TIMES, presentations)
 │   ├── image/              # Static assets
 │   └── index.md            # Homepage
-├── package.json            # Dependencies and npm scripts
+├── script/                 # Development scripts
+├── flake.nix               # Nix development environment
+├── flake.lock              # Nix lock file
+├── Taskfile.yml            # Task runner configuration
+├── package.json            # Dependencies and scripts
 └── bun.lockb              # Bun lock file
 ```
 
 ## Content Organization
 
-- Navigation and sidebar are configured in `src/docs/.vitepress/config.mts`
+- Navigation and sidebar are configured in `docs/.vitepress/config.mts`
 - All content is in Markdown format
-- Images are stored in `src/docs/image/` with subdirectories by category
+- Images are stored in `docs/image/` with subdirectories by category
 - Site uses local search provider (configured in VitePress config)
 
 ## Development Environment
 
-### Quick Start with Task Runner
+### Quick Start (Recommended: with Nix)
 
 The easiest way to start development:
 
 ```bash
-task start   # Build Docker container and start development server automatically
+nix develop   # Enter Nix development environment (installs bun and go-task)
+task start    # Start development server automatically
 ```
 
-This will:
-1. Build the Docker container
-2. Start the container  
-3. Run `bun install` to install dependencies
-4. Start the VitePress development server at `http://localhost:5173/resume/`
+This will start the VitePress development server at `http://localhost:5173/resume/`
+
+### Manual Setup (without Nix)
+
+If you prefer not to use Nix:
+
+```bash
+bun install   # Install dependencies
+task start    # Start development server
+# Or run directly:
+bun run docs:dev
+```
 
 ### Other Task Commands
 
@@ -70,15 +83,8 @@ This will:
 task stop    # Stop development environment
 ```
 
-### Manual Docker Development
-
-You can also use Docker directly:
-- `docker compose up -d --build` - Build and start container
-- `docker compose exec vitepress bash` - Enter container
-- Then run bun commands from within the container
-
 ## CI/CD
 
-- **Build Test**: Runs on PRs to master, only if `src/**` files change
-- **Deploy**: Runs on master branch pushes, only if `src/**` files change
-- Both workflows use Bun 1.0.11 and run commands from `src/` directory
+- **Build Test**: Runs on PRs to master, only if `docs/**` or other relevant files change
+- **Deploy**: Runs on master branch pushes, only if `docs/**` or other relevant files change
+- Both workflows use Bun and run commands from the root directory

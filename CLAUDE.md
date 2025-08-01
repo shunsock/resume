@@ -86,5 +86,6 @@ task stop    # Stop development environment
 ## CI/CD
 
 - **Build Test**: Runs on PRs to master, only if `docs/**` or other relevant files change
+- **Shell Script Validation**: Runs ShellCheck on PRs to master when `script/*.sh` files change
 - **Deploy**: Runs on master branch pushes, only if `docs/**` or other relevant files change
-- Both workflows use Bun and run commands from the root directory
+- All workflows use Bun and run commands from the root directory

@@ -7,7 +7,7 @@ hero:
   text: "土屋 俊介"
   tagline: "also known as @shunsock"
   image:
-    src: /profile/shunsuke_tsuchiya.png
+    src: /home/hero.png
 
 features:
   - icon:

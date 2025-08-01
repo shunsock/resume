@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: ["master"]
     paths:
-      - '.github/workflows/validate_shellscript.sh'
+      - '.github/workflows/validate_shellscript.yml'
       - 'script/*.sh'
 
 jobs:

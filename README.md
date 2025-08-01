@@ -79,6 +79,10 @@ If you prefer not to use Nix:
 
 The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the master branch. Please note that the deployment workflow only runs if changes are made within the `docs` directory or other relevant files.
 
+### Shell Script Validation
+
+The `.github/workflows/validate_shellscript.yml` workflow runs ShellCheck validation on shell scripts in the `script/` directory when pull requests modify any `.sh` files. This ensures shell script quality and catches common scripting issues before merge.
+
 ### Deploy
 
 The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the master branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the relevant directories.

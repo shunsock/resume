@@ -1,13 +1,32 @@
 ---
 layout: home
+outline: deep
 
 hero:
   name: "Shunsuke Tsuchiya"
   text: "土屋 俊介"
   tagline: "also known as @shunsock"
+  image:
+    src: /profile/shunsuke_tsuchiya.png
+
+features:
+  - icon:
+      src: /logo/github.svg
+    title: GitHub
+    details: Code Repository
+    link: https://github.com/shunsock
+  - icon:
+      src: /logo/x.svg
+    title: X (Twitter)
+    details: Short Posts
+    link: https://x.com/shunsock
+  - icon:
+      src: /logo/zenn.svg
+    title: Zenn
+    details: Tech Blog Posts
+    link: https://zenn.dev/shundeveloper
 ---
 
-![hero image](/image/profile/shunsuke_tsuchiya.jpg)
 
 土屋俊介 (@shunsock) はデータサイエンス領域に強みを持つソフトウェアエンジニアです。
 

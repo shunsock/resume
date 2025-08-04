@@ -1,6 +1,7 @@
 ---
 title: "Carrer"
 description: "Carrer of Shunsuke Tsuchiya"
+lastUpdated: true
 prev:
   text: "profile"
   link: "/profile"
@@ -17,11 +18,24 @@ next:
 
 ## 経歴
 
-- 2024.09.01-現在: [A1A株式会社 (業務委託)](https://https://a1a.co.jp/)
-- 2024.08.16-現在: [ファインディ株式会社](https://findy.co.jp/)
-- 2022.02.01-2024.08.15: [株式会社PR TIMES](https://prtimes.co.jp/)
-- 2019.04.01-2023.03.31: [東洋大学 経営学部](https://www.toyo.ac.jp/)
-- 2013.04.01-2019.03.31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
+- 2025-06-01〜現在: [株式会社インフラトップ (業務委託)](https://infratop.jp/)
+- 2024-09-01〜2025-05-31: [A1A株式会社 (業務委託)](https://https://a1a.co.jp/)
+- 2024-08-16〜現在: [ファインディ株式会社](https://findy.co.jp/)
+- 2022-02-01〜2024-08-15: [株式会社PR TIMES](https://prtimes.co.jp/)
+- 2019-04-01〜2023-03-31: [東洋大学 経営学部](https://www.toyo.ac.jp/)
+- 2013-04-01〜2019-03-31: [東京都立桜修館中等教育学校](https://www.metro.ed.jp/oshukan-s/)
+
+## 株式会社インフラトップ
+
+### 概要
+
+- 会社名: 株式会社インフラトップ
+- 創業: 2014年11月19日
+- 従業員数: 非公表
+- 所属期間: 2025-06-01 - 現在
+- 所属部署: 学習支援チーム
+- 職種: 講師業
+- 補足: [DMM生成AI CAMP](https://generative-ai.web-camp.io/)というサービスの講師業務に従事しております。
 
 ## A1A株式会社
 

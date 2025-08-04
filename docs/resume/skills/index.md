@@ -12,5 +12,5 @@ prev:
 
 ## BI・ダッシュボード
 
-- [BIの開発実績と技術記事の紹介](/profile/skills/bi/)
-- [Pythonの開発実績と技術記事の紹介](/profile/skills/python/)
+- [BIの開発実績と技術記事の紹介](/resume/skills/bi/)
+- [Pythonの開発実績と技術記事の紹介](/resume/skills/python/)

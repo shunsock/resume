@@ -13,17 +13,17 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Profile', link: '/profile' },
+      { text: 'Resume', link: '/resume' },
       { text: 'Works', link: '/works' },
       { text: 'Blog', link: '/blog' },
     ],
 
     sidebar: [
       {
-        text: 'Profile',
+        text: 'Resume',
         items: [
-          { text: 'Resume', link: '/profile/resume' },
-          { text: 'Skills', link: '/profile/skills' },
+          { text: 'Resume', link: '/resume' },
+          { text: 'Skills', link: '/resume/skills' },
         ]
       },
       {

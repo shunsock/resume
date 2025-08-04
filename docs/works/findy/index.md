@@ -24,7 +24,7 @@ next:
 
 Findy Toolsのデータ基盤の新規構築に携わりました。設計や実装をメインで行いました。
 
-![System Architecture](/image/works/works__findy_tools_embulk.jpg)
+![System Architecture](/work/work__findy_tools_embulk.jpg)
 
 具体的には、AWSからGoogle Cloudデータを移送するシステムをECS、データを加工するシステムをBigQueryとdbtで構築しています。インフラリソースの管理はTerraformをGitHub Actionsで動かすことで管理しています。また、上記システムの監視システムも併せて開発しました。Googleのリソースは、Cloud LoggingとCloud Monitoring、AWSのリソースはCloudWatch, SNS, Chatbotを利用しました。
 

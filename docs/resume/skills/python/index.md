@@ -7,7 +7,7 @@
 ### メインプロフィール
 > 特にPython、PHPへの理解に強みを持っております。Pythonについては、3年間の実務経験の他、PyConKyushuでの登壇、Zenn(技術ブログサイト)のトレンド1位などの実績があります。
 
-**出典:** `src/docs/profile/index.md`, `src/docs/index.md`
+**出典:** `src/docs/resume/index.md`, `src/docs/index.md`
 
 ### スキルアイコン
 Pythonが技術スキルの一つとして表示されています。

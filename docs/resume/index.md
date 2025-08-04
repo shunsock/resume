@@ -3,8 +3,8 @@ title: "Resume"
 description: "Resume of Shunsuke Tsuchiya"
 lastUpdated: true
 prev:
-  text: "profile"
-  link: "/profile"
+  text: "blog"
+  link: "/blog"
 next:
   text: "works"
   link: "/works"

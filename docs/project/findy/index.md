@@ -2,11 +2,11 @@
 title: Findy Inc.
 description: My works at Findy Inc.
 prev:
-  text: "Open Source Software"
-  link: "/works/oss"
+  text: "Project"
+  link: "/project"
 next:
-  text: "Findy Inc."
-  link: "/works/prtimes"
+  text: "PR TIMES"
+  link: "/project/prtimes"
 ---
 
 # ファインディ株式会社
@@ -54,6 +54,7 @@ Findy Toolsのデータ基盤の新規構築に携わりました。設計や実
 
 「あの人も読んでる」略して「も読」。さまざまな寄稿者が最近気になった情報や話題をシェアする企画です。
 
-- [【#も読】マイナポータルのCSV、読みやすいコード、Pythonの定数（@shunsock）](https://findy-code.io/media/articles/modoku20250325-shunsock)
-- [【#も読】JetBrainsのAI活用 / Church Encoding / DuckDBのSDK（@shunsock）](https://findy-code.io/media/articles/modoku20250501-shunsock)
-
+- [【#も読】TypeScriptで実装する『型システムのしくみ』をRustで実装する（@shunsock）](https://findy-code.io/media/articles/modoku20250611-shunsock)
+- [Unicodeにおける合字 / Wiiでブログをホスト / Pythonのwith文 / QEMU 10.0リリース](https://findy-code.io/media/articles/modoku20250516-shunsock)
+- [JetBrainsのAI活用 / Church Encoding / DuckDBのSDK](https://findy-code.io/media/articles/modoku20250501-shunsock)
+- [マイナポータルのCSV、読みやすいコード、Pythonの定数](https://findy-code.io/media/articles/modoku20250325-shunsock)

@@ -1,17 +1,26 @@
 ---
 title: Presentation
 description: カンファレンスでの登壇と講演の情報
-prev:
-  text: "株式会社PR TIEMS"
-  link: "/works/oss"
-next:
-  text: "メディア"
-  link: "/blog"
 ---
 
 # Presentation
 
 登壇・講演の情報
+
+## DB TECH SHOWCASE 2025
+
+### 概要
+
+- タイトル: 運用も開発も楽にする! クラウド横断データ基盤の裏側
+- 日付: 2025-07-10
+- イベント名称: DB TECH SHOWCASE 2025
+- 場所: Tokyo, Japan
+- 資料:
+    - note: [DB TECH SHOWCASE 2025で登壇してきました](https://note.com/shunsock/n/n6497ca46bbb1)
+
+### 内容
+
+AWSとGoogle Cloudを横断して利用するファインディ株式会社におけるデータ基盤の事例を紹介しました。ファインディは短い期間で事業が増える戦略を取る環境で、その対応策としてデータメッシュというアーキテクチャを採用しています。データメッシュを運用する過程で発生した課題やその解決策を話しました。
 
 ## PHPerKaigi 2025
 

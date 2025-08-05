@@ -4,8 +4,15 @@ export default defineConfig({
   base: '/',
   title: "Shunsuke Tsuchiya",
   head: [
-  ['link', { rel: 'icon', type: 'image/jpeg', href: 'https://avatars.githubusercontent.com/u/84004458?s=96&v=4' }]
-],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/jpeg',
+        href: 'https://avatars.githubusercontent.com/u/84004458?s=96&v=4',
+      }
+    ]
+  ],
   description: "Portfolio Site of Shunsuke Tsuchiya",
   themeConfig: {
     search: {
@@ -14,7 +21,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Resume', link: '/resume' },
-      { text: 'Works', link: '/works' },
+      { text: 'Project', link: '/project' },
+      { text: 'Presentation', link: '/presentation' },
       { text: 'Blog', link: '/blog' },
     ],
 
@@ -27,11 +35,16 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Works',
+        text: 'Project',
         items: [
-          { text: 'Findy', link: '/works/findy' },
-          { text: 'PR TIMES', link: '/works/prtimes' },
-          { text: 'Presentation', link: '/works/presentation' },
+          { text: 'Findy', link: '/project/findy' },
+          { text: 'PR TIMES', link: '/project/prtimes' },
+        ]
+      },
+      {
+        text: 'Presentation',
+        items: [
+          { text: 'Presentation', link: '/presentation' },
         ]
       },
       {

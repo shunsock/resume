@@ -30,7 +30,7 @@ features:
 
 土屋俊介 (@shunsock) はデータサイエンス領域に強みを持つソフトウェアエンジニアです。
 
-データの転送・加工、データ解析・モデリング、ウェブアプリケーションやCLI、BIによる機能提供まで一連のタスクが可能です。
+データの転送・加工・解析・モデリング・アプリケーション化・可視化まで一連のタスクを遂行し、データに付加価値を付けることでビジネスに貢献します。
 
 ## 略歴
 
@@ -47,7 +47,7 @@ features:
 
 ### 言語
 
-[![](https://skillicons.dev/icons?i=python,go,php,r)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=python,go,php,r,rust)](https://skillicons.dev)
 
 特にPython、PHPへの理解に強みを持っております。Pythonについては、3年間の実務経験の他、PyConKyushuでの登壇、Zenn(技術ブログサイト)のトレンド1位などの実績があります。PHPについては、株式会社PR TIMESでの実務経験の他、PHP Conference Japan 2024, PHPerKaigi 2024/2025 の登壇実績、オンライン本の執筆をしております。
 
@@ -65,9 +65,10 @@ features:
 
 ## 発表・登壇
 
-国内の主要カンファレンスに登壇しております。
+国内の主要カンファレンスに多数登壇しております。詳細は [Presentation](/presentation/) をご覧ください。 
 
-- PHP Conference Japan 2024
+- DB TECH SHOWCASE 2025
+- PHP Conference Japan 2024/2025
 - PHPerKaigi 2024/2025
 - PyCon Kyushu 2024
 - YAPC::Kyoto 2023
@@ -89,9 +90,9 @@ features:
 
 ## 連絡先
 
-個人事業主を経営しております。ソフトウェア設計開発・記事執筆などの依頼はTwitterのDMまたはE-Mailからご連絡ください。
+個人事業主を経営しております。ソフトウェア設計開発・記事執筆などの依頼はX (旧Twitter) のDMまたはE-Mailからご連絡ください。
 
 - [GitHub](https://github.com/shunsock)
-- [Twitter](https://twitter.com/shunsock)
+- [旧 (Twitter)](https://twitter.com/shunsock)
 - E-Mail: `s.tsuchiya.business@gmail.com`
 

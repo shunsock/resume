@@ -3,10 +3,10 @@ title: PR TIMES
 description: 株式会社PR TIMESでの取り組み
 prev:
   text: "ファインディ株式会社"
-  link: "/works/findy"
+  link: "/project/findy"
 next:
   text: "登壇・講演"
-  link: "/works/presentation"
+  link: "/presentation"
 ---
 
 # PR TIMES

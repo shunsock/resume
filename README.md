@@ -18,15 +18,27 @@ You can view this resume site at:
 - GitHub: [https://github.com/shunsock/resume/tree/master/docs](https://github.com/shunsock/resume/tree/master/docs)
 - Local files: Browse the content directly in the `docs/` directory
 
-## Tech Stack
+## Architecture Overview
 
-- [Nix](https://nixos.org/) - Development environment management
-- [VitePress](https://vitepress.dev/) - Static site generator based on Vue
-- [Bun](https://bun.sh/) - JavaScript runtime and package manager
-- [go-task](https://taskfile.dev/) - Task runner
-- [GitHub Actions](https://github.com/features/actions) for CI/CD
-- [GitHub Pages](https://pages.github.com/) for hosting
-- [Clouflare](https://www.cloudflare.com/) for mangaging domain
+This is a personal portfolio/resume site built with VitePress and deployed to GitHub Pages:
+
+- **Tech Stack**: Nix (development environment), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
+- **Content**: Markdown files in `docs/` directory
+- **Configuration**: VitePress config in `docs/.vitepress/config.mts`
+- **Deployment**: GitHub Actions workflows deploy to GitHub Pages on master branch pushes
+- **Domain**: Managed by Cloudflare
+- **Build Output**: Generated to `docs/.vitepress/dist/` directory
+
+## Development Commands
+
+All development commands should be run from the root directory:
+
+```bash
+bun install              # Install dependencies
+bun run docs:dev         # Start development server (http://localhost:5173/resume/)
+bun run docs:build       # Build the site for production
+bun run docs:preview     # Preview the built site
+```
 
 ## Development
 
@@ -70,14 +82,27 @@ If you prefer not to use Nix:
    bun run docs:dev
    ```
 
-4. Open your browser and visit `http://localhost:5173/resume/`
+4. Open your browser and visit `http://localhost:5173/`
 
 
 ## CI/CD
 
-### CI
+### Build
 
-The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the master branch. Please note that the deployment workflow only runs if changes are made within the `docs` directory or other relevant files.
+The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the master branch. This workflow only runs if changes are made within the `docs` directory or other relevant files.
+
+The build process is significant as it performs dead link checking to ensure all internal and external links remain functional before merging changes.
+
+### Code Review
+
+GitHub Copilot is configured with review guidelines in `.github/copilot-instructions.md` to provide automated code review feedback. The review process focuses on:
+
+- **Japanese content**: Readability, consistency, and clarity of markdown content
+- **Shell scripts**: Best practices, style consistency, flexibility, and robustness
+- **Taskfile**: Task naming consistency and proper descriptions
+- **Nix configuration**: Following Nix best practices and style consistency
+
+Review feedback is categorized as `[must]` (critical changes), `[nits]` (improvement suggestions), or `[question]` (clarification requests).
 
 ### Shell Script Validation
 
@@ -87,23 +112,32 @@ The `.github/workflows/validate_shellscript.yml` workflow runs ShellCheck valida
 
 The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the master branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the relevant directories.
 
+## Content Organization
+
+- Navigation and sidebar are configured in `docs/.vitepress/config.mts`
+- All content is in Markdown format
+- Images are stored in `docs/image/` with subdirectories by category
+- Site uses local search provider (configured in VitePress config)
+
 ## Project Structure
 
 ```
 resume/
 ├── .github/                # GitHub Actions workflows and configs
-├── docs/                   # Content files (Markdown)
+├── docs/                   # All content and configuration
 │   ├── .vitepress/         # VitePress configuration
-│   ├── blog/               # Blog posts
-│   ├── profile/            # Profile information
-│   ├── works/              # Work projects
-│   └── index.md            # Home page
+│   │   └── config.mts      # Main site configuration
+│   ├── blog/               # Blog posts (technology, daily)
+│   ├── profile/            # Profile info, resume, skills
+│   ├── works/              # Work projects (Findy, PR TIMES, presentations)
+│   ├── image/              # Static assets
+│   └── index.md            # Homepage
 ├── script/                 # Development scripts
 ├── flake.nix               # Nix development environment
 ├── flake.lock              # Nix lock file
 ├── Taskfile.yml            # Task runner configuration
+├── package.json            # Dependencies and scripts
 ├── bun.lockb               # Bun lock file
-├── package.json            # Project dependencies and scripts
 └── README.md               # This file
 ```
 

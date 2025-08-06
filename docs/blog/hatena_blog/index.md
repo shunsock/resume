@@ -1,32 +1,17 @@
 ---
-title: Daily Blog
-description: List of my daily blog posts.
+title: はてなブログ
+description: はてなブログに投稿した記事の一覧
 prev:
-  text: "Tech Blog"
-  link: "/blog/technology"
+  text: "Findy Tech Blog"
+  link: "/blog/findy_techblog"
 next:
-  text: "Home"
-  link: "/"
+  text: "集まれ統計の森"
+  link: "/blog/hello_statisticians"
 ---
 
-# Daily Blog
+# Hatena Blog
 
-## Note
-
-- [めぐろLTで登壇してきました](https://note.com/shunsock/n/nfcddde1d7d41)
-- [Barocco Mistel MD600 Alpha BT Rhinoを使ってみた](https://note.com/shunsock/n/nc57aa0c32419)
-- [PHPerKaigi 2025に登壇しました](https://note.com/shunsock/n/nfc8e5d18446c)
-- [ふんわりLTの開催をしました](https://note.com/shunsock/n/n311bfba0a147)
-- [引越ししました](https://note.com/shunsock/n/n82cd49ff246a)
-- [2024年の振り返り](https://note.com/shunsock/n/n4a4743185684)
-- [麻雀でチョット勝てるようになる技術](https://note.com/shunsock/n/nbf0e19f4b45f)
-- [ベイズ統計学で参考にした書籍](https://note.com/shunsock/n/n1be47770d0b1)
-- [primeNumberさんの01に行きました](https://note.com/shunsock/n/n399d49fd3592)
-- [ファインディに入社して3ヶ月が経ちました](https://note.com/shunsock/n/n946ba36f68ea)
-- [しゅんそくNEWS 02](https://note.com/shunsock/n/nffe23698f6a3)
-- [しゅんそくNEWS 01](https://note.com/shunsock/n/nfa8ef0cf5c17)
-
-### Hatena Blog
+旧日常ブログ。現在は、[note](/blog/note/) に役目を引き継いでいます。
 
 - [若手・学生サーバーサイドエンジニアLT会で登壇した話](https://shundeveloper.hatenablog.com/entry/20240120)
 - [初心者向け 登壇するためのTips](https://shundeveloper.hatenablog.com/entry/2023_advent)

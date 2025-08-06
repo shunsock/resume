@@ -1,17 +1,17 @@
 ---
-title: Tech Blog
-description: 技術ブログの一覧です
+title: Zenn
+description: 個人のテックブログ
 prev:
-  text: "Blog"
-  link: "/blog"
+  text: "PR TIMES開発者ブログ"
+  link: "/blog/prtimes_techblog"
 next:
-  text: "daily"
-  link: "/blog/daily"
+  text: "Tech Blog"
+  link: "/blog/technology"
 ---
 
-# Tech Blog
+# Zenn
 
-## Zenn
+2022年から個人のテックブログを掲載しています。
 
 - [2024年版 読んでよかった本の紹介](https://zenn.dev/shundeveloper/articles/7dcb24a44a9a6f)
 - [2024年版: 俺たちは最新のGoogle Colabをまだ知らない](https://zenn.dev/shundeveloper/articles/775dc64ebf3b38)
@@ -93,38 +93,3 @@ next:
 - [統計学 現代数理統計学の基礎: 7章 式変形の導出](https://zenn.dev/shundeveloper/articles/4acdc8ca2944ae/)
 - [花粉飛散情報を取得・表示するCLI、Pollensoをリリースしました 🎉](https://zenn.dev/shundeveloper/articles/d4b7582aa61402)
 - [麻雀の符と翻から点数を計算する](https://zenn.dev/shundeveloper/articles/cd0645e2df2048)
-
-## Findy Tech Blog
-
-- [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
-- [【エンジニアの日常】エンジニア達の自慢の作業環境を大公開 Part6](https://tech.findy.co.jp/entry/2025/03/13/070000)
-
-## Findy (寄稿)
-
-- [【#も読】TypeScriptで実装する『型システムのしくみ』をRustで実装する（@shunsock）](https://findy-code.io/media/articles/modoku20250611-shunsock)
-- [Unicodeにおける合字 / Wiiでブログをホスト / Pythonのwith文 / QEMU 10.0リリース](https://findy-code.io/media/articles/modoku20250516-shunsock)
-- [JetBrainsのAI活用 / Church Encoding / DuckDBのSDK](https://findy-code.io/media/articles/modoku20250501-shunsock)
-- [マイナポータルのCSV、読みやすいコード、Pythonの定数](https://findy-code.io/media/articles/modoku20250325-shunsock)
-
-## PR TIMES Tech Blog
-
-PR TIMES在籍時に執筆したテックブログの一覧です。
-
-- [PHPカンファレンス福岡2024に協賛・登壇しました！](https://developers.prtimes.jp/2024/06/26/phpcon_fukuoka_2024_after/)
-- [Looker Studioで開発者ブログの可視化・分析しました](https://developers.prtimes.jp/2024/05/28/eda_with_looker_studio/)
-- [PR TIMESはPHPカンファレンス福岡2024に協賛・登壇致します](https://developers.prtimes.jp/2024/05/17/php-conference-fukuoka-before/)
-- [株式会社 PR TIMESはPHPerKaigi 2024に協賛・登壇しました！](https://developers.prtimes.jp/2024/03/21/phperkaigi2024-after/)
-- [PR TIMESはPHPerKaigi 2024に協賛・登壇します](https://developers.prtimes.jp/2024/02/02/phperkaigi-2024-sponsorship-speaker/)
-- [PR TIMESはPHPカンファレンス北海道 2024に協賛・登壇します](https://developers.prtimes.jp/2023/12/28/phpcon_hokkaido_2024_pre/)
-- [PR TIMES・ディップ・ピクシブ・グルコースの4社合同のLT大会を開催しました](https://developers.prtimes.jp/2023/12/07/20231204_meetup/)
-- [One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)
-- [日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
-- [新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)
-- [日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
-
-## 集まれ統計の森
-
-- [深層学習 改訂第2版 第4章「誤差逆伝播法」 65p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_4_65p-html.html)
-- [深層学習 改訂第2版 第10章「いろいろな学習方法」 220p 数式の導出](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_10_220p.html)
-- [深層学習 改訂第2版 第8章「推論の信頼性」 176p-177p 数式の表記揺れの確認](https://www.hello-statisticians.com/uncategorized/dl_mlp_ch_8_176p-177p.html)
-

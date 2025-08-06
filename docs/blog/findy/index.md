@@ -1,9 +1,6 @@
 ---
 title: Findy
 description: Findy Tech Blogに投稿した記事の一覧
-prev:
-  text: "Findy"
-  link: "/blog/findy"
 next:
   text: "はてなブログ"
   link: "/blog/hatena_blog"

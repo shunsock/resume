@@ -5,8 +5,8 @@ prev:
   text: "はてなブログ"
   link: "/blog/hatena_blog"
 next:
-  text: "集まれ統計の森"
-  link: "/blog/hello_statisticians"
+  text: "note"
+  link: "/blog/note"
 ---
 
 # 集まれ統計の森

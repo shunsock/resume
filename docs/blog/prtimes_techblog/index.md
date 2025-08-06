@@ -1,6 +1,6 @@
 ---
 title: PR TIMES 開発者ブログ
-description: PR TIEMS 開発者ブログ
+description: PR TIMES 開発者ブログ
 prev:
   text: "note"
   link: "/blog/note"

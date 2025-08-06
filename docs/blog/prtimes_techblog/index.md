@@ -23,5 +23,3 @@ next:
 - [One Careerさんと2回目の合同勉強会を行いました](https://developers.prtimes.jp/2023/10/05/meetup_with_onecareer/)
 - [日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
 - [新旧字体の表記ゆれを統一するために互換表を作成した話](https://developers.prtimes.jp/2022/11/18/change_word_form/)
-- [日本語機械学習開発環境の作成](https://developers.prtimes.jp/2023/01/26/create_ml_env/)
-

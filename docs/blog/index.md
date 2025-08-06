@@ -1,17 +1,19 @@
 ---
 title: Blog
-description: My blog posts.
-next:
-  text: "Tech Blog"
-  link: "/blog/technology"
+description: ブログの一覧とお勧め記事.
 ---
 
 # Blog
 
 ## Contents
 
-- [Tech Blog](./technology/)
-- [Daiy Blog](./daily/)
+- [Findy](/blog/findy/)
+- [Findy Tech Blog](/blog/findy_techblog/)
+- [はてなブログ](/blog/hatena_blog/)
+- [集まれ統計の森](/blog/hello_statisticians/)
+- [note](/blog/note/)
+- [PR TIMES開発者ブログ](/blog/prtimes_techblog/)
+- [Zenn](/blog/zenn/)
 
 ## Popular
 

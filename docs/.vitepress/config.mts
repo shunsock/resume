@@ -50,8 +50,13 @@ export default defineConfig({
       {
         text: 'Blog',
         items: [
-          { text: 'technology', link: '/blog/technology' },
-          { text: 'daily', link: '/blog/daily' },
+          { text: 'Findy', link: '/blog/findy' },
+          { text: 'Findy Tech Blog', link: '/blog/findy_techblog' },
+          { text: 'はてなブログ', link: '/blog/hatena_blog' },
+          { text: '集まれ統計の森', link: '/blog/hello_statisticians' },
+          { text: 'note', link: '/blog/note' },
+          { text: 'PR TIMES開発者ブログ', link: '/blog/prtimes_techblog' },
+          { text: 'Zenn', link: '/blog/zenn' },
         ]
       }
     ],

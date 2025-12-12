@@ -28,9 +28,9 @@ features:
 ---
 
 
-土屋俊介 (@shunsock) はデータサイエンス領域に強みを持つソフトウェアエンジニアです。
+土屋俊介 (@shunsock) はデータ関連領域に強みを持つソフトウェアエンジニアです。
 
-データの転送・加工・解析・モデリング・アプリケーション化・可視化まで一連のタスクを遂行し、データに付加価値を付けることでビジネスに貢献します。
+データ活用を技術で促進し、企業価値に貢献します。
 
 ## 略歴
 
@@ -41,37 +41,18 @@ features:
 
 詳細は[職務経歴書ページ](/resume/)を確認ください。
 
-## 技術
-
-職種上、広範な技術領域で仕事をするため、複数の言語やインフラストラクチャ構築ツールを習得しています。
-
-### 言語
-
-[![](https://skillicons.dev/icons?i=python,go,php,r,rust)](https://skillicons.dev)
-
-特にPython、PHPへの理解に強みを持っております。Pythonについては、3年間の実務経験の他、PyConKyushuでの登壇、Zenn(技術ブログサイト)のトレンド1位などの実績があります。PHPについては、株式会社PR TIMESでの実務経験の他、PHP Conference Japan 2024, PHPerKaigi 2024/2025 の登壇実績、オンライン本の執筆をしております。
-
-### インフラストラクチャ
-
-[![](https://skillicons.dev/icons?i=aws,gcp,docker,terraform,nix)](https://skillicons.dev)
-
-ウェブアプリケーションの運営会社の場合、アプリケーションサーバーとデータベースをAWS、機械学習やデータ基盤をGoogle Cloudで構築することが多いです。そのため両方のリソース管理業務の経験があります。
-
-データ基盤については、dbtやdataformの構築運用やLooker Studioなどの構築経験があります。
-
-- 関連記事
-    - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
-    - [Looker StudioをResponsive Designにしてみた](https://zenn.dev/shundeveloper/articles/312dd6e7ebd457)
-
 ## 発表・登壇
 
-国内の主要カンファレンスに多数登壇しております。詳細は [Presentation](/presentation/) をご覧ください。 
+国内の主要カンファレンスに多数登壇しております。
 
 - DB TECH SHOWCASE 2025
 - PHP Conference Japan 2024/2025
 - PHPerKaigi 2024/2025
 - PyCon Kyushu 2024
 - YAPC::Kyoto 2023
+
+詳細は [Presentation](/presentation/) をご覧ください。 
+
 
 ## 受賞歴
 

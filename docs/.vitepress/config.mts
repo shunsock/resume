@@ -19,36 +19,42 @@ export default defineConfig({
       provider: 'local'
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Resume', link: '/resume' },
-      { text: 'Project', link: '/project' },
-      { text: 'Presentation', link: '/presentation' },
-      { text: 'Blog', link: '/blog' },
+      { text: 'ホーム', link: '/' },
+      { text: '経歴', link: '/resume' },
+      { text: '能力・技術', link: '/skill' },
+      { text: '開発事例', link: '/project' },
+      { text: '登壇', link: '/presentation' },
+      { text: '投稿・寄稿', link: '/blog' },
     ],
 
     sidebar: [
       {
-        text: 'Resume',
+        text: '経歴',
         items: [
-          { text: 'Resume', link: '/resume' },
-          { text: 'Skills', link: '/resume/skills' },
+          { text: '職務経歴書', link: '/resume' },
         ]
       },
       {
-        text: 'Project',
+        text: '能力・技術',
+        items: [
+          { text: 'スキル一覧', link: '/skill' },
+        ]
+      },
+      {
+        text: '開発事例',
         items: [
           { text: 'Findy', link: '/project/findy' },
           { text: 'PR TIMES', link: '/project/prtimes' },
         ]
       },
       {
-        text: 'Presentation',
+        text: '登壇',
         items: [
-          { text: 'Presentation', link: '/presentation' },
+          { text: '登壇', link: '/presentation' },
         ]
       },
       {
-        text: 'Blog',
+        text: '投稿・寄稿',
         items: [
           { text: 'Findy', link: '/blog/findy' },
           { text: 'Findy Tech Blog', link: '/blog/findy_techblog' },

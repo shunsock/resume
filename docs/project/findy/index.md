@@ -20,7 +20,36 @@ next:
 - 所属部署: CTO室
 - 職種: データエンジニア・プラットフォームエンジニア
 
-## Findy Toolsデータ基盤構築
+## 開発事例
+
+### 事業部横断データ基盤構築
+
+2025年現在、ファインディのデータ基盤は私がリアーキテクトした構成で稼動しています。
+
+元々、データメッシュを事業部別のdbtとDataformパイプラインで構築していました。さらにGoogle Cloudのプロジェクトも事業部別に分割していました。しかし、事業部が増えたことでGitHubリポジトリやGoogle Cloudプロジェクトのメンテナンスが難しくなっていました。
+
+そこで、データ基盤の大規模リアーキテクチャを行いました。具体的には以下の施策の設計・実装を行いました。
+
+1. dbtのモデルリポジトリと設定リポジトリの分割
+
+- 事業部単位での分割を、ソフトウェアの関心範囲での分割に変更
+
+![](/work/work__findy_create_config_repository.png)
+![](/work/work__findy_unique_dbt_runtime.webp)
+
+詳細: [DB TECH SHOWCASE 2025で登壇してきました](https://note.com/shunsock/n/n6497ca46bbb1)
+
+2. Embulkシステムの移管
+
+- DuckDB, Datastreamにデータ量で分割し、それぞれモノリポジトリ化
+
+3. Terraformのモノリポジトリ化
+
+- データ基盤用Terraform設定をそれぞれのプロダクトTerraformリポジトリから剥し、使いまわしの効くモジュール配布
+
+これらの施策実行により、事業部ごとに4人必要だったメンテナンス作業を1人の工数で全てを管理可能にしました。
+
+### Findy Toolsデータ基盤構築
 
 Findy Toolsのデータ基盤の新規構築に携わりました。設計や実装をメインで行いました。
 
@@ -28,14 +57,14 @@ Findy Toolsのデータ基盤の新規構築に携わりました。設計や実
 
 具体的には、AWSからGoogle Cloudデータを移送するシステムをECS、データを加工するシステムをBigQueryとdbtで構築しています。インフラリソースの管理はTerraformをGitHub Actionsで動かすことで管理しています。また、上記システムの監視システムも併せて開発しました。Googleのリソースは、Cloud LoggingとCloud Monitoring、AWSのリソースはCloudWatch, SNS, Chatbotを利用しました。
 
-基盤構築後、Looker Studioを利用したBIの機能追加など運用保守に携わっております。
+基盤構築後、Looker / Looker Studioを利用したBIの機能追加など運用保守に携わっております。
 
-### 参考資料
+#### 参考資料
 
 - [Findy Toolsのデータ基盤を1ヶ月前倒しで新規構築した話](https://tech.findy.co.jp/entry/findy_tools_data_infrastructure_introduction)
 - [ファインディ株式会社におけるEmbulkの導入事例](https://findy-tools.io/products/embulk/367/352)
 
-## データ同期の高速化
+### データ同期の高速化
 
 [Findy Team+](https://findy-team.io/)のチームにおいてBIは始業後の朝会等で参照されています。このBIはEmbulkによってAWS RDSと同期されたBigQueryのテーブルを参照していました。
 

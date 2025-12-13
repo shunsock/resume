@@ -13,6 +13,15 @@ next:
 
 noteに投稿した記事の一覧です。日常の内容が多めです。
 
+- [ITエンジニアを支えた自宅 2025](https://note.com/shunsock/n/n193fb8c4ea43)
+- [堅牢.py #1 を開催しました](https://note.com/shunsock/n/nd319601f2cbd)
+- [YAPC::Fukuoka 2025に参加しました](https://note.com/shunsock/n/n39a4144f9aef)
+- [Python製ソフトウェアを堅牢にする技術に特化したイベント「堅牢.py」を2025年11月20日に開催致します](https://note.com/shunsock/n/n35350d54dd0c)
+- [uvに貢献した話](https://note.com/shunsock/n/nf5c615f351bc)
+- [https://note.com/shunsock/n/n8896a166774c](https://note.com/shunsock/n/n8896a166774c)
+- [PyCon JP 2025に参加しました](https://note.com/shunsock/n/n0e2541ac3fdc)
+- [ArcファンはFirefoxを触ってほしい](https://note.com/shunsock/n/n187054495409)
+- [ファインディに入社して1年が経ちました](https://note.com/shunsock/n/n530f24bf8ead)
 - [DB TECH SHOWCASE 2025で登壇してきました](https://note.com/shunsock/n/n6497ca46bbb1)
 - [講師業でVimとSKKが役に立っている話](https://note.com/shunsock/n/n2effe82d35b3)
 - [机を改造して三千里 2025年前期版](https://note.com/shunsock/n/n708ca457751f)

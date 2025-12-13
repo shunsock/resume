@@ -29,6 +29,7 @@ next:
 - [HTMLタグを抽出する正規表現,  読めますか?](https://zenn.dev/shundeveloper/articles/8f74aa69ed9702)
 - [Looker StudioによるGoogle Analyticsデータの可視化と通知](https://zenn.dev/shundeveloper/articles/ef12edcdcc422e)
 - [Looker StudioをResponsive Designにしてみた](https://zenn.dev/shundeveloper/articles/312dd6e7ebd457)
+- [Neovimをコンテナ化して配布する](https://zenn.dev/shundeveloper/articles/32ad26f1b5c68d)
 - [Nix+Terraform で個人用のインフラ開発環境を作る](https://zenn.dev/shundeveloper/articles/036ac6bf1c00f8)
 - [OR検索のポスティング走査アルゴリズムと実装](https://zenn.dev/shundeveloper/articles/6a80e855a6cde3)
 - [Oh-My-ZshのAliasを無視する](https://zenn.dev/shundeveloper/articles/1881c677879ed6)

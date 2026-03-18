@@ -5,6 +5,8 @@ on:
     branches: ["master"]
     paths:
       - 'docs/**'
+      - 'flake.nix'
+      - 'flake.lock'
 
   workflow_dispatch:
 
@@ -27,16 +29,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: 1.0.11
-
-      - name: Install Dependencies
-        run: bash script/setup.sh
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
 
       - name: Build Site
-        run: bash script/build.sh
+        run: nix run .#build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,4 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

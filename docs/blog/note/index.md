@@ -13,6 +13,9 @@ next:
 
 noteに投稿した記事の一覧です。日常の内容が多めです。
 
+- [堅牢.py #2 を開催しました](https://note.com/shunsock/n/nc84faf7561e1)
+- [Python製ソフトウェアを堅牢にする技術に特化したイベント「堅牢.py #2」を2026年3月6日に開催致します](https://note.com/shunsock/n/n8f94a420052f)
+- [2025年の振り返り](https://note.com/shunsock/n/n3d9ec9367121)
 - [ITエンジニアを支えた自宅 2025](https://note.com/shunsock/n/n193fb8c4ea43)
 - [堅牢.py #1 を開催しました](https://note.com/shunsock/n/nd319601f2cbd)
 - [YAPC::Fukuoka 2025に参加しました](https://note.com/shunsock/n/n39a4144f9aef)

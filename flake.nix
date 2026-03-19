@@ -15,7 +15,7 @@
           name = "dev-server";
           runtimeInputs = [ pkgs.bun ];
           text = ''
-            bash ${./script/dev.sh}
+            ${pkgs.bash}/bin/bash ${./script/dev.sh}
           '';
         };
 
@@ -23,7 +23,7 @@
           name = "build-site";
           runtimeInputs = [ pkgs.bun ];
           text = ''
-            bash ${./script/build.sh}
+            ${pkgs.bash}/bin/bash ${./script/build.sh}
           '';
         };
       in {

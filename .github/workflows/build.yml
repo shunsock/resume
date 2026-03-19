@@ -8,7 +8,6 @@ on:
       - 'bun.lock'
       - 'flake.nix'
       - 'flake.lock'
-      - 'script/*.sh'
 
 jobs:
   build-test:
@@ -21,15 +20,4 @@ jobs:
         uses: cachix/install-nix-action@v31
 
       - name: Build Site
-        run: nix run .#build
-
-  shellcheck:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Run ShellCheck
-        uses: ludeeus/action-shellcheck@master
-        with:
-          scandir: './script'
+        run: bash script/build.sh

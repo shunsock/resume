@@ -38,7 +38,6 @@ resume/
 │   ├── works/              # Work projects (Findy, PR TIMES, presentations)
 │   ├── image/              # Static assets
 │   └── index.md            # Homepage
-├── script/                 # Development scripts
 ├── flake.nix               # Nix development environment
 ├── flake.lock              # Nix lock file
 ├── Taskfile.yml            # Task runner configuration
@@ -61,7 +60,7 @@ The easiest way to start development:
 
 ```bash
 nix develop   # Enter Nix development environment (installs bun and go-task)
-task start    # Start development server automatically
+task run      # Start development server automatically
 ```
 
 This will start the VitePress development server at `http://localhost:5173/resume/`
@@ -72,20 +71,13 @@ If you prefer not to use Nix:
 
 ```bash
 bun install   # Install dependencies
-task start    # Start development server
+task run      # Start development server
 # Or run directly:
 bun run docs:dev
-```
-
-### Other Task Commands
-
-```bash
-task stop    # Stop development environment
 ```
 
 ## CI/CD
 
 - **Build Test**: Runs on PRs to master, only if `docs/**` or other relevant files change
-- **Shell Script Validation**: Runs ShellCheck on PRs to master when `script/*.sh` files change
 - **Deploy**: Runs on master branch pushes, only if `docs/**` or other relevant files change
 - All workflows use Bun and run commands from the root directory

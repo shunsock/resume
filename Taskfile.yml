@@ -4,8 +4,8 @@ tasks:
   run:
     desc: 開発用サーバーの起動
     cmds:
-      - bash ./script/dev.sh
+      - bash script/run.sh
   build:
     desc: プロダクション用にアプリケーション(VitePress)をビルド
     cmds:
-      - bash ./script/build.sh
+      - bash script/build.sh

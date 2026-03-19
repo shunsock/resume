@@ -13,17 +13,21 @@
 
         dev-server = pkgs.writeShellApplication {
           name = "dev-server";
-          runtimeInputs = [ pkgs.bash pkgs.bun ];
+          runtimeInputs = [ pkgs.bun ];
           text = ''
-            bash ${./script/dev.sh}
+            [ -d "node_modules" ] && rm -rf -- "node_modules"
+            bun install
+            bun run docs:dev
           '';
         };
 
         build-site = pkgs.writeShellApplication {
           name = "build-site";
-          runtimeInputs = [ pkgs.bash pkgs.bun ];
+          runtimeInputs = [ pkgs.bun ];
           text = ''
-            bash ${./script/build.sh}
+            [ -d "node_modules" ] && rm -rf -- "node_modules"
+            bun install
+            bun run docs:build
           '';
         };
       in {

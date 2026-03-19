@@ -33,7 +33,7 @@ jobs:
         uses: cachix/install-nix-action@v31
 
       - name: Build Site
-        run: nix run .#build
+        run: bash script/build.sh
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -6,6 +6,7 @@ on:
     paths:
       - 'docs/**'
       - 'bun.lock'
+      - 'package.json'
       - 'flake.nix'
       - 'flake.lock'
 

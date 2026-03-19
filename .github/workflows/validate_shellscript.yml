@@ -8,12 +8,12 @@ on:
       - 'script/*.sh'
 
 jobs:
-  shellcheck:  
+  shellcheck:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        
+
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:

@@ -13,17 +13,17 @@
 
         dev-server = pkgs.writeShellApplication {
           name = "dev-server";
-          runtimeInputs = [ pkgs.bun ];
+          runtimeInputs = [ pkgs.bash pkgs.bun ];
           text = ''
-            ${pkgs.bash}/bin/bash ${./script/dev.sh}
+            bash ${./script/dev.sh}
           '';
         };
 
         build-site = pkgs.writeShellApplication {
           name = "build-site";
-          runtimeInputs = [ pkgs.bun ];
+          runtimeInputs = [ pkgs.bash pkgs.bun ];
           text = ''
-            ${pkgs.bash}/bin/bash ${./script/build.sh}
+            bash ${./script/build.sh}
           '';
         };
       in {

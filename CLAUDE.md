@@ -7,11 +7,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 All development commands should be run from the root directory:
 
 ```bash
-bun install              # Install dependencies
-bun run docs:dev         # Start development server (http://localhost:5173/resume/)
-bun run docs:build       # Build the site for production
-bun run docs:preview     # Preview the built site
+nix run                  # Start development server (auto-installs deps, http://localhost:5173/resume/)
+nix run .#build          # Build the site for production (auto-installs deps)
+task run                 # Same as nix run (via script/run.sh)
+task build               # Same as nix run .#build (via script/build.sh)
 ```
+
+`nix run` apps automatically clean `node_modules` and run `bun install` before starting.
 
 Build output is generated to `docs/.vitepress/dist/` directory.
 
@@ -19,7 +21,7 @@ Build output is generated to `docs/.vitepress/dist/` directory.
 
 This is a personal portfolio/resume site built with VitePress and deployed to GitHub Pages:
 
-- **Tech Stack**: Nix (development environment), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
+- **Tech Stack**: Nix (development environment & app runner), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
 - **Content**: Markdown files in `docs/` directory
 - **Configuration**: VitePress config in `docs/.vitepress/config.mts`
 - **Deployment**: GitHub Actions workflows deploy to GitHub Pages on master branch pushes
@@ -41,8 +43,11 @@ resume/
 ├── flake.nix               # Nix development environment
 ├── flake.lock              # Nix lock file
 ├── Taskfile.yml            # Task runner configuration
+├── script/                 # Shell scripts for task runner
+│   ├── run.sh              # Runs nix run (dev server)
+│   └── build.sh            # Runs nix run .#build (production build)
 ├── package.json            # Dependencies and scripts
-└── bun.lockb              # Bun lock file
+└── bun.lock               # Bun lock file
 ```
 
 ## Content Organization
@@ -54,30 +59,31 @@ resume/
 
 ## Development Environment
 
-### Quick Start (Recommended: with Nix)
+### Quick Start (Recommended)
 
-The easiest way to start development:
+One command to start the development server:
 
 ```bash
-nix develop   # Enter Nix development environment (installs bun and go-task)
-task run      # Start development server automatically
+nix run       # Cleans node_modules, installs deps, starts dev server
+```
+
+Or equivalently via go-task:
+
+```bash
+nix develop   # Enter Nix devShell (provides bun and go-task)
+task run      # Delegates to script/run.sh → nix run
 ```
 
 This will start the VitePress development server at `http://localhost:5173/resume/`
 
-### Manual Setup (without Nix)
-
-If you prefer not to use Nix:
+### Build
 
 ```bash
-bun install   # Install dependencies
-task run      # Start development server
-# Or run directly:
-bun run docs:dev
+nix run .#build   # Production build (or: task build)
 ```
 
 ## CI/CD
 
 - **Build Test**: Runs on PRs to master, only if `docs/**` or other relevant files change
 - **Deploy**: Runs on master branch pushes, only if `docs/**` or other relevant files change
-- All workflows use Bun and run commands from the root directory
+- All workflows use Nix (`cachix/install-nix-action`) and run `bash script/build.sh` (`nix run .#build`)

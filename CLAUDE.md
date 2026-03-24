@@ -22,7 +22,7 @@ This is a personal portfolio/resume site built with VitePress and deployed to Gi
 - **Tech Stack**: Nix (development environment), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
 - **Content**: Markdown files in `docs/` directory
 - **Configuration**: VitePress config in `docs/.vitepress/config.mts`
-- **Deployment**: GitHub Actions workflows deploy to GitHub Pages on master branch pushes
+- **Deployment**: GitHub Actions workflows deploy to GitHub Pages on main branch pushes
 - **Domain**: Managed by Cloudflare
 
 ## Key Directory Structure
@@ -78,6 +78,6 @@ bun run docs:dev
 
 ## CI/CD
 
-- **Build Test**: Runs on PRs to master, only if `docs/**` or other relevant files change
-- **Deploy**: Runs on master branch pushes, only if `docs/**` or other relevant files change
+- **Build Test**: Runs on PRs to main, only if `docs/**` or other relevant files change
+- **Deploy**: Runs on main branch pushes, only if `docs/**` or other relevant files change
 - All workflows use Bun and run commands from the root directory

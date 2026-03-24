@@ -15,7 +15,7 @@ This site contains:
 
 You can view this resume site at:
 - GitHub Pages: [https://shunsock.github.io/resume/](https://shunsock.github.io/resume/)
-- GitHub: [https://github.com/shunsock/resume/tree/master/docs](https://github.com/shunsock/resume/tree/master/docs)
+- GitHub: [https://github.com/shunsock/resume/tree/main/docs](https://github.com/shunsock/resume/tree/main/docs)
 - Local files: Browse the content directly in the `docs/` directory
 
 ## Architecture Overview
@@ -25,7 +25,7 @@ This is a personal portfolio/resume site built with VitePress and deployed to Gi
 - **Tech Stack**: Nix (development environment), VitePress (Vue-based static site generator), Bun (runtime), go-task (task runner)
 - **Content**: Markdown files in `docs/` directory
 - **Configuration**: VitePress config in `docs/.vitepress/config.mts`
-- **Deployment**: GitHub Actions workflows deploy to GitHub Pages on master branch pushes
+- **Deployment**: GitHub Actions workflows deploy to GitHub Pages on main branch pushes
 - **Domain**: Managed by Cloudflare
 - **Build Output**: Generated to `docs/.vitepress/dist/` directory
 
@@ -89,7 +89,7 @@ If you prefer not to use Nix:
 
 ### Build
 
-The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the master branch. This workflow only runs if changes are made within the `docs` directory or other relevant files.
+The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the main branch. This workflow only runs if changes are made within the `docs` directory or other relevant files.
 
 The build process is significant as it performs dead link checking to ensure all internal and external links remain functional before merging changes.
 
@@ -110,7 +110,7 @@ The `.github/workflows/validate_shellscript.yml` workflow runs ShellCheck valida
 
 ### Deploy
 
-The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the master branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the relevant directories.
+The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the main branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the relevant directories.
 
 ## Content Organization
 

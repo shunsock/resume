@@ -57,7 +57,7 @@ bun run docs:preview     # Preview the built site
 
 3. Start the development server
    ```bash
-   task start
+   task run
    ```
 
 4. Open your browser and visit `http://localhost:5173/resume/`
@@ -77,12 +77,12 @@ If you prefer not to use Nix:
 
 3. Start the development server
    ```bash
-   task start
+   task run
    # Or run directly:
    bun run docs:dev
    ```
 
-4. Open your browser and visit `http://localhost:5173/`
+4. Open your browser and visit `http://localhost:5173/resume/`
 
 
 ## CI/CD
@@ -116,7 +116,7 @@ The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed
 
 - Navigation and sidebar are configured in `docs/.vitepress/config.mts`
 - All content is in Markdown format
-- Images are stored in `docs/image/` with subdirectories by category
+- Images are stored in `docs/public/` with subdirectories by category
 - Site uses local search provider (configured in VitePress config)
 
 ## Project Structure
@@ -128,16 +128,18 @@ resume/
 │   ├── .vitepress/         # VitePress configuration
 │   │   └── config.mts      # Main site configuration
 │   ├── blog/               # Blog posts (technology, daily)
-│   ├── profile/            # Profile info, resume, skills
-│   ├── works/              # Work projects (Findy, PR TIMES, presentations)
-│   ├── image/              # Static assets
+│   ├── presentation/       # Presentations at conferences
+│   ├── project/            # Work projects (Findy, PR TIMES)
+│   ├── public/             # Static assets (images, logos)
+│   ├── resume/             # Resume and career history
+│   ├── skill/              # Skills and technologies
 │   └── index.md            # Homepage
 ├── script/                 # Development scripts
 ├── flake.nix               # Nix development environment
 ├── flake.lock              # Nix lock file
 ├── Taskfile.yml            # Task runner configuration
 ├── package.json            # Dependencies and scripts
-├── bun.lockb               # Bun lock file
+├── bun.lock                # Bun lock file
 └── README.md               # This file
 ```
 

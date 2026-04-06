@@ -34,22 +34,24 @@ resume/
 │   ├── .vitepress/         # VitePress configuration
 │   │   └── config.mts      # Main site configuration
 │   ├── blog/               # Blog posts (technology, daily)
-│   ├── profile/            # Profile info, resume, skills
-│   ├── works/              # Work projects (Findy, PR TIMES, presentations)
-│   ├── image/              # Static assets
+│   ├── presentation/       # Presentations at conferences
+│   ├── project/            # Work projects (Findy, PR TIMES)
+│   ├── public/             # Static assets (images, logos)
+│   ├── resume/             # Resume and career history
+│   ├── skill/              # Skills and technologies
 │   └── index.md            # Homepage
 ├── flake.nix               # Nix development environment
 ├── flake.lock              # Nix lock file
 ├── Taskfile.yml            # Task runner configuration
 ├── package.json            # Dependencies and scripts
-└── bun.lockb              # Bun lock file
+└── bun.lock                # Bun lock file
 ```
 
 ## Content Organization
 
 - Navigation and sidebar are configured in `docs/.vitepress/config.mts`
 - All content is in Markdown format
-- Images are stored in `docs/image/` with subdirectories by category
+- Images are stored in `docs/public/` with subdirectories by category
 - Site uses local search provider (configured in VitePress config)
 
 ## Development Environment

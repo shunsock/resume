@@ -39,7 +39,7 @@ jobs:
       - name: Check formatting (shfmt)
         run: shfmt -f . | xargs -r -d '\n' shfmt -d
 
-      # --external-sources で source 先 (bin/library/*.sh) を追跡し、
+      # --external-sources で source 先のファイルも追跡し、
       # 呼び出し元込みの文脈で lint する。format が落ちても lint は実行する。
       - name: Lint (shellcheck)
         if: ${{ !cancelled() }}

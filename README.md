@@ -89,7 +89,7 @@ If you prefer not to use Nix:
 
 ### Build
 
-The `.github/workflows/build.yml` workflow is triggered when a pull request is opened against the main branch. This workflow only runs if changes are made within the `docs` directory or other relevant files.
+The `.github/workflows/build__site.yaml` workflow is triggered when a pull request is opened against the main branch. It runs on every pull request so that the `build-test` job can serve as a required status check.
 
 The build process is significant as it performs dead link checking to ensure all internal and external links remain functional before merging changes.
 
@@ -106,11 +106,11 @@ Review feedback is categorized as `[must]` (critical changes), `[nits]` (improve
 
 ### Shell Script Validation
 
-The `.github/workflows/validate_shellscript.yml` workflow runs ShellCheck validation on shell scripts in the `script/` directory when pull requests modify any `.sh` files. This ensures shell script quality and catches common scripting issues before merge.
+The `.github/workflows/lint__shell.yaml` workflow runs shfmt and ShellCheck validation on shell scripts in the repository. This ensures shell script quality and catches common scripting issues before merge.
 
 ### Deploy
 
-The `.github/workflows/deploy.yml` workflow is triggered when changes are pushed to the main branch. Similar to the CI workflow, deployment only proceeds if there are changes detected in the relevant directories.
+The `.github/workflows/deploy__site.yaml` workflow is triggered when changes are pushed to the main branch. Deployment only proceeds if there are changes detected in the relevant directories.
 
 ## Content Organization
 

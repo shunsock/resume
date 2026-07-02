@@ -1,4 +1,4 @@
-name: Build Test
+name: build__site
 
 # build-test を branch protection の required status check にするため
 # paths フィルタを設けず全 PR で実行する (path 限定だと check が報告されず merge が塞がる)。

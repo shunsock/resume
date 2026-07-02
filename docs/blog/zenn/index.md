@@ -4,15 +4,14 @@ description: 個人のテックブログ
 prev:
   text: "PR TIMES開発者ブログ"
   link: "/blog/prtimes_techblog"
-next:
-  text: "Tech Blog"
-  link: "/blog/technology"
 ---
 
 # Zenn
 
 2022年から個人のテックブログを掲載しています。
 
+- [FastAPI Cloudを使ってみた](https://zenn.dev/shundeveloper/articles/93417d82f02dd5)
+- [TerraformリポジトリをAI利用前提の構成にリアーキテクトした話](https://zenn.dev/shundeveloper/articles/aac64078ec57f2)
 - [LazyNixとuvでお手軽Python開発](https://zenn.dev/shundeveloper/articles/c74a9afbf1e786)
 - [LazyNix: 誰でも作れる再現可能な開発環境](https://zenn.dev/shundeveloper/articles/6d9a464c4a6bad)
 - [開発環境現状確認（2026年）](https://zenn.dev/shundeveloper/articles/e403a5083148d2)

@@ -16,7 +16,7 @@ jobs:
   auto_merge:
     # dependabot の PR のみを対象とし、人間の PR には作用させない。
     if: github.event.pull_request.user.login == 'dependabot[bot]'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
       contents: write

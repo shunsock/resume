@@ -7,6 +7,23 @@ description: カンファレンスでの登壇と講演の情報
 
 登壇・講演の情報
 
+## フロントエンド・PHPカンファレンス北海道 2026
+
+### 概要
+
+- タイトル: ユーザーに「👍」と「👎」の押しミスをさせない設計にしよう
+- 日付: 2026-06-06
+- イベント名称: [フロントエンド・PHPカンファレンス北海道 2026](https://frontend-php-con.hokkaido.jp/)
+- 場所: Sapporo, Japan
+- 資料:
+    - Speaker Deck: [「👍」と「👎」の押しミスに震えない世界を作りませんか?](https://speakerdeck.com/shunsock/to-noya-simisunizhen-enaishi-jie-wozuo-rimasenka)
+    - Zenn: [ユーザーに「👍」と「👎」の押しミスをさせない設計にしよう](https://zenn.dev/shundeveloper/articles/6d489ed4398b0b)
+    - note: [フロントエンド・PHPカンファレンスで登壇しました](https://note.com/shunsock/n/n53c5f628f745)
+
+### 内容
+
+「👍」と「👎」のような絵文字リアクションボタンが Unicode の文字コード順で隣接して並ぶことによる押しミスの問題を取り上げた LT です。文字コード順ではなく感情の意味順 (ポジティブ → ニュートラル → ネガティブ) に並べることで、ユーザーが意図と逆のリアクションを誤送信してしまう事故を設計で防げることを、Google Meet などの実例を交えて紹介しました。
+
 ## DB TECH SHOWCASE 2025
 
 ### 概要

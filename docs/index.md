@@ -58,6 +58,7 @@ features:
 
 国内の主要カンファレンスに多数登壇しております。
 
+- フロントエンド・PHPカンファレンス北海道 2026
 - DB TECH SHOWCASE 2025
 - PHP Conference Japan 2024/2025
 - PHPerKaigi 2024/2025

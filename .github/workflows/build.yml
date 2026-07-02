@@ -1,14 +1,10 @@
 name: Build Test
 
+# build-test を branch protection の required status check にするため
+# paths フィルタを設けず全 PR で実行する (path 限定だと check が報告されず merge が塞がる)。
 on:
   pull_request:
     branches: ["main"]
-    paths:
-      - 'docs/**'
-      - 'bun.lock'
-      - 'package.json'
-      - 'flake.nix'
-      - 'flake.lock'
 
 # 既定では何も書き込ませない (最小権限)。checkout に必要な read のみ job 側で付与する。
 permissions: {}

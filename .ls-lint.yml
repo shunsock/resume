@@ -1,0 +1,30 @@
+# ディレクトリ・ファイル名を snake_case に強制する。
+# CLAUDE.md / README.md / Taskfile.yml / .github 配下は各ツールが要求する慣習名のため、
+# .vitepress は VitePress が予約する隠しディレクトリのため除外する。
+ls:
+  .dir: snake_case
+  .md: snake_case
+  .yml: snake_case
+  .yaml: snake_case
+  .mts: snake_case
+  .nix: snake_case
+  .json: snake_case
+  .lock: snake_case
+  .sh: snake_case
+  .png: snake_case
+  .svg: snake_case
+  .jpg: snake_case
+  .jpeg: snake_case
+  .webp: snake_case
+
+ignore:
+  - .git
+  - .github
+  - .claude
+  - docs/.vitepress
+  - CLAUDE.md
+  - README.md
+  - Taskfile.yml
+  - node_modules
+  - docs/.vitepress/cache
+  - docs/.vitepress/dist

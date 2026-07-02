@@ -1,0 +1,37 @@
+name: merge__dependabot
+
+# dependabot が作成した PR のうち patch / minor 更新に auto-merge を設定する。
+# major 更新は影響が大きいため対象外とし、手動レビューに委ねる。
+# 実際のマージは main の required status checks (branch protection) を
+# すべて満たした時点で GitHub の auto-merge が実行する。
+
+on:
+  pull_request:
+    branches: [main]
+
+# 既定では何も書き込ませない (最小権限)。auto-merge 設定に必要な権限は job 側で付与する。
+permissions: {}
+
+jobs:
+  auto_merge:
+    # dependabot の PR のみを対象とし、人間の PR には作用させない。
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Fetch dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # マージ方式は既存履歴に合わせて merge commit とする。
+      - name: Enable auto-merge for patch / minor updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

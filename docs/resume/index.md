@@ -35,6 +35,9 @@ next:
 
 - 会社名: [株式会社ナウキャスト](https://nowcast.co.jp/)
 - 所属期間: 2026-04-01 - 現在
+- 職種: プロダクトエンジニア
+- 業務内容:
+    - 店舗開発DXツール「[DataLens店舗開発](https://lp.datalenshub.com/property)」の開発
 
 ### ファインディ株式会社
 
@@ -55,7 +58,7 @@ next:
 - 会社名: 株式会社インフラトップ
 - 創業: 2014年11月19日
 - 従業員数: 非公表
-- 所属期間: 2025-06-01 - 現在
+- 所属期間: 2025-06-01 - 2026-01-31
 - 所属部署: 学習支援チーム
 - 職種: プログラミング講師
 - 業務内容:
@@ -66,7 +69,7 @@ next:
 - 会社名: A1A株式会社
 - 創業: 2018年6月26日
 - 従業員数: 非公表
-- 所属期間: 2024-09-01 - 現在
+- 所属期間: 2024-09-01 - 2025-06-30
 - 所属部署: プロダクトチーム
 - 職種: 技術調査、設計レビュー、開発等
 - 業務内容:
@@ -94,13 +97,14 @@ next:
 
 ## Presentation / 登壇
 
+- [フロントエンド・PHPカンファレンス北海道 2026](https://frontend-php-con.hokkaido.jp/): LT登壇
 - [DB TECH SHOWCASE 2025](https://www.db-tech-showcase.com/2025): トーク登壇
 - [PHPerKaigi 2025](https://phperkaigi.jp/2025/): トーク登壇
 - [PHPerKaigi 2024](https://phperkaigi.jp/2024/): トーク登壇
-- [PHP Conference Japan 2024](https://phpcon.php.gr.jp/2025/): LT登壇
-- [PHP Conference Japan 2025](https://phpcon.php.gr.jp/2024/): トーク登壇
+- [PHP Conference Japan 2024](https://phpcon.php.gr.jp/2024/): LT登壇
+- [PHP Conference Japan 2025](https://phpcon.php.gr.jp/2025/): トーク登壇
 - [PyCon Kyushu 2024](https://kyushu.pycon.jp/2024/): トーク登壇
-- [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/): LT登壇 (ベストLT章受賞)
+- [YAPC::Kyoto 2023](https://yapcjapan.org/2023kyoto/): LT登壇 (ベストLT賞受賞)
 
 ## Awards / 受賞歴
 

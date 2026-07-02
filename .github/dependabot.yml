@@ -4,12 +4,16 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    # 公開直後のバージョンを即取り込まず、supply-chain 攻撃の検出猶予を設ける (zizmor 対応)。
+    cooldown:
+      default-days: 7
     reviewers:
       - "shunsock"
   - package-ecosystem: "bun"
     directory: "/src"
     schedule:
       interval: "monthly"
+    cooldown:
+      default-days: 7
     reviewers:
       - "shunsock"
-

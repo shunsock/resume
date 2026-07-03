@@ -65,7 +65,9 @@ UI で一時的に branch 配信へ切り替えると live サイトが壊れる
 
 ```bash
 gh workflow run deploy__site.yaml --ref main
-gh run watch "$(gh run list --workflow=deploy__site.yaml --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
+user=$(gh api user --jq .login)
+run_id=$(gh run list --workflow=deploy__site.yaml --branch main --event workflow_dispatch --user "$user" --limit 1 --json databaseId --jq '.[0].databaseId')
+gh run watch "$run_id" --exit-status
 ```
 
 デプロイのステータスと live サイトも合わせて確認する。

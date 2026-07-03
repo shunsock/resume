@@ -1,5 +1,8 @@
 name: lint__github_actions
 
+# MANAGED BY shunsock/github_central — このファイルは gh-infra で配信される。
+# 変更は github_central 側の workflows/ で行うこと。直接編集しても同期で上書きされうる。
+#
 # .github/workflows 配下の GitHub Actions workflow を静的解析する。
 #   actionlint: 構文・式・埋め込み shell script の検証
 #   ghalint:    workflow のセキュリティポリシー (permission 明示・SHA pin など) の強制
@@ -24,7 +27,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
 
@@ -46,7 +49,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
 
@@ -66,16 +69,16 @@ jobs:
       contents: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
 
       # zizmor 本体の version を固定し再現性を担保する。
-      # 当 repo は private かつ GitHub Advanced Security 未契約のため SARIF upload は使えない。
-      # advanced-security: false で annotation に fallback し (security-events 権限も不要)、
-      # online-audits: false で外部 API へ問い合わせず決定的に監査する。
+      # private リポジトリ (GitHub Advanced Security 未契約) にも配信するため SARIF upload は
+      # 使わない。advanced-security: false で annotation に fallback し (security-events 権限も
+      # 不要)、online-audits: false で外部 API へ問い合わせず決定的に監査する。
       - name: Run zizmor
-        uses: zizmorcore/zizmor-action@192e21d79ab29983730a13d1382995c2307fbcaa # v0.5.7
+        uses: zizmorcore/zizmor-action@5f14fd08f7cf1cb1609c1e344975f152c7ee938d # v0.5.6
         with:
           version: v1.25.2
           advanced-security: false

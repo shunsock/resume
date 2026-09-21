@@ -1,7 +1,10 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "2.0.0-alpha.19"
+  },
+  "overrides": {
+    "mdast-util-to-hast": "13.2.1"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs --host",

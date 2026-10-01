@@ -1,7 +1,7 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.19"
+    "vitepress": "2.0.0-alpha.20"
   },
   "overrides": {
     "mdast-util-to-hast": "13.2.1"
